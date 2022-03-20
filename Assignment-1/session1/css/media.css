@@ -1,0 +1,153 @@
+@media(max-width:1024px){
+    .below-header ul li a {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media(max-width:768px){
+    /*===================================hambyrger-menu===================*/
+    #menu{
+        display: block;
+        height: 30px;
+        width: 35px;
+        cursor: pointer;
+    }
+    .upper-header{
+        position: relative;
+    }
+    .nav{
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none
+    }
+    #menu-bar{
+        position: absolute;
+        right: 20px;
+        top: 58%;
+        transform: translateY(-58%);
+    }
+   .bar{
+        height:4px;
+        width:80%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        margin-bottom: 4px;
+    }
+    .below-header ul{
+     flex-direction: column;
+    }
+    .change .bar{
+        background-color: white;
+    }
+    .change #bar1{
+        transform: translateY(4px) rotate(-45deg);
+    }
+    .change #bar2{
+        opacity: 0;
+    }
+    .change #bar3{
+        transform: translateY(-6px) rotate(45deg);
+    }
+    .change{
+        width: 100%;
+        position: absolute;
+        top:100px;
+        z-index: 50;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .below-header ul li a,ul li a, p, .main-wrap ul li a, .footer p{
+        font-size: 14px;
+    }
+    .below-header ul li a{
+        padding: 12px;
+    }
+    /*================================================================*/
+    .logo{
+        flex-direction: column;
+        padding: 12px;
+    }
+    .right-nav h1 a{
+        font-size:18px;
+    }
+    .left-nav a{
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .left-nav p{
+        padding: 0px 10 5px 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .right-nav h1 a{
+        font-size: 26px;
+    }
+    .para2 h3{
+        font-size: 18px;
+    }
+    .below-header ul{
+        justify-content: center;
+        padding: 16px 0px 16px 0px;
+    }
+    .below-header ul li a{
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .main-wrap .container{
+        flex-direction: column;
+        padding: 30px;
+    }
+   .main-wrap .left{
+        padding: 30px  38px 30px 38px;
+        margin: auto;
+    } 
+    .left-side{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .right{
+        padding: 30px 0px 0px 0px;
+    }
+}
+@media(max-width:426px){
+    .right-nav h1 a {
+        font-size: 24px;
+    }
+    .below-header ul li a, ul li a, p, .main-wrap ul li a, .footer p{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .main-wrap .container{
+        padding: 15px;
+    }
+    .right{
+        padding-top: 15px;
+    }
+    .para2{
+        padding-top: 20px;
+    }
+    .main-wrap p {
+        padding-top: 8px;
+    }
+}
+@media(max-width:320px){
+    .right-nav h1 a {
+        font-size: 21px;
+    }
+    .logo{
+        padding: 14px;
+    }
+}

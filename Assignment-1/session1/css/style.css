@@ -1,0 +1,123 @@
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 19px 17px;
+}
+.upper-header{
+    background-color: #18375a;
+}
+.upper-header a, .below-header a{
+    text-decoration: none;
+    color:#ffff;
+}
+.right-nav h1 a{
+    font-size: 34px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.left-nav a{
+    font-size: 24px;
+    font-weight:400;
+}
+.left-nav p{
+    padding-top: 18px;
+}
+.nav{
+    background-color: #262626;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav ul li a:active{
+    background-color: #f49722;
+}
+/* .below-header ul li {
+    font-size: 15px;
+} */
+.below-header ul li a{
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: 15px;
+}
+.below-header ul li a:hover{
+    background-color: #f49722;
+}
+/*=================================MAIN-WRAP===============================*/
+.main-wrap ul li a{
+    text-decoration: none;
+    color:#262626;
+    font-size: 14px;
+    position: relative;
+    padding-left: 18px;
+    display: inline-block;
+}
+.main-wrap ul li a::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    left: 0;
+    top: 4px;
+}
+.main-wrap .container{
+    display: flex;
+    padding: 30px 0px;
+}
+.main-wrap li, .sub-list{
+    padding-top: 14px;
+}
+ p,.right-side ul li a{
+    font-size: 13px;
+    line-height:1.8;
+}
+.main-wrap p{
+    padding-top: 20px;
+}
+.left-side{
+    background-color: #dddddd;
+    max-width: 223px;
+    flex: 0 0 223px;
+    padding: 30px;
+}
+.right-side{
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+.right{
+    padding-left: 30px;
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.para2{
+    padding-top: 44px;
+}
+.left-side ul{
+    padding-top: 8px;
+}
+.left-side ul li a:hover{
+   text-decoration: underline;
+}
+.left-side .sub-list{
+    padding: 0px 0px 0px 20px;
+}
+
+/*====================================FOOTER====================================*/
+.footer{
+    background-color: #18375a;
+}
+.footer p{
+    padding: 18px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+/*=======================================HAMBURGER-MENU======================*/

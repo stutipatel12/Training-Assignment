@@ -1,0 +1,96 @@
+.white{
+    color: #ffff;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.f48{font-size: 40px;}
+.f28{font-size: 28px;}
+.bg-img{
+    background-size:cover;
+    background-position: center;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+/*===========================================================HEADER===========================================*/
+.header{
+    background-image: url(../images/banner-img.jpg);
+}
+.shadow{
+    background-image: url(../images/bg.png);
+}
+.menulinks{
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 0px 10px 0px;
+}
+.navbar{
+    border-bottom: 2px solid white;
+    padding-top: 100px;
+    margin: 0px 30px 0px 30px;
+}
+ul li a{
+    font-size: 16px;
+    padding:20px;
+    text-transform:uppercase ;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: white;
+}
+.left-nav{
+    width: 70%;
+}
+.right-nav{
+    padding-top: 12px;
+}
+.links{
+    flex: 0 0 40%;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.login-btn{
+    padding: 6px 22px;
+    background: transparent;
+    border:1px solid white;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.login-btn:hover{
+    background-color: white;
+    color: black;
+}
+.below-nav{
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    flex-direction: column;
+}
+h2{color:#1ebcee; font-weight: 400;}
+h2, h3{
+    padding: 10px;
+}
+.main{
+    width:55%;
+}
+.main span{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.part1, .part2, .part3{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.row{
+    margin: 0px;
+}
