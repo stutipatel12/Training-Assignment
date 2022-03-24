@@ -1,0 +1,127 @@
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:15px;
+    align-items: center;
+}
+.wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.upper-header{
+    background-color: #18375a;
+}
+.upper-header a, .below-header a{
+    text-decoration: none;
+    color:#ffff;
+}
+.right-nav h1 a{
+    font-size: 34px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.left-nav a{
+    font-size: 24px;
+    font-weight:400;
+}
+.nav{
+    background-color: #262626;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav ul li a:active{
+    background-color: #f49722;
+}
+.below-header ul li a{
+    display: inline-block;
+    padding: 18px 32px;
+    font-size: 15px;
+}
+.below-header ul li a:hover{
+    background-color: #f49722;
+}
+/*=================================MAIN-WRAP===============================*/
+p,.right-block .list a{
+   font-size: 13px;
+   line-height:1.8;
+}
+.col ul li a{
+    text-decoration: none;
+    color:#262626;
+    font-size: 14px;
+    position: relative;
+    padding-left: 18px;
+    display: inline-block;
+}
+.col ul li a::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    left: 0;
+    top: 10px;
+}
+.list{
+    padding: 20px 0;
+}
+.para1{padding: 20px 0;}
+.para2{padding: 10px 0;}
+.left-block .list ul li a:hover{
+   text-decoration: underline;
+}
+.list .sub-list{
+    padding: 0px 0px 0px 20px;
+}
+.main-wrap .container{
+    display: flex;
+    padding: 30px 0px;
+}
+.sub-list{margin-top: 14px;}
+.main-wrap li, .sub-list{
+    margin-bottom: 14px;
+}
+.main-wrap p{
+    margin-bottom:20px;
+}
+.left-block{
+    background-color: #dddddd;
+    max-width: 223px;
+    flex: 0 0 223px;
+    padding: 30px;
+}
+.right-block{
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+.right{
+    padding-left: 30px;
+    flex: calc(100% - 223px);
+    max-width: calc(100% - 223px);
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding-bottom: 8px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.para2 .heading{margin-bottom: 10px}
+.para2 .list{
+    padding: 0px;
+}
+/*====================================FOOTER====================================*/
+.footer{
+    background-color: #18375a;
+}
+.footer p{
+    padding: 18px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+/*=======================================HAMBURGER-MENU======================*/
