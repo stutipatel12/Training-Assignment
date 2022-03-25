@@ -24,7 +24,7 @@
     }
     #menu-bar{
         position: absolute;
-        right: 20px;
+        right:34px;
         top:50%;
         transform: translateY(-50%);
     }

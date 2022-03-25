@@ -11,32 +11,42 @@
     <title>Assignment-3</title>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
         <!--------------------------------------------------------------HOME PAGE-------------------------------------------------->
         <!--------------Header----------------->
-        <section>
+        <header>
             <nav class="navbar">
                 <div class="container">
-                <div class="menulinks flex-block">
-                    <div class="left-nav flex-block">
-                        <div class="logo">
-                            <a href="#"><img src="images\logo_1.png" /></a>
+                    <div class="menulinks flex-block">
+                        <div class="left-nav flex-block">
+                            <div class="logo">
+                                <a href="#"><img src="images\logo_1.png" /></a>
+                            </div>
+                            <div id="menu-bar">
+                                <div id="menu" onclick="onClickMenu()">
+                                    <div id="bar1" class="bar"></div>
+                                    <div id="bar2" class="bar"></div>
+                                    <div id="bar3" class="bar"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="links">
-                            <ul class="flex-block">
-                                <li><a href="#" class="white">How it works</a></li>
-                                <li><a href="#" class="white">Contact us</a></li>
-                            </ul>
+                        <!-------------------hamburger-menu------------------->
+                        <div class="link-block nav"id="nav"onclick="onClickNav()" >
+                            <div class="links">
+                                <ul class="flex-block">
+                                    <li><a href="#" class="white">How it works</a></li>
+                                    <li><a href="#" class="white">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-nav">
+                                <button class="login-btn white">Login</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="right-nav">
-                        <button class="login-btn white">Login</button>
                     </div>
                 </div>
-            </div>
             </nav>
-        </section>
+        </header>
 
         <section class="header bg-img">
             <div class="shadow bg-img">
@@ -47,7 +57,7 @@
                             Apply to your perfect volunteer, intern or teach aborad program.
                         </p>
                     </div>
-                    <div class="main">
+                    <div class="select-block">
                         <div class="block block-1">
                             <div class="text">
                                 <span>Type</span>
@@ -95,7 +105,7 @@
             </div>
         </section>
         <!----------------------------------------------------------slider-1--------------------------------------------->
-        <section class="content-1">
+        <section class="trending-slider slider-block">
             <div class="container">
                 <h2>Trending Projects</h2>
                 <div class="slider slider1">
@@ -215,7 +225,7 @@
             </div>
         </section>
         <!-------------------------------------------------------------slider2--------------------------------->
-        <section class="content-2">
+        <section class="feature-slider slider-block">
             <div class="container">
                 <h2>Feature</h2>
                 <div class="slider slider2">
@@ -367,7 +377,7 @@
             </div>
         </section>
         <!-------------------------------------------------------SLIDER-3-------------------------->
-        <section class="content-3">
+        <section class="affordable-slider slider-block">
             <div class="container">
                 <h2>Most Affordable Projects</h2>
                 <div class="slider slider3">
@@ -399,7 +409,7 @@
                                 <p>Starting at</p>
                                 <h3>$299/week</h3>
                                 <p>for 4 Weeks</p>
-                                <p class="big-text" >Animal Care</p>
+                                <p class="big-text">Animal Care</p>
                             </div>
                             <div class="sub-content-2">
                                 <p class="red-text">Ghana</p>

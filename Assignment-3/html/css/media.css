@@ -1,0 +1,244 @@
+@media(max-width:1320px){
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        font-size: 16px;
+    }
+}
+@media(max-width:1024px){
+    .select-block{
+        width: 95%;
+    }
+    .select-text .select2-container{
+        height: 80px;
+        padding: 24px 0;
+    }
+    .select-text .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        top:74%;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        font-size:20px;
+    }
+    .block-4 button{
+        height: 80px;
+        font-size: 20px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    .big-text{
+        font-size: 17px;
+    }
+}
+@media(max-width:776px){
+    h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .slider-block{
+        padding: 22px 0;
+    }
+    .trending-slider{
+        padding-top:42px;
+    }
+    /*----------------------hamburger-menu----------------------*/
+    #menu{
+        display: block;
+        height: 30px;
+        width: 35px;
+        cursor: pointer;
+        padding: 4px;
+    }
+    .nav{
+        padding: 0;
+        margin: 0 20px;
+        transition: 1s ease;
+        display: none
+    }
+    #menu-bar{
+        position: absolute;
+        right:32px;
+        top:50%;
+        transform: translateY(-50%);
+        z-index: 20;
+    }
+   .bar{
+        height:4px;
+        width:100%;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        margin-bottom: 4px;
+    }
+    .links ul{
+        flex-direction: column;
+       }
+    .open-menu .bar{background-color:#44a9c9;}
+    .open-menu #bar1{
+           transform: translateY(8px) rotateZ(-45deg);
+       }   
+    .open-menu #bar2{
+           opacity: 0;
+       }
+    .open-menu #bar3{
+           transform: translateY(-8px) rotate(45deg);
+       }
+       .nav{
+        width: 100%;
+        max-width:400px;
+        position: fixed;
+        top:0px;
+        z-index: 10;
+        right:-400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        height:100vh;
+        background-color: white;
+       }
+       .open-menu .nav{
+           right: 0;
+       }
+       .links ul li a{
+           color: #44a9c9;
+           padding: 14px;
+           font-size: 16px;
+        }
+        .right-nav button:hover{
+           color: white;
+           background-color: #44a9c9;
+        }
+       .right-nav  button{
+           color: #44a9c9;
+           border: 1px solid #44a9c9;
+           font-size: 16px;
+       }
+       .right-nav, .links li{
+           padding:20px;
+       }
+       .links{
+           width: 100%;
+       }
+       .open-menu{
+           overflow: hidden;
+       }   
+       .fixed-white-header .bar{
+           background-color: #44a9c9;
+       }
+       /*-----------------------------------*/
+       .logo img{
+           width: 180px;
+       }
+       .headings h1{
+           font-size:40px;
+           font-weight: 800;
+           max-width: 383px;
+           margin: 0 auto;
+       }
+       .headings{
+           padding-top: 30px;
+       }
+       .headings p{
+           font-size: 25px;
+           font-weight: 500;
+           max-width: 460px;
+           padding:0 15px;
+       }
+       .select-block{
+           flex-direction: column;
+           align-items: center;
+       }
+       .block{
+           display: flex;
+           align-items: center;
+       }
+       .select-text .select2-container{
+           border: none;
+       }
+       .block, .block-4{
+           flex: 0 0 100%;
+           max-width: 100%;
+           margin-bottom: 15px;
+           border-radius: 6px;
+       }
+       .block{
+           background-color: white;
+           border: 1px solid white;
+       }
+       .select-text .select2-container{
+           height:40px;
+           padding: 8px 56px 8px 0;
+       }
+       .block-4 button{
+           height: 40px;
+           font-size: 15px;
+           border-radius: 6px;
+       }
+       .select2-container--default .select2-selection--single .select2-selection__rendered{
+           font-size: 15px;
+           color: black;
+       }
+       .text span{
+           color: tomato;
+           font-size: 13px;
+       }
+       .select-block .text{
+           margin-bottom: 0px;
+           width: 30%;
+       }
+       .select-text{
+           max-width: 100%;
+       }
+       .block-1 .select-text{
+           width: 300px;
+       }
+       .block-2 .select-text{
+           width: 280px;
+       }
+       .block-3 .select-text{
+           width: 290px;
+       }
+       .block-4 .select-text{
+           width: 333px;
+       }
+       /*------------------------------*/
+       footer{
+           padding: 10px 0;
+       }
+       .footer{
+           flex-direction: column;
+       }
+       .footer ul li a{
+           padding: 20px 20px 10px 20px;
+       }
+    }
+
+@media(max-width:426px){
+    h2{
+        font-size: 28px;
+    }
+    .headings h1{
+        font-size: 33px;
+    }
+    .headings p{
+        font-size: 20px;
+    }
+    .nav{
+        right: -500px;
+        max-width: 500px;
+    }
+    .logo img {
+        width: 160px;
+    }
+    .select-block{
+        padding: 0 15px;
+    }
+}    
+
+

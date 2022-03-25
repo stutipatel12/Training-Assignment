@@ -10,7 +10,7 @@ $(document).ready(function() {
         slidesToScroll: 4,
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1440,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
@@ -19,14 +19,16 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 600,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -46,6 +48,15 @@ $(document).ready(function() {
         slidesToScroll: 6,
         responsive: [
           {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
@@ -62,7 +73,7 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 480,
+            breakpoint:400,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -82,6 +93,15 @@ $(document).ready(function() {
         slidesToScroll: 5,
         responsive: [
           {
+            breakpoint: 1440,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
@@ -91,14 +111,14 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 788,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2
             }
           },
           {
-            breakpoint: 480,
+            breakpoint:600,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1
@@ -115,39 +135,34 @@ $(document).ready(function() {
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 150) {
-	    $(".navbar").css({"background":"white","box-shadow":"5px 10px 18px #888888"});
-      $(".navbar ul li a").css("color", "#44a9c9");
-      $(".login-btn").css({"border":"1px solid #44a9c9","color":"#44a9c9"})
+	  if (scroll > 0) {
+      $(".navbar").addClass("fixed-white-header");
       $('.logo img').attr("src","./images/logo.png");
-
-
-      $(".login-btn").hover(function(){
-        $(this).css({"background-color":"#44a9c9","color":"white"});
-        }, function(){
-        $(this).css({"background-color":"transparent","color":"#44a9c9"});
-      });
 	  }
 
 	  else{
-		  $(".navbar").css({"background":"transparent","box-shadow":"none"});  	
-      $("a").css("color", "white");
-      $(".login-btn").css({"border":"1px solid white","color":"white"})
+      $(".navbar").removeClass("fixed-white-header");
       $('.logo img').attr("src","./images/logo_1.png");
-
-      $(".login-btn").hover(function(){
-        $(this).css({"background-color":"white","color":"#44a9c9"});
-      },function(){
-        $(this).css({"background-color":"transparent","color":"white"});
-      });
 
 	  }
   })
 })
-// $(document).ready(function(){
-//   $(".login-btn").hover(function(){
-//     $(this).css("background-color", "yellow");
-//     }, function(){
-//     $(this).css("background-color", "pink");
-//   });
+
+// $(window).resize(function() {
+//   var width = $(window).width();
+//   if (width > 846){
+//     $(".links ul li a").css("color", "#44a9c9");
+//     }
+
+//   else{
+//     $(".links ul li a").css("color", "#44a9c9")
+//   }  
 // });
+
+
+
+function onClickMenu(){
+  document.getElementById("body").classList.toggle("open-menu");
+}
+
+
