@@ -137,8 +137,8 @@ footer{background-color:#595656;padding: 20px 0;}
 .active-nav .sub-nav ul{background-color: #FFFFFF;border-top: 1px solid #c8c8c8;}
 .active-nav .sub-nav ul li{padding: 0 14.1px;}
 .active-nav a{color: #44a9c9;text-decoration: none;font-size: 14px;}
-.active-nav a:hover{color: #fff;}
-.active-nav li:hover{background-color: #e53b51;}
+.active-nav a:hover{color: rgb(214, 36, 48);}
+.active-nav li:hover{background-color: #f7d3d8;}
 .section{min-height: 70vh;border-bottom:1px solid gray;padding: 20px 0;}
 .active{background-color: #e53b51;}
 .active a{color: #fff;}

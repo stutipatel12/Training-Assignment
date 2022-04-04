@@ -222,6 +222,8 @@ $(document).on('click', '.active-nav ul li a', function (event) {
 });
 
 /*-----date picker--------------*/
+$('.datepicker').datepicker();
+$(document).off('.datepicker.data-api');
 $('#datepicker').datepicker({
   format: 'mm/dd/yyyy',    
 });

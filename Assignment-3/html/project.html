@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Project</title>
 </head>
 
@@ -759,7 +758,8 @@
                                     <form>
                                         <div class="row form-group">
                                             <!-- <label for="date" class="col-sm-3 col-form-label">Date</label> -->
-                                            <div class="col-sm-4">
+                                            <input data-provide="datepicker">
+                                            <!-- <div class="col-sm-4">
                                                 <div class="input-group date" id="datepicker">
                                                     <input type="text" class="form-control">
                                                     <span class="input-group-append">
@@ -768,8 +768,15 @@
                                                         </span>
                                                     </span>
                                                 </div>
+                                            </div> -->
+                                            <div class="input-group date" data-provide="datepicker">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-th"></span>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </form>
                                 </section>
 
