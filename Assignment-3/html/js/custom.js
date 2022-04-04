@@ -130,6 +130,47 @@ $(document).ready(function() {
         ]
       });
 });
+$(document).ready(function() {
+  $('.date-slider').slick({
+    nextArroe:'.next-arrow',
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });   
+ 
+});
 
 /*---------------fixed-navbar------------*/
 $(document).ready(function(){
@@ -148,21 +189,39 @@ $(document).ready(function(){
   })
 })
 
-// $(window).resize(function() {
-//   var width = $(window).width();
-//   if (width > 846){
-//     $(".links ul li a").css("color", "#44a9c9");
-//     }
-
-//   else{
-//     $(".links ul li a").css("color", "#44a9c9")
-//   }  
-// });
-
-
-
+/*-------------------------------------------------*/
 function onClickMenu(){
   document.getElementById("body").classList.toggle("open-menu");
 }
 
+/*--------------active-nav--------------------*/
 
+$(window).scroll(function() {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+      $('.active-nav section').each(function(i) {
+      // The number at the end of the next line is how many pixels you from the top you want it to activate.
+          if ($(this).position().top  <= windscroll) {
+              $('.link.active').removeClass('active');
+              $('.link').eq(i).addClass('active');
+          }
+      });
+  } else {
+      $('.link.active').removeClass('active');
+      $('.link:first').addClass('active');
+  }
+}).scroll();
+
+
+$(document).on('click', '.active-nav ul li a', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 150
+  }, 500);
+});
+
+/*-----date picker--------------*/
+$('#datepicker').datepicker({
+  format: 'mm/dd/yyyy',    
+});
