@@ -754,31 +754,13 @@
                             </div>
                             <div class="date-picker">
                                 <h5>Project start Date</h5>
-                                <section>
-                                    <form>
-                                        <div class="row form-group">
-                                            <!-- <label for="date" class="col-sm-3 col-form-label">Date</label> -->
-                                            <input data-provide="datepicker">
-                                            <!-- <div class="col-sm-4">
-                                                <div class="input-group date" id="datepicker">
-                                                    <input type="text" class="form-control">
-                                                    <span class="input-group-append">
-                                                        <span class="input-group-text bg-white">
-                                                           <img class="date-img" src="images\icon3.png">
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div> -->
-                                            <div class="input-group date" data-provide="datepicker">
-                                                <input type="text" class="form-control">
-                                                <div class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-th"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </section>
+                                <div class="input-group date" data-provide="datepicker">
+                                    <input type="text" class="form-control" placeholder="mm-dd-yyyy"
+                                        id="date-placeholder">
+                                    <div class="input-group-addon">
+                                        <img src="./images/icon3.png" alt="icon-img">
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="apply-select">
@@ -821,9 +803,9 @@
             </div>
         </footer>
     </div>
+    <script src="js\jquery-3.4.1.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
     <script src="js\bootstrap-datepicker.min.js"></script>
-    <script src="js\jquery-3.4.1.min.js"></script>
     <script src="js\main.js"></script>
     <script src="js\select2.min.js"></script>
     <script src="js\slick.min.js"></script>
