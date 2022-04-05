@@ -196,19 +196,21 @@ footer{background-color:#595656;padding: 20px 0;}
 .section-5{border-bottom: none;}
 
 /*---------------------------------------Right-block-------------------------------*/
-.apply-block{background-color: #44a9c9;min-height: 500px;position: sticky;top: 110px;z-index: 5;padding: 30px;text-align: initial;}
+.apply-block{background-color: #44a9c9;min-height:380px;position: sticky;top: 110px;z-index:4;padding: 30px;text-align: initial;}
 .right-block .select-duration{padding: 0;}
-.right-block{padding-left: 30px;}
+.right-block{padding: 40px 0 30px 30px;}
 .right-block .select2-container{border: 1px solid white;background: white;width: 269px!important ;min-height: 42px;border-radius: 5px;}
 .apply-block .select2-container--default .select2-selection--single .select2-selection__arrow{top:3px}
-.apply-block .select2-container--default .select2-selection--single .select2-selection__rendered{color:#595656;font-size: 15px;text-align: initial;}
-
-.apply-btn button{width:269px;background-color: #e53b51;color: #fff;border: none;min-height: 42px; border-radius: 5px;}
+.apply-block .select2-container--default .select2-selection--single .select2-selection__rendered{color:#595656;font-size: 15px;text-align: initial;padding-top: 7px;padding-left: 10px;}
+.apply-btn button{width:269px;background-color: #e53b51;color: #fff;border: none;min-height: 42px; border-radius: 5px;cursor: pointer;}
+.apply-btn button:hover{background-color: #f7d3d8;;color:rgb(214, 36, 48)}
 .apply-btn{padding-top: 30px;}
 .apply-text{background-color: #68bdd6;}
 .date-picker h5, .time-text h5{font-size: 16px;color: #fff;}
 .plain-text{background:none;}
-.apply-select, .apply-btn{padding: 15px 0;}
+.apply-select, .apply-btn{padding: 10px 0;}
 .plain-text p{font-size: 13px;}
-
-.date-picker .col-sm-4{flex: 0 0 100%; max-width: 100%;}
+.date-picker{padding: 20px 0 10px 0;}
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control{flex: 0 0 100%;padding-left:40px;}
+.input-group > .form-control:not(:first-child){border-radius:5px;}
+.date-picker .input-group-addon{position: absolute;top: 5px;left: 7px;z-index: 6;}
