@@ -214,4 +214,5 @@ footer{background-color:#595656;padding: 20px 0;}
 .input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control{flex: 0 0 100%;padding-left:40px;}
 .input-group > .form-control:not(:first-child){border-radius:5px;}
 .date-picker .input-group-addon{position: absolute;top: 5px;left: 7px;z-index: 6;}
-.date-picker .datepicker-dropdown{width: 18%;}
+.date-picker .datepicker .datepicker-dropdown{width:18%;}
+.date-picker .datepicker td, .datepicker th{padding:0 9px;}
