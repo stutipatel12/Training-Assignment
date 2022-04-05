@@ -188,7 +188,7 @@ footer{background-color:#595656;padding: 20px 0;}
 .date-slider .slick-slide{margin: 0;}
 .date-day{border: 1px solid gray;}
 .date-slider .slick-list{margin: 0;}
-.date-slider .slick-prev, .date-slider .slick-next{background-image: url(../images/right-white-arrow.png);top: -8%;}
+.date-slider .slick-prev, .date-slider .slick-next{background-image: url(../images/right-white-arrow.png);top: -4%;}
 .date-slider .slick-next{right: -14px;transform: rotate(360deg);}
 .date-slider .slick-prev{left: -14px;transform: rotate(180deg);}
 .date-text{padding-bottom: 5px;}
