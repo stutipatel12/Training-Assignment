@@ -25,6 +25,11 @@ h3{font-size:22px}
 .big-text{font-size:17px}
 
 /*--------------------------PROJECT PAGE------------------------------------*/
+.content-block{flex-direction: column;}
+.left-block, .right-block{flex: 0 0 100%;max-width: 100%;}
+.active-nav .sub-nav{top: 97px;}
+.active-nav .sub-nav ul li {padding: 0 18.5px;}
+.right-block{padding: 0;}
 }
 
 @media(max-width:776px){
@@ -74,6 +79,8 @@ footer{padding:10px 0}
 .footer ul li a{padding:20px 20px 10px 20px}
 
 /*--------------------------PROJECT PAGE------------------------------------*/
+.heading h1{text-align: center;}
+.view-photo-block button{font-size: 14px;padding: 10px;}
 }
 
 @media(max-width:426px){
