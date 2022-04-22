@@ -19,17 +19,117 @@
 .select-text .select2-container--default .select2-selection--single .select2-selection__arrow b{top:74%}
 .select2-container--default .select2-selection--single .select2-selection__rendered{font-size:20px}
 .block-4 button{height:80px;font-size:20px}
-.logo img{width:200px}
+.logo img{width:220px}
 h4{font-size:16px}
 h3{font-size:22px}
 .big-text{font-size:17px}
 
 /*--------------------------PROJECT PAGE------------------------------------*/
-.content-block{flex-direction: column;}
-.left-block, .right-block{flex: 0 0 100%;max-width: 100%;}
-.active-nav .sub-nav{top: 97px;}
+.left-nav{flex: 0 0 22%;max-width: 22%;}
+.link-block{flex: 0 0 78%;max-width: 78%;}
+.project .container{padding: 12px 6px;}
+ul li a{font-size: 21px;}
+.links li{padding: 0 20px;}
+.links .link2{padding-left: 22px;}
+.login-btn{padding: 7px 29px;font-size: 19px;}
+.menulinks{padding-bottom: 27px;}
+
+.project .below-nav, .project .shadow{min-height: 509px;}
+.project-banner h1{font-size: 48px;}
+.view-photo-block button{padding: 9px 33px;font-size: 20px;}
+.project-banner .view-photo-block{right:40px;bottom: 27px;}
+.location img{width: 20px;}
+.location-img{padding-top: 0;}
+.location-name{padding-left: 7px;}
+.location-name p{font-size: 32px;}
+.image-heading-block img{width: 106px;}
+.plan-gap-year{padding-top: 9px;}
+.image-heading-block{padding-top: 10px;}
+.image-heading-block img{margin-right: 20px;}
+.project h3{font-size:33px;margin-top: 10px;}
+.info-block{padding-left:5px;padding-top: 25px;max-width: 100%;justify-content: flex-start;}
+.payment img, .age-group img{width: 35px;}
+.info-block p{font-size: 23px;margin: 0 6px;}
+.time img{width:28px;}
+.time{padding:  0 22px;}
+.active-nav ul li a{padding: 16px 28px;}
+
+.section-1{padding: 41px 0;}
+.active-nav .sub-nav{padding-bottom: 41px;}
+.section h2{font-size: 41px;margin-bottom: 10px;}
+.overview{padding-top: 22px;}
+.video-block{padding-bottom: 22px;}
+.section h4{font-size: 35px;}
+.section p{font-size: 18px;padding: 9.5px 0;}
+.field-conditions{padding-top: 28px;padding-bottom:22px;}
+.field-conditions p{padding: 3px 0;}
+.impact p{padding: 4px 0;}
+.impact{padding-bottom: 6px;}
+.section-2{padding-bottom: 60px;}
+.section-2 h2{padding-top: 34px;}
+.section-2 .location-img{padding:6px 0 0 4px;}
+.section-2 .location-img img{width: 25px;}
+.section-2 .location-text p{padding-left: 6px;font-size: 39px;}
+.section-2 .map{padding-top: 32px;}
+.map iframe{min-height: 1003px;}
+
+.section-3{padding-top: 57px;}
+.cost-block{min-height: 144px;}
+.section-3 .col{padding-top: 18px;}
+.time-img img{width: 38px;}
+.time-text h3, .cost-text h3, .cost-block .price h3{margin-top: 0;}
+.duration .select2-container{width: 217px!important;}
+.duration .select2-container--default .select2-selection--single{height: 66px;}
+.time-text{padding: 4px 19px 0 7px;}
+.select-duration{padding-left: 19px;}
+.duration .select2-container--default .select2-selection--single .select2-selection__rendered{font-size: 23px;padding: 20px 25px 5px 20px;}
+.duration .select2-container--default .select2-selection--single .select2-selection__arrow{top: 13px;right: 9px}
+.cost-img img{width: 46px;}
+.cost-img{padding: 0 6px 0 20px;}
+.cost-text{padding: 0 41px 0 6px;}
+.cost-block .price{padding-left: 41px;}
+.half-block{height: 106px;}
+.inclusion-block{padding-top: 42px;padding-bottom: 24px;}
+.inclusion-block .text {padding: 2px 0 2px 24px;}
+.inclusion-block h3{font-size: 29px;}
+.include-content, .not-include-content{padding: 22px 0 20px 22px;}
+.check img{width: 28px;}
+.check{padding: 11px 7px;}
+.check-text p{font-size: 21.5px;}
+
+.section-4{padding:47px 0;}
+.date-text p{padding: 3px 0;}
+.date-text{padding-bottom:20px;}
+.date-slider{padding-top: 20px;padding-bottom: 27px;}
+.month{min-height: 52px;}
+.date-day{min-height: 67px;}
+.month h5{font-size: 24px;}
+.date-day p{font-size: 24px;padding:14px 0;}
+.date-day span{font-size: 26px;}
+.date-slider .slick-prev, .date-slider .slick-next{right: -3px;top: 7%;}
+
+.section-5{padding-top: 52px;}
+.section-5 p{padding: 10px 0;}
+.section-5{min-height: 54vh;}
+
+.content-block{flex-direction: column;padding-top:20px;}
+.project .heading h2{font-size:40px}
+.left-block{flex: 0 0 100%;max-width: 100%;}
+.active-nav .sub-nav{top: 146px;}
 .active-nav .sub-nav ul li {padding: 0 18.5px;}
-.right-block{padding: 0;}
+.right-block{padding: 0;margin: auto;flex: 0 0 38%;max-width: 38%;}
+.view-photo-block{right:30px;}
+.below-content .container{max-width: 972px;}
+.heading-block{flex-direction: column;padding-bottom: 9px;}
+.hidden-text{display: block;}
+.active-nav .sub-nav ul{justify-content: space-between;}
+.section-1{display: flex;flex-direction: column;}
+.video-block{order: 1;}
+.overview{order: 2;}
+.field-conditions{order: 3;}
+.impact{order: 4;}
+.play-video, .map iframe, .cost-block, .inclusion-block, .date-slider{max-width: 100%;}
+.open-apply-btn{display: block;}
 }
 
 @media(max-width:776px){
@@ -81,6 +181,26 @@ footer{padding:10px 0}
 /*--------------------------PROJECT PAGE------------------------------------*/
 .heading h1{text-align: center;}
 .view-photo-block button{font-size: 14px;padding: 10px;}
+.active-nav .sub-nav ul li{padding: 0;}
+.below-content .container{padding: 0 30px;}
+.hidden-map-info{display: block;}
+
+.active-nav .sub-nav{top: 130px;}
+.project .heading h2, .project h2{font-size: 34px;}
+.project h1{font-size: 40px;}
+.location-name p, .project h3, .section h4,.section-2 .location-text p{font-size: 28px;}
+.hidden-text p,.hidden-text span{font-size: 18px;}
+.info-block p, .open-apply-btn button{font-size: 20px;}
+.section p{font-size: 15px;}
+.duration{flex-direction: column;border: none;}
+.cost-block{border: none;}
+.duration .select2-container--default .select2-selection--single{border: none;height: 30px;}
+.half-block{flex-direction: column;height: 106px;}
+.time-img, .time-text, .select-duration,.duration .select2-container--default .select2-selection--single .select2-selection__rendered, .cost-img, .cost-text,.cost-block .price{padding: 0;}
+.duration .select2-container{width: 150px !important;text-align: center;}
+.select-duration .select2-container--default .select2-selection--single .select2-selection__arrow b{display: none;}
+
+.right-block{flex: 0 0 50%;max-width: 50%;}
 }
 
 @media(max-width:426px){

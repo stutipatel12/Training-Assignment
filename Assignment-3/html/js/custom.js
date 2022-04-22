@@ -194,6 +194,12 @@ function onClickMenu(){
   document.getElementById("body").classList.toggle("open-menu");
 }
 
+$(document).ready(function(){
+  $(".open-apply-btn button").click(function(){
+    $(".hide").toggle();
+  });
+});
+
 /*--------------active-nav--------------------*/
 
 $(window).scroll(function() {
