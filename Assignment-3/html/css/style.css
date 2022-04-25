@@ -111,7 +111,7 @@ footer{background-color:#595656;padding: 20px 0;}
 .project .below-nav{justify-content:center;min-height:352px;}
 .project .shadow{min-height:400px;}
 .project-banner h1{font-weight: 800;font-size: 43px;}
-.view-photo-block{position:absolute;bottom: 20px;}
+.view-photo-block{position:absolute;bottom: 20px;left: 27px;}
 .view-photo-block button{padding:15px 24px;border: none;background-color: #f5f4f4;color: #44a9c9;border-radius: 6px;font-size:19px;}
 .view-photo-block i{margin-right: 12px;}
 .view-photo-block button:hover{background-color: #44a9c9;color: #fff;}
@@ -129,7 +129,7 @@ footer{background-color:#595656;padding: 20px 0;}
 .left-block{flex: 0 0 64.4%;max-width: 64.4%;}
 .right-block{flex: 0 0 35.4%;max-width: 35.4%;}
 .col{padding:15px 0;}
-.plan-gap-year, .image-heading-block{padding-top: 0px;padding-bottom: 12px;}
+.plan-gap-year, .image-heading-block{padding-top: 0px;padding-bottom: 10px;}
 .location img{width:15px;}
 .location-img{padding-top: 5px;}
 .hidden-text p{color: #595656;font-size:20px;}
@@ -145,7 +145,7 @@ footer{background-color:#595656;padding: 20px 0;}
 .payment p{font-size: 17px;}
 
 .active-nav .sub-nav {position: sticky;top:102px;z-index:5;padding-bottom:24px;}
-.active-nav{padding-top: 0px;}
+.active-nav{padding-top: 0px;padding-bottom: 0;}
 .active-nav .sub-nav ul{background-color: #FFFFFF;border-top: 1px solid #c8c8c8;}
 .active-nav .sub-nav ul li{padding: 0 10px;}
 .active-nav a{color: #44a9c9;text-decoration: none;font-size: 16px;padding: 11px 33.5px;}

@@ -36,8 +36,8 @@ ul li a{font-size: 21px;}
 
 .project .below-nav, .project .shadow{min-height: 509px;}
 .project-banner h1{font-size: 48px;}
-.view-photo-block button{padding: 9px 33px;font-size: 20px;}
-.project-banner .view-photo-block{right:40px;bottom: 27px;}
+.view-photo-block button{padding: 9px 33px;font-size: 20px;float: right;}
+.project-banner .view-photo-block{bottom: 27px;}
 .location img{width: 20px;}
 .location-img{padding-top: 0;}
 .location-name{padding-left: 7px;}
@@ -129,7 +129,7 @@ ul li a{font-size: 21px;}
 .field-conditions{order: 3;}
 .impact{order: 4;}
 .play-video, .map iframe, .cost-block, .inclusion-block, .date-slider{max-width: 100%;}
-.open-apply-btn{display: block;}
+.open-apply-btn{display: block;padding-top: 72px;}
 }
 
 @media(max-width:776px){
@@ -235,10 +235,10 @@ footer{padding:10px 0}
     .info-block p{margin: 8px 0;}
     .time {padding: 0 13px;}
 
-    .active-nav{padding-top: 6px;}
+    .active-nav{padding-top: 10px;}
     .active-nav .sub-nav {top: 127px;}
     .active-nav ul li a{padding: 10px;font-size: 13px;}
-    .section-1{padding: 12px 0;}
+    .section-1{padding: 16px 0 7px 0;}
     .video-block{padding: 14px 0;}
     .play-video{min-height: 240px;}
     .overview{padding: 0 0 16px 0;}
@@ -284,7 +284,7 @@ footer{padding:10px 0}
    .date-slider span{font-size: 20px;}
 
    .section-5 {padding-top: 46px;}
-   .section-5, .active-nav, .open-apply-btn{padding-bottom: 65px;}
+   .section-5, .active-nav, .open-apply-btn{padding-bottom:38px;}
    .open-apply-btn button{font-size: 26px;max-width: 216px;padding: 0 30px;background-position-x: 181px;}
    .right-block {flex: 0 0 81%;max-width: 81%;}
    footer ul li a{font-size: 14px;}
