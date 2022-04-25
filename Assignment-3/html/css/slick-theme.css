@@ -40,17 +40,15 @@
 
     cursor: pointer;
 
-    width: 60px;
-    height: 60px;
-    background-size: 64px;
-
+    width: 70px;
+    height: 70px;
     color: transparent;
     border: none;
     outline: none;
     background: transparent;
     background-image: url(../images/arrow-toggle.png);
     /* background-color: #ffffffba; */
-    /* background-size: 24px; */
+    background-size: 78px;
     background-repeat: no-repeat;
     padding:26px;
     background-position: center;
