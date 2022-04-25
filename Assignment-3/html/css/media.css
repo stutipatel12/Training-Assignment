@@ -202,11 +202,11 @@ footer{padding:10px 0}
 
 .right-block{flex: 0 0 50%;max-width: 50%;}
 .date-slider .slick-prev, .date-slider .slick-next {right: -20px;top: 6%;}
-.month h5{font-size: 18px;padding: 14px;a}
+.month h5{font-size: 18px;padding: 14px;}
 }
 
 @media(max-width:480px){
-    .left-nav {flex: 0 0 50%; max-width: 50%;}
+    .left-nav {flex: 0 0 50%; max-width:50%;}
     .logo img {width: 192px;}
     #menu-bar {right: 27px;top: 42%;}
     #menu{width:39px;padding: 0px;height: 28px;}
