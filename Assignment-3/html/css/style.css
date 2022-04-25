@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6,p,ul{margin-bottom: 0;line-height: 1.3;}
 
 .banner{background-image:url(../images/banner-img.jpg);min-height:592px;background-size:cover;background-position:center;justify-content:center;align-items:center}
 .shadow{background-image:url(../images/bg.png);min-height:592px;background-size:cover;background-position:center;justify-content:center;align-items:center}
-.wrapper header{position:fixed;width:100%;z-index:5;padding-left: 0;padding-right: 0;}
+.wrapper header{position:fixed;width:100%;z-index:6;padding-left: 0;padding-right: 0;}
 .menulinks{width:100%;border-bottom:1px solid #fff;padding:10px 0 14px 0}
 .left-nav{align-items:center;justify-content:space-between;padding-right:20px;flex: 0 0 15%;max-width: 15%;}
 .left-nav .links{padding-left: 20px;}
@@ -173,17 +173,24 @@ footer{background-color:#595656;padding: 20px 0;}
 .section-2 .map{padding-top: 15px;}
 .section-2{padding-bottom: 30px;}
 .section-3{padding-top: 30px;}
-.section-2 .hidden-map-info p{font-size: 14px;}
+.section-2 .hidden-map-info p{font-size: 18px;}
 .section-2 h5{font-size:18px;}
 .map-info1 h5, .map-info1 p, .map-info3 h5{color: #e53b51;}
 .section-2 h6{color: #595656;padding-left:0; font-size: 14px;}
 .map-info2 h5, .map-info2 p{color: #44a9c9;}
 .map-info1, .map-info2{border-bottom: 1px solid gray;}
-.map-info3 img{width: 30px;}
-.map-info1 img{width: 30px;}
-.section-2 .text{padding: 6px 10px;max-width:346px;}
-.hidden-map-info{max-width:376px;margin: 0 auto;padding-top: 24px;display: none;}
-.map-info1, .map-info2, .map-info3{padding: 12px 0 8px 0;flex-wrap: nowrap;}
+.map-info3 img{width: 38px;}
+.map-info1 img{width: 36px;}
+.section-2 .text{padding: 4px 10px;}
+.hidden-map-info{max-width:400px;margin: 0 auto;padding-top:8px;display: none;}
+.map-info1, .map-info2, .map-info3{padding: 12px 0 0px 0;flex-wrap: nowrap;}
+.hidden-map-info h5, .hidden-map-info p, .hidden-map-info h6{font-family: auto;}
+.hidden-map-info h5{font-size: 23px;margin-bottom: 0;}
+.hidden-map-info h6{font-size: 17px;}
+.map-info2{padding-top: 26px ;padding-bottom: 2px;}
+.map-info2 img{width: 32px;}
+.map-info2 .text{padding: 5px 15px;}
+.map-info3{padding-top: 27px;}
 
 .cost-block{border: 1px solid gray;min-height:114px;align-items: center;flex-wrap: nowrap;max-width: 789px;width: 100%;}
 .inclusion-block{padding-top: 30px;max-width:786px;width: 100%;}
