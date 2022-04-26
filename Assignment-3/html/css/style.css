@@ -93,6 +93,7 @@ h4, h5, h6{margin-bottom: 5px;}
 .blue-text{color: #44a9c9;margin-bottom: 14px;}
 .headings p{font-size:30px;color: #44a9c9;}
 .slider1 h4{text-transform: uppercase;}
+.slide .image:hover{transform: scale(1.05); }
 
 
 .slider2 img{height:206px}
