@@ -160,6 +160,19 @@ ul li a{font-size: 21px;}
 .impact{order: 4;}
 .play-video, .map iframe, .cost-block, .inclusion-block, .date-slider{max-width: 100%;}
 .open-apply-btn{display: block;padding-top: 72px;}
+
+/*-------------------------------------------------CONTACT PAGE-------------------------------*/
+.contact .below-nav {min-height:536px;}
+.contact .heading{padding-top: 24px;}
+.contact .col .form-control {padding: 16px 28px;font-size: 23px;}
+.contact .content-block .container{max-width: 93.5%;}
+.contact .content-block{padding-top: 24px;}
+.contact .col-12 .form-control{font-size: 23px;min-height: 418px;}
+.contact .para p {font-size: 24px;line-height: 39px;}
+.contact .contact-form .container{max-width: 965px;}
+.contact .contact-form{padding-top: 0px;padding-bottom: 20px;}
+.send-btn button{font-size: 23px;padding:15px 52px;}
+.contact-form .col-12{padding-top: 5px;}
 }
 
 @media(max-width:776px){
@@ -192,8 +205,8 @@ h2{font-size:30px;margin-bottom:20px}
 .select-block{flex-direction:column;align-items:center}
 .block{display:flex;align-items:center}
 .select-text .select2-container{border:none}
-.block,.block-4{flex:0 0 100%;max-width:100%;margin-bottom:14px;border-radius:6px}
-.block{background-color:#fff;border:1px solid #fff;width:428px;}
+.project .block,.block-4{flex:0 0 100%;max-width:100%;margin-bottom:14px;border-radius:6px}
+.project .block{background-color:#fff;border:1px solid #fff;width:428px;}
 .select-text .select2-container{height:40px;padding:8px 56px 8px 0}
 .block-4 button{height:50px;font-size:22px;border-radius:6px;border: none;}
 .select2-container--default .select2-selection--single .select2-selection__rendered{font-size:21px;color:#000;padding: 3px 40px 8px 40px;}
@@ -232,6 +245,9 @@ footer{padding:10px 0}
 .right-block{flex: 0 0 50%;max-width: 50%;}
 .date-slider .slick-prev, .date-slider .slick-next {right: -20px;top: 6%;}
 .month h5{font-size: 18px;padding: 14px;}
+/*--------------------------------------------------Conatct page--------------------------*/
+.contact {width:none;}
+.contact .send-btn{justify-content: center;}
 }
 
 @media(max-width:480px){
@@ -343,29 +359,27 @@ footer{padding:10px 0}
    .open-apply-btn button{font-size: 26px;max-width: 216px;padding: 0 30px;background-position-x: 181px;}
    .right-block {flex: 0 0 81%;max-width: 81%;}
    footer ul li a{font-size: 14px;}
+
+   /*------------------------------------------------CONTACT PAGE-----------------------------------*/
+   .contact h1{font-size: 37px;}
+   .contact .below-nav {min-height: 369px;}
+   .contact .banner, .contact .shadow{min-height: 384px;}
+   .contact .content-block .container {max-width: 89%;}
+   .contact .para p{font-size: 18px;line-height: 28px;}
+   .contact .content-block {padding-top: 0px;}
+   .contact .contact-form .container{max-width: 100%}
+   .contact-form .row{flex-direction: column;margin-left: 0;}
+   .contact-form .col{padding: 0;}
+   .contact-form .col-12{padding:0;}
+   .contact-form .col:nth-child(2){padding-left:15px;}
+   .send-btn button{width: 100%;}
+   .contact-form .row .form-block{flex: 0 0 100%;max-width: 100%;margin-bottom: 12px;}
+   .contact .block{padding:20px 2px 6px 2px;}
+   .contact .col .form-control {padding: 14px 24px;}
+   .contact .col-12 .form-control{padding: 16px 26px;min-height: 308px;}
+   .contact-form .form-block{padding-right: 0;}
+   .contact-form .form-block:nth-child(2){padding-left: 0;}
 }
-/*--------------------------PROJECT PAGE------------------------------------*/
-/* @media(max-width:426px){ */
-/*-----------------------HOME PAGE-------------------------------------*/     
-/* h2{font-size:28px}
-.headings h1{font-size:33px}
-.headings p{font-size:20px}
-.nav{right:-500px;max-width:500px}
-.logo img{width:160px}
-.select-block{padding:0 15px}
-.active-nav ul{flex-wrap: wrap;}
-.active-nav .sub-nav{top: 120px;}
-.project p{font-size: 14px;}
-.check img{width: 18px;}
-.include-content, .not-include-content{padding:5px;}
-.project .heading h2, .project h2{font-size:30px;}
-.project h1{font-size: 38px;}
-.play-video { min-height: 168px;}
-.section-2 .location-text p{font-size: 26px;}
-.project h3{font-size: 24px;}
-.open-apply-btn button{font-size:20px;max-width: 200px;background-position-x:166px;}
-.right-block {flex: 0 0 100%;max-width: 100%;}
-.section-5{padding-bottom: 0;}
-} */
+   
 
 

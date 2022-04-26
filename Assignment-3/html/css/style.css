@@ -283,3 +283,30 @@ footer ul li a{padding:20px 8px;}
 
 .open-apply-btn{text-align: center;padding: 20px 0;display: none;}
 .open-apply-btn button{border: none;background-color: #e53b51;color: #fff;max-width:222px;width: 100%;border-radius:7px;min-height: 55px;background-image: url(../images/up-white-arrow.png);background-repeat: no-repeat;background-position: right;background-position-x:185px;padding: 0 39px;text-align: start;font-size: 24px;}
+
+/*============================================CONTACT PAGE==================================================*/
+.contact .banner{background-image:url(../images/contact-banner.jpg);min-height:400px;background-size:cover;background-position:center;justify-content:center;align-items:center;position: relative;}
+.contact .below-nav{min-height: 400px;justify-content: center;}
+.contact .shadow{min-height: 400px;}
+.contact .navbar {padding-left: 12px;padding-right: 12px;}
+.contact h1{font-size: 40px;font-weight: bolder;}
+
+.contact .para p{color: #595656;font-size: 19px;line-height: 28px;}
+.contact .content-block .container{max-width: 92%;}
+.contact .contact-form .container{max-width: 920px;}
+.send-btn button{color: #fff;background-color: #e53b51;border: none;padding: 12px 42px;}
+.send-btn button:hover{background-color: #eb6274;transform: scale(1.05)}
+.contact .content-block{padding: 40px 0 72px 0;}
+.contact .block{padding: 18px 0 26px 0;}
+.send-btn{text-align: center;}
+.contact .send-btn{padding-top: 0px;justify-content: center;}
+.contact .contact-form{padding-bottom: 16px;}
+.contact .form-control{border: 1px solid black;font-size: 18px;}
+.contact .col .form-control{padding: 10px 19px}
+.contact .col-12 .form-control{min-height: 295px;justify-content: center;display: flex;align-items: center;}
+.contact-form .form-block{padding-right: 5px;}
+.contact-form .form-block:nth-child(2){padding-left: 5px;padding-right: 0;}
+.contact-form .col-12{padding: 0;}
+.contact-form .form-control:focus{box-shadow:0 0 0 1px rgba(67, 67, 67, 0.25);}
+.contact-form .row{width: 100%;margin-left: 0;margin-right: 0;}
+.contact-form .row .form-block{flex: 0 0 50%;max-width: 50%;}

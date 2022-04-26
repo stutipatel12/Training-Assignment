@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Assignment-3</title>
+</head>
+
+<body id="body">
+    <div class="contact wrapper">
+        <!--------------------------------------------------------------HOME PAGE-------------------------------------------------->
+        <!--------------Header----------------->
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="menulinks flex-block">
+                        <div class="left-nav flex-block">
+                            <div class="logo">
+                                <a href="#"><img src="images\logo_1.png" /></a>
+                            </div>
+                            <div id="menu-bar">
+                                <div id="menu" onclick="onClickMenu()">
+                                    <div id="bar1" class="bar"></div>
+                                    <div id="bar2" class="bar"></div>
+                                    <div id="bar3" class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-------------------hamburger-menu------------------->
+                        <div class="link-block nav" id="nav" onclick="onClickNav()">
+                            <div class="links">
+                                <ul class="flex-block">
+                                    <li><a href="#" class="white">How it works</a></li>
+                                    <li><a href="#" class="white">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-nav">
+                                <button class="login-btn white">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="banner">
+            <div class="shadow">
+                <div class="below-nav flex-block">
+                    <div class="heading">
+                        <h1>Contatct Us</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------content section--------------------->
+        <section class="content-block">
+            <div class="container">
+                <div class="para block">
+                    <p>Got questions for your Volunteer Overseas team? No problem! We've got answers...or at least the
+                        best
+                        guidance to help you book your dream program abroad. Don't hesitate to drop us a line, and your
+                        trusted Volunteer Overseas travel
+                        guides will get back to you in record time. Thank You!</p>
+                </div>
+                <div class="contact-form block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-block">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder="Name"
+                                        aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="form-block">
+                                <div class="col">
+                                    <input class="form-control" type="text" placeholder=" your@email.com"
+                                        aria-label="default input example">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" placeholder="Message" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="send-btn block">
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer flex-block">
+                    <div class="footer-logo">
+                        <a href="#"><img src="images\logo_1.png" /></a>
+                    </div>
+                    <div class="footer-links">
+                        <ul class="flex-block">
+                            <li><a href="#" class="white">FAQ</a></li>
+                            <li><a href="#" class="white">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js\select2.min.js"></script>
+    <script src="js\slick.min.js"></script>
+    <script src="js\custom.js"></script>
+</body>
+
+</html>
