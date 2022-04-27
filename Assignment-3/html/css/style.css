@@ -316,12 +316,15 @@ footer ul li a{padding:20px 8px;}
 .faq .below-nav{min-height: 400px;justify-content: center;}
 .faq .shadow{min-height: 400px;}
 
-#accordion .card .card-link{position: relative;display: block;color: #44a9c9;font-size:28px;font-weight: bold;letter-spacing: 0.5px;}
+#accordion .card .card-link{position: relative;display: block;color: #44a9c9;font-size:28px;font-weight: bold;letter-spacing: 0.5px;padding-right: 40px;}
 #accordion .card-body p{color:#7e7d7d;font-size: 21px;margin-bottom: 15px;line-height: 34px;}
-#accordion .card .card-link img{position: absolute;right: 0px;top: 4px;}
+#accordion .card .card-link i{position: absolute;right: 0px;top: 4px;width: 40px;height: 40px;}
+#accordion .card .card-link i img{width: 100%;}
 #accordion .card .card-link .is-active{transform: rotate(180deg);}
 #accordion .card .card-link img{width: 42px;}
 #accordion .card-header{background-color:transparent;padding: 5px;border: none;}
 #accordion .card-body{padding: 0px 5px;max-width: 998px;}
 #accordion .card{border:none;border-bottom: 1px solid #7e7d7d;padding: 27px 0;}
 .faq-block .container{max-width:62%;padding-left: 15px;padding-right: 15px;}
+
+#accordion .collapsed img{transform: rotate(180deg);}

@@ -243,6 +243,6 @@ $('.datepicker').datepicker({
 //   })
 // })
 
-$(".arrow").click(function(){
-  $(this).toggleClass("is-active");
-});
+// $(".arrow").click(function(){
+//   $(this).toggleClass("is-active");
+// });
