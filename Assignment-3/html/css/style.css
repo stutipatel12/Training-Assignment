@@ -323,7 +323,7 @@ footer ul li a{padding:20px 8px;}
 #accordion .card .card-link .is-active{transform: rotate(180deg);}
 #accordion .card .card-link img{width: 42px;}
 #accordion .card-header{background-color:transparent;padding: 5px;border: none;}
-#accordion .card-body{padding: 0px 5px;max-width: 998px;}
+#accordion .card-body{padding: 0px 105px 0px 5px;}
 #accordion .card{border:none;border-bottom: 1px solid #7e7d7d;padding: 27px 0;}
 .faq-block .container{max-width:62%;padding-left: 15px;padding-right: 15px;}
 

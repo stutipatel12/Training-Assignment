@@ -181,8 +181,8 @@ ul li a{font-size: 21px;}
 .faq-block .container{max-width: 97%;padding: 0 12px;}
 #accordion .card{padding: 18px 0;}
 #accordion .card .card-link i{top:9px;right:7px;}
-#accordion .card-body{max-width:820px;padding-top: 15px;}
-#accordion .card-body p{line-height: 30px;}
+#accordion .card-body{padding-top: 15px;padding-right: 137px;}
+#accordion .card-body p{line-height:28px;margin-bottom: 19px;}
 }
 
 @media(max-width:776px){
