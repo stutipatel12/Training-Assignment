@@ -231,3 +231,18 @@ $(document).on('click', '.active-nav ul li a', function (event) {
 $('.datepicker').datepicker({
   format: 'mm/dd/yyyy',    
 });
+
+/*----------------------accordion--------------*/
+// $(document).ready(function(){
+//   $("#accordion .card .card-link").click(function(){
+//     if($(this).find("img .arrow").hasClass(".arrow-up"))
+//     {
+//       $(this).find("img .arrow").removeClass(".arrow-up");
+//       $(this).find("img.arrow").addClass(".arrow-down");
+//     }
+//   })
+// })
+
+$(".arrow").click(function(){
+  $(this).toggleClass("is-active");
+});

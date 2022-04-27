@@ -1,3 +1,7 @@
+/* @media(max-width:1536px){
+    .faq-block .container{max-width: 68%;}
+    #accordion .card-body{max-width: 950px;}
+} */
 @media(max-width:1496px){
     .active-nav ul li a{padding: 15px 17px;}
     .time-img img {width: 20px;}
@@ -28,7 +32,7 @@ h3{font-size:22px}
 .slider-block h2{font-size: 41px;}
 .big-text{font-size:17px}
 .slider-block .container{padding: 0 21px;}
-.navbar {padding: 20px 19px 12px 13px;}
+.navbar {padding: 20px 13px 12px 13px;}
 .below-nav{min-height:608px;}
 .headings h1{font-size: 50px;}
 .below-nav .headings p{font-size: 29.7px;}
@@ -173,6 +177,15 @@ ul li a{font-size: 21px;}
 .contact .contact-form{padding-top: 0px;padding-bottom: 20px;}
 .send-btn button{font-size: 23px;padding:15px 52px;}
 .contact-form .col-12{padding-top: 5px;}
+
+
+/*-------------------------------------FAQ PAGE-----------------------------------------------*/
+.faq .below-nav{min-height: 535px;padding-top: 127px;}
+.faq-block .container{max-width: 97%;padding: 0 12px;}
+#accordion .card{padding: 18px 0;}
+#accordion .card .card-link img{top: 12px;right: 6px;}
+#accordion .card-body{max-width:820px;padding-top: 15px;}
+#accordion .card-body p{line-height: 30px;}
 }
 
 @media(max-width:776px){
@@ -248,8 +261,13 @@ footer{padding:10px 0}
 /*--------------------------------------------------Conatct page--------------------------*/
 .contact {width:none;}
 .contact .send-btn{justify-content: center;}
+/*----------------------------------------------FAQ PAGE--------------------------------------*/
+#accordion .card .card-link{font-size: 24px;}
+#accordion .card .card-link br{display: none;}
+.faq-block .container { max-width: 92%;}
+#accordion .card .card-link img { top: -2px;right: -18px;}
+#accordion .card-body p{font-size: 18px;}
 }
-
 @media(max-width:480px){
     /*---------------------------------------HOME PAGE---------------------------*/
     .logo img {width: 189px;}

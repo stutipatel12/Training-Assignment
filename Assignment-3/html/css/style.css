@@ -61,7 +61,7 @@ h3{font-weight:700;}
 .select2-container--default .select2-selection--single{background: transparent;border: none;}
 .select-text .select2-container{width: 100% !important;height:72px;border: 1px solid white;text-align: center;padding: 21px 0;}
 .select2-container--default .select2-selection--single .select2-selection__rendered{color: white;}
-.select2-container--default .select2-selection--single .select2-selection__arrow{top: 14px;}
+.select2-container--default .select2-selection--single .select2-selection__arrow{top: 14px;right: -35px;}
 
 .block-2 .select2-container--default .select2-selection--single .select2-selection__arrow{display: none;}
 .select-text .select2-container--default .select2-selection--single .select2-selection__arrow b{background-image: url(../images/right-white-arrow.png);background-repeat: no-repeat;border-style: none;
@@ -310,3 +310,18 @@ footer ul li a{padding:20px 8px;}
 .contact-form .form-control:focus{box-shadow:0 0 0 1px rgba(67, 67, 67, 0.25);}
 .contact-form .row{width: 100%;margin-left: 0;margin-right: 0;}
 .contact-form .row .form-block{flex: 0 0 50%;max-width: 50%;}
+
+/*===========================================FAQ PAGE======================================================*/
+.faq .banner{background-image:url(../images/faq-banner.jpg);min-height:400px;background-size:cover;background-position:center;justify-content:center;align-items:center;position: relative;}
+.faq .below-nav{min-height: 400px;justify-content: center;}
+.faq .shadow{min-height: 400px;}
+
+#accordion .card .card-link{position: relative;display: block;color: #44a9c9;font-size:28px;font-weight: bold;letter-spacing: 0.5px;}
+#accordion .card-body p{color:#7e7d7d;font-size: 21px;margin-bottom: 15px;line-height: 34px;}
+#accordion .card .card-link img{position: absolute;right: 0px;top: 4px;}
+#accordion .card .card-link .is-active{transform: rotate(180deg);}
+#accordion .card .card-link img{width: 42px;}
+#accordion .card-header{background-color:transparent;padding: 5px;border: none;}
+#accordion .card-body{padding: 0px 5px;max-width: 998px;}
+#accordion .card{border:none;border-bottom: 1px solid #7e7d7d;padding: 27px 0;}
+.faq-block .container{max-width:62%;padding-left: 15px;padding-right: 15px;}
