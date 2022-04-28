@@ -147,7 +147,6 @@ footer ul li a:hover{text-decoration:underline;background-color:transparent;colo
 .col{padding:15px 0;}
 .plan-gap-year, .image-heading-block{padding-top: 0px;padding-bottom: 10px;}
 .location img{width:15px;}
-.location-img{padding-top: 5px;}
 .hidden-text p{color: #595656;font-size:20px;}
 .hidden-text span{color: #44a9c9;font-size:19px;}
 .hidden-text{display: none;}
@@ -281,6 +280,11 @@ footer ul li a:hover{text-decoration:underline;background-color:transparent;colo
 .date-picker .datepicker .datepicker-dropdown{width:18%;}
 .date-picker .datepicker td, .datepicker th{padding:0 13.5px;}
 .date-picker .input-group{height:50px;max-width: 330px;width: 100%;}
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover{background: #e53b51 !important;color: white;border-radius: 20px;}
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover{background: #e53b51 !important;color: white}
+.datepicker td, .datepicker th {border-radius: 20px;}
+.datepicker-months,.datepicker-years{padding: 6px 52px !important;}
+
 
 .open-apply-btn{text-align: center;padding: 20px 0;display: none;}
 .open-apply-btn button{border: none;background-color: #e53b51;color: #fff;max-width:222px;width: 100%;border-radius:7px;min-height: 55px;background-image: url(../images/up-white-arrow.png);background-repeat: no-repeat;background-position: right;background-position-x:185px;padding: 0 39px;text-align: start;font-size: 24px;}
