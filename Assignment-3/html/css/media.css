@@ -29,7 +29,7 @@ h3{font-size:22px}
 .slider-block h2{font-size: 41px;}
 .big-text{font-size:17px}
 .slider-block .container{padding: 0 21px;}
-.navbar {padding: 20px 13px 12px 13px;}
+.navbar {padding: 20px 4px 12px 4px;}
 .below-nav{min-height:608px;}
 .headings h1{font-size: 50px;}
 .below-nav .headings p{font-size: 29.7px;}
@@ -37,10 +37,11 @@ h3{font-size:22px}
 .headings{padding-bottom:57px;}
 .headings p, .headings h1 {padding: 10px 0;}
 .text span{font-size: 21px;}
-.select2-container .select2-selection--single .select2-selection__rendered{padding-right: 42px;}
+.select2-container .select2-selection--single .select2-selection__rendered{padding-right: 20px;}
 .block-3 .select2-container--default .select2-selection--single .select2-selection__arrow b{left: -68px;}
+.block-1 .select2-container--default .select2-selection--single .select2-selection__arrow b{left: -58px;}
 .trending-slider {padding-top: 60px;}
-.slick-next{ right: -16px;top: 42%;}
+.slick-next{ right: -16px;top: 43%;}
 .slick-prev{left: -15px;top: 42%;}
 .slider1 img {height: 436px;}
 .sub-content{padding: 22px 22px 17px 22px;}
@@ -56,14 +57,15 @@ h3{font-size:22px}
 .sub-content-2{padding: 0 15px;}
 
 /*--------------------------PROJECT PAGE------------------------------------*/
-.left-nav{flex: 0 0 22%;max-width: 22%;}
-.link-block{flex: 0 0 78%;max-width: 78%;}
+.left-nav{flex: 0 0 30%;max-width: 30%;}
+.link-block{flex: 0 0 70%;max-width: 70%;}
 .project .container{padding: 12px 6px;}
 ul li a{font-size: 21px;}
 .links li{padding: 0 20px;}
 .links .link2{padding-left: 22px;}
 .login-btn{padding: 7px 29px;font-size: 19px;}
 .menulinks{padding-bottom: 27px;}
+.right-nav{padding-left: 0;}
 
 .project .below-nav, .project .shadow{min-height: 509px;}
 .project-banner h1{font-size: 48px;}
@@ -185,7 +187,7 @@ ul li a{font-size: 21px;}
 #accordion .card-body p{line-height:28px;margin-bottom: 19px;}
 }
 
-@media(max-width:776px){
+@media(max-width:798px){
 /*-----------------------HOME PAGE-------------------------------------*/     
 h2{font-size:30px;margin-bottom:20px}
 .slider-block{padding:22px 0}
@@ -208,19 +210,19 @@ h2{font-size:30px;margin-bottom:20px}
 .links{width:100%}
 .open-menu{overflow:hidden}
 .fixed-white-header .bar{background-color:#44a9c9}
+.headings{padding-top: 30px;padding-bottom: 26px;}
 .logo img{width:180px}
-.headings h1{font-size:40px;font-weight:800;max-width:383px;margin:0 auto}
-.headings{padding-top:30px}
+.headings h1{font-size:40px;font-weight:800;max-width:383px;margin:0 auto;}
 .headings p{font-size:25px;font-weight:500;max-width:460px;padding:0 15px}
 .select-block{flex-direction:column;align-items:center}
-.block{display:flex;align-items:center}
+.homepage .block{display:flex;align-items:center}
 .select-text .select2-container{border:none}
-.project .block,.block-4{flex:0 0 100%;max-width:100%;margin-bottom:14px;border-radius:6px}
-.project .block{background-color:#fff;border:1px solid #fff;width:428px;}
+.homepage .block,.block-4{flex:0 0 100%;max-width:100%;margin-bottom:14px;border-radius:6px}
+.homepage .block{background-color:#fff;border:1px solid #fff;width:428px;}
 .select-text .select2-container{height:40px;padding:8px 56px 8px 0}
 .block-4 button{height:50px;font-size:22px;border-radius:6px;border: none;}
 .select2-container--default .select2-selection--single .select2-selection__rendered{font-size:21px;color:#000;padding: 3px 40px 8px 40px;}
-.block-1 .select2-container--default .select2-selection--single .select2-selection__rendered{padding-left: 0px;}
+.block-1 .select2-container--default .select2-selection--single .select2-selection__rendered{padding-left: 10px;}
 .text span{color:tomato;font-size:21px}
 .select-block .text{margin-bottom:0;width:30%;padding-left:10px;padding-top:0px;text-align: start;}
 .select-text{max-width:100%;height: 50px;}
@@ -276,20 +278,26 @@ footer{padding:10px 0}
     .slider1 img { height: 417px;}
     .sub-content p {font-size: 15px;}
     .sub-content .blue-text{font-size: 21px;}
-    .sub-content h4{font-size: 20px;}
-    .slider-block h6 {font-size: 21px; padding: 2px 2px;}
+    .sub-content h4{font-size: 20px;margin-bottom: 9px;}
+    .slider-block h6 {font-size: 24px; padding: 0px 8px;}
+    .slider2 h6{font-size: 22px;padding: 0;}
+    .slider2 h4{margin-bottom: 0;}
     .sub-content{padding-left: 18px;}
-    .slick-next{right: -22px;}
-    .slick-prev{left: -22px;}
+    .slick-next{right: -22px;background-size: 58px;top: 42%;}
+    .slick-prev{left: -22px;background-size: 58px;top: 42%;}
     .slider2 img {height: 201px;}
     .slider3 .image img{height: 357px;}
-    .slider3 .sub-content{bottom: 50px;}
-    .slider3 .big-text, .sub-content p, .slider3 h3{font-size: 21px;}
+    .slider3 .sub-content p{font-size: 20px;}
+    .slider3 .sub-content{bottom:77px;}
+    .sub-content-2 p{font-size: 15px;}
+    .blue-text{margin-bottom: 10px;}
+    .slider3 .big-text, .slider3 h3{font-size: 21px;}
     .slider3 p{margin-bottom: 10px;}
     .affordable-slider h3{padding: 12px 10px;margin-bottom: 8px;}
     .slider3 .sub-content-2 p {font-size: 20px;margin-bottom: 8px;}
     .slider3 .sub-content-2 .blue-text{font-size: 22px;}
-    .slider3 .big-text {margin-bottom: 26px;}
+    .slider3 .big-text {margin-bottom: 0;}
+    .select-text .select2-container{padding-right: 20px;}
     /*--------------------------------------PROJECT PAGE----------------------*/
     .left-nav {flex: 0 0 50%; max-width:50%;}
     .logo img {width: 192px;}
@@ -408,3 +416,7 @@ footer{padding:10px 0}
 #accordion .card-body p{line-height: 28px;margin-bottom: 17px;}
 }
 
+@media (max-width:320px){
+    .slider3 .sub-content{bottom: 94px;}
+    .slider3 .slick-next,.slider3 .slick-prev, .slider1 .slick-next, .slider1 .slick-prev{top: 28%;}
+}
