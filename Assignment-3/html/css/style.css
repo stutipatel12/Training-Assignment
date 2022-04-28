@@ -225,7 +225,7 @@ footer ul li a:hover{text-decoration:underline;background-color:transparent;colo
 .cost-text{padding: 0 30px 0 1px;}
 .cost-block .price{padding:0 0 0 40px;}
 .cost-block .price h3{color: #e53b51;font-weight: 400;}
-.select-duration .select2-container--default .select2-selection--single .select2-selection__arrow b{background-image: url(../images/admin-arrow.png);background-repeat: no-repeat;border-style: none;width:20px;height:20px;;left: 0;top: 66%;}
+.select-duration .select2-container--default .select2-selection--single .select2-selection__arrow b{background-image: url(../images/admin-arrow.png);background-repeat: no-repeat;border-style: none;width:20px;height:20px;;left:-33px;top:78%;}
 .inclusion-block h3{margin-bottom: 0;color: #fff;font-size: 23px;}
 .include-block, .not-include-block{flex: 0 0 50%;max-width: 50%;}
 .not-include-block .text{background-color: #e53b51;}
@@ -238,6 +238,7 @@ footer ul li a:hover{text-decoration:underline;background-color:transparent;colo
 .include-block .text{background-color: #44a9c9;}
 .not-include-block .text{background-color: #e53b51;}
 .not-include-block .text{margin-left: 2px;}
+.project .slick-next, .project .slick-prev{background-size: 10px;}
 
 .date-day span{font-size: 19px;color: #e53b51;font-weight: 800;padding-right: 4px;}
 .month{background-color: #44a9c9;text-align: center;min-height:42px;margin: 0 1px 0 0;}
@@ -254,7 +255,7 @@ footer ul li a:hover{text-decoration:underline;background-color:transparent;colo
 .date-slider .slick-prev{left: -14px;transform: rotate(180deg);}
 .date-text{padding-bottom: 5px;padding-top: 8px;}
 .date-slider{padding-top: 15px;padding-bottom: 13px;max-width: 787px;width: 100%;}
-.section-5{border-bottom: none;padding-top:32px;padding-bottom: 0;}
+.section-5{border-bottom: none;padding-top:32px;padding-bottom:14px;}
 
 /*---------------------------------------Right-block-------------------------------*/
 .apply-block{background-color: #44a9c9;min-height:380px;position: sticky;top: 104px;z-index:4;padding: 30px 30px 12px 30px;text-align: initial;}
