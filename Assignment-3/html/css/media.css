@@ -1,4 +1,14 @@
-
+@media(max-width:1700px){
+    .work-block .container{padding: 0 50px;}
+    .trip-block .right-img-block img{width: 500px;}
+    .trip-block .right-img-block{bottom: 312px;}
+    .line3{left: 90px;}
+    .line2{left: 254px;}
+    .email-img{left:80px;}
+    .email-img img{width: 350px;}
+    .apply-now-block .right-img-block img{width: 600px;}
+    .news-block .right-img-block img{width: 490px;}
+}
 @media(max-width:1496px){
     .active-nav ul li a{padding: 15px 17px;}
     .time-img img {width: 20px;}
@@ -9,9 +19,6 @@
 /*-----------------------HOME PAGE-------------------------------------*/    
 .select2-container--default .select2-selection--single .select2-selection__rendered{font-size:16px}
 
-/*--------------------------PROJECT PAGE------------------------------------*/
-
-}
 
 @media(max-width:1024px){
 /*-----------------------HOME PAGE-------------------------------------*/ 
