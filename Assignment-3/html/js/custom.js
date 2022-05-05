@@ -232,17 +232,59 @@ $('.datepicker').datepicker({
   format: 'mm/dd/yyyy',    
 });
 
-/*----------------------accordion--------------*/
-// $(document).ready(function(){
-//   $("#accordion .card .card-link").click(function(){
-//     if($(this).find("img .arrow").hasClass(".arrow-up"))
-//     {
-//       $(this).find("img .arrow").removeClass(".arrow-up");
-//       $(this).find("img.arrow").addClass(".arrow-down");
-//     }
-//   })
-// })
+/*-------------------Search result slider------------------------*/
+$('.search-result-slider').slick({
+  infinite: false,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1, 
+  responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+      }
+      },
+  ] 
+});
+/*-----------------------------------------------------*/
+/*-----------------------Filter noui slider-------------------*/
+$(document).ready(function(){
+var keypressSlider = document.getElementById("slider-keypress");
+var skipValues = [
+  document.getElementById("skip-value-min"),
+  document.getElementById("skip-value-max")
+];
 
-// $(".arrow").click(function(){
-//   $(this).toggleClass("is-active");
-// });
+noUiSlider.create(keypressSlider, {
+  start: [1, 11],
+  connect: true,
+  behaviour: "drag",
+  step: 1,
+  range: {
+    min: 1,
+    max: 30
+  },
+  format: {
+    from: function (value) {
+        return parseInt(value);
+    },
+    to: function (value) {
+        return parseInt(value);
+    }
+}
+});
+
+keypressSlider.noUiSlider.on("update", function(values, handle) {
+  skipValues[handle].innerHTML = values[handle];
+});
+})
+
+
+
+$(document).ready(function(){
+  $(".filter-btn").click(function(){
+    $(".hide").toggle();
+  });
+});
