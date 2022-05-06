@@ -49,54 +49,65 @@
     </header>
     <!--------------------------------filter----------------------------------------------->
     <section class="filter-section">
-      <div class="container flex-block align-items-center">
-        <div class="cause-block">
-          <h2>Cause</h2>
-          <div class="cause flex-block">
-            <div class="form-check check-box">
-              <input class="form-check-input" type="checkbox" value="" id="check1">
-              <label class="form-check-label" for="check1">
-                Volunteer
-              </label>
-            </div>
-            <div class="form-check check-box">
-              <input class="form-check-input" type="checkbox" value="" id="check2" checked>
-              <label class="form-check-label" for="check2">
-                Teach
-              </label>
-            </div>
-            <div class="form-check check-box">
-              <input class="form-check-input" type="checkbox" value="" id="check3" checked>
-              <label class="form-check-label" for="check3">
-                Intern
-              </label>
+      <div class="filter-container">
+        <div class="filter-block flex-block">
+            <div class="cause-block">
+            <p>Cause</p>
+            <div class="cause flex-block">
+              <div class="form-check check-box">
+                <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label" for="check1">
+                  Volunteer
+                </label>
+              </div>
+              <div class="form-check check-box">
+                <input class="form-check-input" type="checkbox" value="" id="check2" checked>
+                <label class="form-check-label" for="check2">
+                  Teach
+                </label>
+              </div>
+              <div class="form-check check-box">
+                <input class="form-check-input" type="checkbox" value="" id="check3" checked>
+                <label class="form-check-label" for="check3">
+                  Intern
+                </label>
+              </div>
             </div>
           </div>
+          <div class="select country-block" >
+            <p>Country</p>
+            <select class="js-example-basic-multiple" name="state">
+              <option value="AL">Search Country</option>
+              <option value="WY">India</option>
+              <option value="WY">USA</option>
+            </select>
+          </div>
+          <div class="select activity-block">
+            <p>Activity</p>
+            <select class="js-example-basic-multiple" name="state">
+              <option value="AL">Animal conversation</option>
+              <option value="WY">India</option>
+              <option value="WY">USA</option>
+            </select>
+          </div>
+          
+          <!--------------for mobile screen------------->
+          <div class="edit-content">
+            <h3>Volunteer <span>in</span>  Cambodia <span>for</span> Animal Conservation</h3>
+            <div class="edit-icon" id="edit"><img src="./images/edit-icon.png" alt="edit-icon"></div>
         </div>
-        <div class="select country-block">
-          <h2>Country</h2>
-          <select class="js-example-basic-multiple" name="state">
-            <option value="AL">Search Country</option>
-            <option value="WY">India</option>
-            <option value="WY">USA</option>
-          </select>
-        </div>
-        <div class="select activity-block">
-          <h2>Activity</h2>
-          <select class="js-example-basic-multiple" name="state">
-            <option value="AL">Animal Conservation</option>
-            <option value="WY">India</option>
-            <option value="WY">USA</option>
-          </select>
-        </div>
-        <div class="filter-btn" id="toggle-btn">
-          <button>More Filters<span>4</span></button>
+        <div class="white-block"></div>
+        <!-- <div class="toggle-overlay"></div> -->
+        <!--------------more filter btn------------------>
+          <div class="filter-btn" id="toggle-btn">
+            <button><span class="filter-text">More Filters</span><span class="filter-dots">...</span><span class="number">4</span></button>
+          </div>
         </div>
       </div>
     </section>
     <div class="more-filter">
       <div class="filter-toggle" id="panel">
-        <div class="container">
+        <div class="filter-container">
           <div class="row toggle-block">
             <div class="col-xl-4 col-md-12 toggle-col">
               <div class="toggle-heading flex-block">
@@ -231,16 +242,16 @@
             <button>See results</button>
           </div>
         </div>
+        <span class="close-icon"><img src="./images/cross.png" alt="cross-image"></span>    
       </div>
       <div class="toggle-overlay" id="panel"></div>
-            
     </div>
     <!----------------------------Result Section----------------------------------------->
     <section class="result-section">
-      <div class="container">
+      <div class="filter-container">
         <div class="results flex-block">
           <div class="total-result">
-            <h2>329 Results</h2>
+            <p>329 Results</p>
           </div>
           <div class="select sort-result flex-block">
             <p>Sort by:</p>

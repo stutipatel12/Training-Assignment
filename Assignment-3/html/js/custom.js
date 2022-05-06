@@ -309,3 +309,29 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+$(".edit-icon").click(function(){
+  $(".cause-block").slideToggle();
+  $(".country-block").slideToggle();
+  $(".activity-block").slideToggle();
+  // document.body.style.overflow = document.body.style.overflow == 'hidden' ? 'auto' : 'hidden' ;
+});
+$(".edit-icon").click(function(){
+  $(".white-block").slideToggle("slow");
+});
+  $(".edit-icon").click(function(){
+    $(".toggle-overlay").slideUp("slow");
+});
+});
+
+
+
+$(document).ready(function(){
+  $(".close-icon").click(function(){
+    $("#panel").slideUp();;
+  });
+  $(".close-icon").click(function(){
+    $(".toggle-overlay").slideUp();;
+  });
+});
+
