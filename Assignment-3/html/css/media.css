@@ -8,6 +8,7 @@
     .email-img img{width: 350px;}
     .apply-now-block .right-img-block img{width: 600px;}
     .news-block .right-img-block img{width: 490px;}
+    .filter-section .container, .result-section .container{max-width: 1400px;}
 }
 @media(max-width:1496px){
     .active-nav ul li a{padding: 15px 17px;}
@@ -293,7 +294,7 @@ h2{font-size:30px;margin-bottom:20px}
 #menu{display:block;height:30px;width:35px;cursor:pointer;padding:4px}
 .nav{padding:0;margin:0 20px;transition:1s ease;display:none}
 #menu-bar{position:absolute;right:32px;top:50%;transform:translateY(-50%);z-index:20}
-.bar{height:4px;width:100%;background-color:#fff;display:block;border-radius:5px;transition:.3s ease;margin-bottom:4px}
+.bar{height:4px;width:100%;background-color:white;display:block;border-radius:5px;transition:.3s ease;margin-bottom:4px}
 .links ul{flex-direction:column}
 .open-menu .bar{background-color:#44a9c9}
 .open-menu #bar1{transform:translateY(8px) rotateZ(-45deg)}
@@ -380,6 +381,9 @@ footer{padding:10px 0}
 .work-block .trip-block{margin-left: 292px;}
 .trip-block .text-block1 p{margin-bottom: 10px;}
 }
+
+/*---------------------------------------Search result---------------------------------*/
+.search-result .bar{background-color: #44a9c9;}
 @media(max-width:480px){
     /*---------------------------------------HOME PAGE---------------------------*/
     .logo img {width: 189px;}
