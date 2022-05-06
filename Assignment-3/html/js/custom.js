@@ -300,6 +300,12 @@ keypressSlider.noUiSlider.on("update", function(values, handle) {
 $(document).ready(function(){
   $("#toggle-btn").click(function(){
     $("#panel").slideToggle("slow");
+    document.body.style.overflow = document.body.style.overflow == 'hidden' ? 'auto' : 'hidden' ;
+  });
+});
+$(document).ready(function(){
+  $("#toggle-btn").click(function(){
+    $(".toggle-overlay").slideToggle("fast");
   });
 });
 
