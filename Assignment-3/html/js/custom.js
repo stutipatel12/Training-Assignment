@@ -335,3 +335,32 @@ $(document).ready(function(){
   });
 });
 
+
+  $('#exampleModalCenter').appendTo("body").modal('hide');
+
+  $(document).ready(function(){
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite:false,
+            fade: true,
+            asNavFor: '.slider-navigation',
+        });
+        $('.slider-navigation').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            focusOnSelect: true,
+            arrows: false,       
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+                },
+            ]
+        })
+    })
+    })
