@@ -1,8 +1,6 @@
 @media(max-width:1700px){
     .view-photo-block{left: 76px;}
-
     .contact .content-block .container {max-width: 1384px;}
-
     .work-block .container{padding: 0 50px;}
     .trip-block .right-img-block img{width: 500px;}
     .trip-block .right-img-block{bottom: 312px;}
@@ -14,6 +12,8 @@
     .apply-now-block .right-img-block img{width: 600px;}
     .news-block .right-img-block img{width: 490px;}
     .filter-container, .search-result .container{max-width: 1400px;}
+    .search-result .menulinks{padding-left: 0;padding-right: 0;}
+    .search-result .navbar { padding-left: 0; padding-right: 0;}
 }
 @media(max-width:1498px){
     .active-nav ul li a{padding: 15px 17px;}
