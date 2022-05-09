@@ -210,7 +210,7 @@ ul li a{font-size: 21px;}
 
 /*-------------------------------------FAQ PAGE-----------------------------------------------*/
 .faq .below-nav{min-height: 535px;padding-top: 127px;}
-.faq-block .container{max-width: 97%;padding: 0 12px;}
+.faq-block .container{max-width:1000px;}
 #accordion .card{padding: 18px 0;}
 #accordion .card .card-link i{top:9px;right:7px;}
 #accordion .card-body{padding-top: 15px;padding-right: 137px;}
@@ -346,12 +346,6 @@ ul li a{font-size: 21px;}
 .toggle-block .select2-container--default .select2-selection--single .select2-selection__rendered { padding: 6px 9px 6px 11px;}
 .toggle-block .select2-container--default .select2-selection--single{padding: 13px 20px 11px 0px;}
 }
-/* @media(max-width:952px){
-    .work .below-nav{flex-direction: column;}
-    .header-block, .watch-video-block{flex: 0 0 100%;max-width: 100%;}
-    .watch-video-block button{margin-left: 0;}
-    .work .text{text-align: center;}
-} */
 
 @media(max-width:991px){
 /*-----------------------HOME PAGE-------------------------------------*/     
@@ -429,7 +423,7 @@ footer{padding:10px 0}
 /*----------------------------------------------FAQ PAGE--------------------------------------*/
 #accordion .card .card-link{font-size: 24px;padding-right: 44px;}
 #accordion .card .card-link br{display: none;}
-.faq-block .container { max-width: 92%;}
+.faq-block .container { max-width:720px;}
 #accordion .card-body p{font-size: 18px;}
 
 /*-------------------------------------------WORK PAGE--------------------------------------*/
@@ -599,7 +593,7 @@ footer{padding:10px 0}
 .faq .below-nav {min-height: 385px;padding-top: 109px;}
 .faq h1{font-size: 40px;} 
 .faq .banner, .faq .shadow{min-height: 384px;}
-.faq-block .container{width: 100%;padding: 0;}
+.faq-block .container{width:472px;}
 #accordion .card-header{padding: 0;}
 #accordion .card .card-link{font-size: 22px;}
 #accordion .card {padding: 23px 0;}
