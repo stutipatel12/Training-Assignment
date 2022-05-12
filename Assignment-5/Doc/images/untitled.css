@@ -1,0 +1,41 @@
+footer
+
+background: #221F1C;
+
+/* Copyright © Toll Hol: */
+font-family: Helvetica;
+font-size: 11px;
+color: #8F8E8D;
+line-height: 24px;
+
+
+banner
+
+/* We’re helping custom: */
+font-family: HelveticaNeueLTStd-Roman;
+font-size: 22px;
+color: #FFFFFF;
+line-height: 28px;
+
+/* Dear *FIRST NAME*, I: */
+font-family: Arial-BoldMT;
+font-size: 14px;
+color: #4A545D;
+line-height: 20px;
+
+/* CTA button: */
+/* Rectangle: */
+background: #00AAA6;
+/* get in touch: */
+font-family: Arial-BoldMT;
+font-size: 18px;
+color: #FFFFFF;
+text-align: center;
+line-height: 22px;
+
+
+/* Download brochure: */
+font-family: ArialMT;
+font-size: 12px;
+color: #00AAA6;
+line-height: 16px;
