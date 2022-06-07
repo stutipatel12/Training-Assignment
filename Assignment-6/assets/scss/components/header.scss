@@ -1,0 +1,139 @@
+header{
+    position: fixed;top:0;left: 0;width: 100%;z-index: 99;
+    .local-header{
+        background-color: $brown;padding: 30px 0 27px 0;   
+        @include bp(sm-max){padding:15px;}     
+        .content{            
+            display: flex;justify-content: center;align-items: center;font-weight: bold;
+            @include bp(sm-max){flex-direction: column;}
+            .text{color:$white;font-size: 18px;margin-right: 21px;
+            @include bp(sm-max){margin: 0 0 6px 0;font-size: 15px;}}
+            .call{
+                display: flex;align-items: center;margin-right: 12px;
+                @include bp(sm-max){margin: 0 0 4px 0;}
+                em{width:24px;height: 24px;
+                    @include bp(sm-max){width: 20px;height: 20px;}
+                }
+                a{color:$white;margin:0 0 0 14px;
+                @include bp(sm-max){font-size: 14px;}
+                }
+            }
+            .or{color:$white;font-size: 18px;margin-right: 14px;
+             @include bp(sm-max){margin: 0 0 6px 0;font-size: 15px;}
+            }
+            .chat{
+                display: flex;align-items: center;
+                em{width:24px;height: 24px; @include bp(sm-max){width: 20px;height: 20px;}}
+                .chat-text{color: $white;margin-left: 12px;
+                    @include bp(sm-max){font-size: 14px;}
+                }
+            }
+        }
+    }
+    .global-header{display: flex;align-items: center;background-color: $white;justify-content:space-between;
+        padding: 52px 22px 34px 18px;
+        @include transition(all 0.4s ease-in-out);
+        @include bp(tablet-max){padding:32px;}
+        @include bp(sm-max){padding: 30px 15px;}
+        &.active-global{padding: 20px 22px 20px 18px;box-shadow: 0 0 8px 0 $off-white;
+            @include bp(tablet-max){padding:32px;}
+            @include bp(sm-max){padding: 30px 15px;}
+        }
+        .logo-block{flex: 0 0 29%;max-width:29%;
+            @include bp(sm-max){flex: 0 0 45%;max-width: 45%;}
+            .logo{
+                img{width: 204px;height: 29px;}
+        }
+    }
+        .main-nav{display: flex;align-items:center;flex:0 0 71%; max-width: 71%;justify-content:space-between;
+            @include bp(sm-max){flex: 0 0 55%;max-width: 55%;}
+          .navbar{
+            ul{
+                display: flex;justify-content: center;align-items: center;
+                li{
+                    margin-right: 28px;
+                    &:last-child{margin:0}
+                    @include bp(tablet-max){padding:30px;margin-right:0;
+                      &:first-child{padding-top: 0;}
+                      &:last-child{padding-bottom: 60px;}
+                    }
+                    @include bp(md-max){padding: 24px;}
+                    @include bp(sm-max){padding: 18px;
+                        &:last-child{padding-bottom: 30px;}}
+                    a{
+                        padding:10px;font-size: 14px;font-weight: bold;color: $black2;
+                        &:hover{color: $black3;}
+                        @include bp(tablet-max){font-size: 22px;color: $brown;}
+                        @include bp(md-max){font-size: 18px;}
+                        @include bp(sm-max){font-size: 15px;
+                        }
+                    }
+                }
+            }
+          }
+          .search{display: flex;align-items: center;
+            .search-btn{width: 24px;height: 24px;margin-right: 42px;&:hover{cursor: pointer;}
+             @include bp(tablet-max){width: 32px;height: 32px;margin-right: 28px;}  
+             @include bp(md-max){width: 25px; height: 25px;}    
+        }
+            .crisis-btn{color: $white;background-color: $brown;
+                &:hover{color: $brown;background-color: $off-white2;box-shadow: 0px 0px 0px 0px;border: 1px solid $brown;}
+                @include bp(tablet-max){font-size: 22px;
+                  &:hover{border: 1px solid $brown;box-shadow: 0 6px 0 0 $brown;}                
+                }
+                @include bp(md-max){font-size: 18px;}
+                @include bp(sm-max){font-size: 15px;}
+
+            }
+            .search-model{
+                position: fixed;top:0;left: 0;width:100%;height: 100%;display: none;
+                .overlay-model{
+                    width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.456);display: flex;padding-top: 150px;justify-content: center;align-items: flex-start;
+                    @include bp(xxs-max){padding-top:230px;}
+                    .search-box{
+                        display: flex;align-items: flex-start;position: relative;
+                        .fa-times{position: absolute;top:-40px;right: -20px;;font-size: 23px;color: $white;&:hover{cursor: pointer;}}
+                        img{width: 20px;height: 20px;position: absolute;right: 10px;top:50%;@include translateY(-50%);}
+                        input{width: 400px;border-radius: 20px;padding: 15px 40px 15px 20px;border: none;
+                        @include bp(xxs-max){width: 290px;}
+                        @include bp(xxxs-max){width: 230px;}
+                        }
+                    }
+                }
+            }                 
+          }
+        }
+        #menu-bar{display: none;
+            @include bp(tablet-max){display: block;z-index: 100;}
+            #menu{
+                .bar{background-color:$off-white4;width: 30px;height: 5px;margin-bottom: 5px;border-radius: 4px;transition: .3s ease;}
+            }
+        }
+        .nav{
+          @include bp(tablet-max){width: 100%;max-width: 510px;position: fixed;top: 80px;z-index: 10;right:-510px;margin: 0 auto;display: flex;flex-direction: column;justify-content: center;
+              height: 100vh;background-color:$off-white3;transition: 1s ease;
+            ul{flex-direction: column;  
+            }
+            @include bp(md-max){max-width: 390px; right: -390px;top: 81px;}
+            @include bp(sm-max){top: 116px;max-width: 426px;right: -426px;}
+          }
+        }
+    }
+}
+
+.open-menu{overflow: hidden;
+   header{
+       .global-header{
+           .nav{right: 0;}
+           #menu-bar{
+               #menu{
+                   #bar1{transform: translateY(9px) rotateZ(-45deg);}
+                   #bar2{opacity: 0;}
+                   #bar3{transform: translateY(-11px) rotate(45deg);}
+                   .bar{background-color: $brown;}
+               }
+           }
+       }
+   }
+}
+
