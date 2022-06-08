@@ -110,7 +110,7 @@ header{
             }
         }
         .nav{
-          @include bp(tablet-max){width: 100%;max-width: 510px;position: fixed;top: 80px;z-index: 10;right:-510px;margin: 0 auto;display: flex;flex-direction: column;justify-content: center;
+          @include bp(tablet-max){width: 100%;max-width: 510px;position: fixed;top: 81px;z-index: 10;right:-510px;margin: 0 auto;display: flex;flex-direction: column;justify-content: center;
               height: 100vh;background-color:$off-white3;transition: 1s ease;
             ul{flex-direction: column;  
             }

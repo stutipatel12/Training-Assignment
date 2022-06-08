@@ -35,19 +35,29 @@
 // Get Help banner 
 .help-banner{
     width: 100%;background-image: url("../images/get-help-banner.jpg");background-size: cover;background-repeat: no-repeat;background-position: center;margin-top:212px;
+    @include bp(tablet-max){margin-top: 175px;}
+    @include bp(sm-max){margin-top: 206px;}
     .container{
         .content{max-width: 592px;padding:123px 0 83px 0;
             .text-div{
-                .text{font-size: 29.5px;font-weight: bold;color: $off-white3;line-height: 33px;margin-bottom: 35px;}
-                .text-call{font-size: 52px;font-weight: bold;color: $off-white3;line-height: 64px;margin-bottom: 118px;}
+                .text{font-size: 29.5px;font-weight: bold;color: $off-white3;line-height: 33px;margin-bottom: 35px;
+                @include bp(sm-max){font-size: 26px;}
+                @include bp(xxs-max){font-size: 24px;margin-bottom: 28px;}
+                }
+                .text-call{font-size: 52px;font-weight: bold;color: $off-white3;line-height: 64px;margin-bottom: 118px;
+                    @include bp(sm-max){font-size: 40px;margin-bottom: 80px;}
+                    @include bp(xxs-max){font-size: 34px;margin-bottom: 50px;}
+                }
             }  
             .two-block{
                 display: flex;flex-wrap: wrap;margin:0 -18px;
                 .block{
                     max-width: 50%;flex:0 0 50%;padding:0 18px;
+                    @include bp(xxs-max){flex: 0 0 100%; max-width: 100%;margin-bottom: 20px;}
                     .inner{padding-top: 34px;width: 100%;display: flex;justify-content: space-between;align-items: flex-end;border-top: 1px solid $white;
                         .text{
                             font-size: 21px;font-weight: bold;color: $white;
+                            @include bp(sm-max){font-size: 18.5px;}
                             span{border-bottom: 1px solid $white;line-height: 28px;}
                         }
                         .share-img{width: 22px;height: 22px;}
@@ -57,6 +67,7 @@
         }
     }
 }
+
 
 //Give Help banner
 .givehelp-banner{
