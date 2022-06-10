@@ -2,11 +2,7 @@
     font-family: 'Public Sans', sans-serif;
 }
 .container{width: 1222px;margin: 0 auto;padding: 0 15px;max-width: 100%;
-    @include bp(tablet-max){padding: 0 30px;width: 950px;}
-    @include bp(md-max){padding:0 20px;width: 680px;}
-    @include bp(xs-max){width:390px;padding: 0 15px;}
-    // @include bp(xxs-max){width: 300px;}
-    @include bp(xxxs-max){width: 280px;}
+    @include bp(xlg-max){padding: 0 30px;}
 }
 section{overflow: hidden;}
 footer div{overflow: hidden;}
@@ -14,6 +10,8 @@ footer div{overflow: hidden;}
 
 /*------------------------------SLIDER-SECTION-----------------------------*/
 .slider-block{padding:100px 0 50px 0;
+    .main-slide{@include bp(xxlg-max){padding: 0 30px;}
+               @include bp(xxxs-max){padding: 0 15px;}
     .slider{margin: 0 -10px;
             .slick-slide{margin: 0 15px;
                
@@ -44,25 +42,29 @@ footer div{overflow: hidden;}
             }
         }
 }
+}
 
 
 /*---------------------------ABOUT US----------------------------------*/
 .info-block{padding:50px 0 44px 0;
-    .content{background-color: $brown;display: flex;padding:50px;border-radius:10px;box-shadow: 0px 12px 0px 0px $off-white;
+    .content{background-color: $brown;display: flex;padding:50px;border-radius:10px;box-shadow: 0px 12px 0px 0px $off-white;margin: 0 -11px;
         @include bp(md-max){padding: 20px;}
         @include bp(sm-max){flex-direction: column;}
-      .left-block{padding:20px;flex:0 0 50%; max-width: 50%;
+      .left-block{padding:0 11px;flex:0 0 50%; max-width: 50%;
         @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding:15px 0;}
         h3{color:$white;font-size: 16px;padding-bottom: 40px;
         @include bp(sm-max){font-size: 14px;padding-bottom: 0;}
         }
         p{color:$white;font-size: 48px;font-weight: 700;padding-top: 40px;
+            span{display: block;
+            @include bp(sm-max){display: inline-block;}
+            }
         @include bp(md-max){font-size: 34px;}
         @include bp(sm-max){font-size: 28px;}
         }
       }
-      .right-block{padding: 20px 4px;flex:0 0 50%; max-width: 50%;
-        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
+      .right-block{flex:0 0 50%; max-width: 50%; padding: 0 11px;
+        @include bp(sm-max){flex: 0 0 100%; max-width: 100%; padding: 10px 0;}
        p{color:$white;font-size: 20px;line-height: 1.4;
         @include bp(md-max){font-size: 15px;}
         @include bp(sm-max){font-size:13.5px;}
@@ -76,34 +78,34 @@ footer div{overflow: hidden;}
     .container{
         h4{color: $black3;font-weight: bold;text-align: center;padding:45px 0 42px 0;}
         .content{
-            margin:0 -25px;display:flex;flex-wrap: wrap;padding:43px 0 45px 0;
-           
+            margin:0 -10px;display:flex;flex-wrap: wrap;padding:43px 0 45px 0;
+            @include bp(xs-max){flex-direction: column;}
             .col-3{
-                padding:0 25px;flex:0 0 25%;margin-bottom: 45px;position: relative; z-index: 2;  
-                @include bp(tablet-max){flex: 0 0 50%;padding: 0 42px;margin-bottom: 88px;} 
-                @include bp(sm-max){flex: 100%;margin-bottom: 70px;}            
+                padding:0 25px;flex:0 0 25%;max-width:25%; margin-bottom: 45px;position: relative; z-index: 2;  
+                @include bp(lg-max){flex: 0 0 50%; max-width: 50%;margin-bottom: 76px;}
+                @include bp(tablet-max){margin-bottom: 88px;} 
+                @include bp(sm-max){margin-bottom: 70px;} 
+                @include bp(xs-max){flex: 0 0 100%; max-width: 100%;}           
                 .col{
-                    background-color: $white;padding: 34px 16px 34px 31px;border-radius: 6px;
+                    background-color: $white;padding: 34px;border-radius: 6px;
                     @include bp(sm-max){padding: 20px 15px;}
                     &::before{content: "";position: absolute;top:-19px;left: 6px;width:200px;height: 200px;background-color: $black3;z-index: -1;border-radius: 6px;
-                      @include bp(tablet-max){left: 22px;width: 382px;height: 322px;}
-                      @include bp(md-max){width: 242px;height:264px; left: 26px; top: -16px;}
-                      @include bp(sm-max){width: 315px;height: 226px;}
-                      @include bp(xxs-max){width:218px ;}
-                    //   @include bp(xxxs-max){width: 218px;}
                     }
                     h2{font-size: 72px;font-weight: bold;color: $brown;line-height: 55px;margin-bottom: 31px;
                      @include bp(md-max){font-size: 54px;margin-bottom: 22px;}
                      @include bp(sm-max){font-size: 40px;}
                     }
-                    .text{font-size: 16px;line-height: 24px;color: $black1;margin-bottom: 42px;min-height: 120px;
-                     @include bp(md-max){font-size: 15px;margin-bottom: 22px;}
-                     @include bp(sm-max){min-height: 70px;font-size: 13.5px;}
+                    .text{font-size: 16px;line-height: 24px;color: $black1;margin-bottom: 42px;min-height: 120px; padding-right: 10px;
+                    @include bp(xxlg-max){min-height: 150px;}
+                    @include bp(lg-max){min-height: 80px;}
+                     @include bp(md-max){font-size: 15px;margin-bottom: 22px;min-height: 100px;}
+                     @include bp(sm-max){min-height: 70px;font-size: 13.5px;min-height: 120px;}
                     }
                     .more-link{font-size: 18px;color: $black1;border-bottom: 2px solid $black1;font-weight: bold;line-height: 18px;
                     @include bp(sm-max){font-size: 15px;}
                     }
                 }
+                .last-col{padding-right: 27px;}
             }
         }
     }
@@ -116,7 +118,8 @@ footer div{overflow: hidden;}
 /*-------------------Facing suicide section---------------------*/
 .facing-suicide-block{background-color: $off-white2;margin-top: 212px;
     @include bp(tablet-max){margin-top: 175px;}
-    @include bp(sm-max){margin-top: 206px;}
+    @include bp(sm-max){ margin-top: 144px;}
+    @include bp(xxs-max){margin-top: 195px;}
     .content-block{display: flex;align-items:center;padding:27px;
         @include bp(tablet-max){padding: 27px 0;}
         @include bp(md-max){flex-direction: column;}
@@ -124,11 +127,12 @@ footer div{overflow: hidden;}
         @include bp(md-max){flex: 0 0 100%; max-width: 100%; padding-right: 0;text-align: center;margin-bottom: 20px;}
             h2{color: $black1;font-size: 48px;line-height: 53px;padding-right: 124px;padding-bottom:20px;
             @include bp(md-max){font-size: 40px;padding: 0 0 10px 0;}
-            @include bp(xs-max){font-size: 30px;}
+            @include bp(xs-max){font-size:30px;}
+            @include bp(xxs-max){font-size: 26px;}
             }
             p{font-size:18px;line-height: 28px;padding-top: 20px;
                 @include bp(md-max){font-size: 16px;}
-                // @include bp(xs-max){font-size: 13.5px;}
+                @include bp(xs-max){font-size: 13.5px;padding-top: 0;}
             }
             span{color: $brown;text-decoration: underline;cursor: pointer;
               &:hover{color: $black1;}
@@ -180,7 +184,7 @@ footer div{overflow: hidden;}
                 .col-3{
                     flex:0 0 25%;max-width: 25%;padding:0 40px;margin-bottom: 40px;
                     @include bp(tablet-max){flex: 0 0 50%; max-width: 50%;}
-                    @include bp(xxs-max){flex: 0 0 100%; max-width: 100%;}
+                    @include bp(xs-max){flex: 0 0 100%; max-width: 100%;}
                     .card{
                         .image-wrap{
                             min-height: 112px;display: flex;justify-content: center;align-items: center;margin-bottom: 34px;
@@ -218,15 +222,16 @@ footer div{overflow: hidden;}
 /*---------------------get-help section------------*/
 .get-help-block{padding-top: 98px;
     @include bp(xxs-max){padding-top: 54px;}
-    .content{
-       .left-block{padding: 25px 40px 25px 20px;flex:0 0 45%; max-width: 45%;
-        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
-           p{padding-top: 0;line-height: 55px;
-           @include bp(xxs-max){line-height: 40px;}
+    .content{padding: 86px;
+        @include bp(xs-max){padding: 30px;}
+       .left-block{
+        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
+           p{padding-top: 0;line-height: 1.3;
+           @include bp(xxs-max){line-height: 40px;font-size: 26px;}
         }
         }
-       .right-block{padding: 30px 50px;flex:0 0 55%; max-width: 55%;
-        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
+       .right-block{
+        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
            p{padding-bottom:42px;}
            a{color: $white; font-size:18px;text-decoration: underline;font-weight: 700;line-height:1.3;
             &:hover{text-decoration: none;}
@@ -237,11 +242,11 @@ footer div{overflow: hidden;}
 /*-------------Story block--------------*/
 .story-block{margin-top: 50px;background-color: $off-white2;position: relative;
      .story-content{display: flex;align-items:center; 
-        .left-block{ 
-           .bg-img{position: absolute;top: 0;left: 0;}
+        .left-block{ flex: 0 0 40%; max-width: 40%;
+           .image{position: absolute; top: 0; left: 0;}
            span{position: absolute; top:60px;left:60px;color:$purple;font-size: 27px;font-weight: 800;}
         }
-        .right-block{
+        .right-block{flex: 0 0 60%; max-width: 60%;
             p{font-size: 36px;color: $black1;font-weight: 700;line-height: 42px;padding-bottom: 36px;}
             a{font-size: 18px;color: $brown;text-decoration: underline;font-weight: 700;
                &:hover{text-decoration: none;}
@@ -253,11 +258,11 @@ footer div{overflow: hidden;}
 
 /*--------------Living through loss--------------*/
 .living-block{
-    .content{justify-content: space-between;
-        .left-block{flex: 0 0 30%; max-width: 30%;
+    .content{
+        .left-block{flex: 0 0 40%; max-width: 40%;
             @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
         }
-        .right-block{flex: 0 0 60%; max-width: 60%;padding-right: 59px;
+        .right-block{flex: 0 0 60%; max-width: 60%;
             @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
         }
     }
@@ -272,7 +277,7 @@ footer div{overflow: hidden;}
             @include bp(tablet-max){flex: 0 0 55%; max-width: 55%;}
             @include bp(md-max){flex: 0 0 100%; max-width: 100%;padding-right: 0;margin-bottom: 15px;}
             .point1{font-size: 32px;line-height: 38px;color: $black1;font-weight: 700;padding: 20px 68px 15px 0;
-            @include bp(xxs-max){font-size: 24px;padding-right: 0;}
+            @include bp(xs-max){font-size: 24px;padding-right: 0;}
             }
             .point2{font-size: 16px;line-height: 21px;color: $black1;padding:15px 44px 22px 0;
             @include bp(md-max){padding-right: 0;}

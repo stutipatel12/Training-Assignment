@@ -5,33 +5,36 @@ header{
         @include bp(sm-max){padding:15px;}     
         .content{            
             display: flex;justify-content: center;align-items: center;font-weight: bold;
-            @include bp(sm-max){flex-direction: column;}
+            @include bp(xxs-max){flex-direction: column;}
             .text{color:$white;font-size: 18px;margin-right: 21px;
-            @include bp(sm-max){margin: 0 0 6px 0;font-size: 15px;}}
+            @include bp(xs-max){font-size: 13.5px;margin-right: 8px;}
+            @include bp(xxs-max){margin: 0 0 6px 0;font-size: 15px;}}
             .call{
                 display: flex;align-items: center;margin-right: 12px;
-                @include bp(sm-max){margin: 0 0 4px 0;}
+                @include bp(xs-max){margin-right:0px;}
+                @include bp(xxxs-max){margin: 0 0 4px 0;}
                 em{width:24px;height: 24px;
-                    @include bp(sm-max){width: 20px;height: 20px;}
+                    @include bp(xs-max){width: 20px;height: 20px;}
                 }
                 a{color:$white;margin:0 0 0 14px;
-                @include bp(sm-max){font-size: 14px;}
+                    @include bp(xs-max){font-size: 12.5px; margin-right: 8px;}
                 }
             }
             .or{color:$white;font-size: 18px;margin-right: 14px;
-             @include bp(sm-max){margin: 0 0 6px 0;font-size: 15px;}
+                @include bp(xs-max){font-size: 13.5px;margin-right: 8px;}
+             @include bp(xxxs-max){margin: 0 0 6px 0;}
             }
             .chat{
                 display: flex;align-items: center;
                 em{width:24px;height: 24px; @include bp(sm-max){width: 20px;height: 20px;}}
                 .chat-text{color: $white;margin-left: 12px;
-                    @include bp(sm-max){font-size: 14px;}
+                    @include bp(xs-max){font-size: 13.5px;margin-right: 8px;}
                 }
             }
         }
     }
     .global-header{display: flex;align-items: center;background-color: $white;justify-content:space-between;
-        padding: 52px 22px 34px 18px;
+        padding: 48px 22px 40px 18px;
         @include transition(all 0.4s ease-in-out);
         @include bp(tablet-max){padding:32px;}
         @include bp(sm-max){padding: 30px 15px;}
@@ -39,45 +42,51 @@ header{
             @include bp(tablet-max){padding:32px;}
             @include bp(sm-max){padding: 30px 15px;}
         }
-        .logo-block{flex: 0 0 29%;max-width:29%;
-            @include bp(sm-max){flex: 0 0 45%;max-width: 45%;}
+        .logo-block{padding-right: 30px;
+            // @include bp(sm-max){flex: 0 0 45%;max-width: 45%;}
             .logo{
                 img{width: 204px;height: 29px;}
         }
     }
-        .main-nav{display: flex;align-items:center;flex:0 0 71%; max-width: 71%;justify-content:space-between;
-            @include bp(sm-max){flex: 0 0 55%;max-width: 55%;}
+        .main-nav{
+            // @include bp(sm-max){flex: 0 0 55%;max-width: 55%;}
           .navbar{
             ul{
                 display: flex;justify-content: center;align-items: center;
                 li{
                     margin-right: 28px;
                     &:last-child{margin:0}
-                    @include bp(tablet-max){padding:30px;margin-right:0;
-                      &:first-child{padding-top: 0;}
-                      &:last-child{padding-bottom: 60px;}
-                    }
-                    @include bp(md-max){padding: 24px;}
-                    @include bp(sm-max){padding: 18px;
-                        &:last-child{padding-bottom: 30px;}}
-                    a{
+                    @include bp(lg-max){margin-right: 22px;}
+                    @include bp(tablet-max){margin-bottom: 36px;margin-right:0;}
+                    a{display: block;
                         padding:10px;font-size: 14px;font-weight: bold;color: $black2;
                         &:hover{color: $black3;}
-                        @include bp(tablet-max){font-size: 22px;color: $brown;}
-                        @include bp(md-max){font-size: 18px;}
-                        @include bp(sm-max){font-size: 15px;
-                        }
+                        @include bp(lg-max){font-size: 12.5px;padding: 6px;}
+                        @include bp(tablet-max){font-size:18px;color: $brown;}
+                        @include bp(sm-max){font-size: 15px;}
                     }
+                }
+                .search-hide{display: none;
+                @include bp(tablet-max){display: block;}
+                  .search{display: flex;
+                  a{color: $white; padding: 15px;
+                  &:hover{color: $brown;}
+                }
+                }
                 }
             }
           }
-          .search{display: flex;align-items: center;
+        }
+        .search{display: flex;align-items: center;
+            @include bp(tablet-max){display: none;}
             .search-btn{width: 24px;height: 24px;margin-right: 42px;&:hover{cursor: pointer;}
+            @include bp(lg-max){margin-right: 22px;width: 20px;}
              @include bp(tablet-max){width: 32px;height: 32px;margin-right: 28px;}  
              @include bp(md-max){width: 25px; height: 25px;}    
         }
             .crisis-btn{color: $white;background-color: $brown;
                 &:hover{color: $brown;background-color: $off-white2;box-shadow: 0px 0px 0px 0px;border: 1px solid $brown;}
+                @include bp(lg-max){font-size: 15px; padding: 12px 20px; min-height: 42px;}
                 @include bp(tablet-max){font-size: 22px;
                   &:hover{border: 1px solid $brown;box-shadow: 0 6px 0 0 $brown;}                
                 }
@@ -102,7 +111,6 @@ header{
                 }
             }                 
           }
-        }
         #menu-bar{display: none;
             @include bp(tablet-max){display: block;z-index: 100;}
             #menu{
@@ -110,7 +118,7 @@ header{
             }
         }
         .nav{
-          @include bp(tablet-max){width: 100%;max-width: 510px;position: fixed;top: 81px;z-index: 10;right:-510px;margin: 0 auto;display: flex;flex-direction: column;justify-content: center;
+          @include bp(tablet-max){width: 100%;max-width: 510px;position: fixed;top: 81px;z-index: 10;right:-510px;margin: 0 auto;display: flex;flex-direction: column;justify-content: flex-start;padding-top: 100px;overflow: auto;
               height: 100vh;background-color:$off-white3;transition: 1s ease;
             ul{flex-direction: column;  
             }
