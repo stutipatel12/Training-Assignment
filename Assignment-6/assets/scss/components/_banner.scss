@@ -82,7 +82,7 @@
     background-image: url("../images/give-help-banner.jpg");background-size: cover;background-position: center;margin-top:211px;
     .content{
         padding:47px 0 68px 0;
-        h2{font-size: 32px;color: $white;text-align: center;margin-bottom: 58px;line-height: 42px;}
+        h2{font-size: 32px;color: $white;text-align: center;line-height: 42px; max-width: 688px; margin: 0 auto;margin-bottom: 58px;}
         .row{
             display: flex;flex-wrap: wrap;margin:0 -23px;
             .col-3{flex:0 0 25%;max-width: 25%;padding:0 23px;position: relative;z-index: 2;margin-bottom: 50px;
@@ -106,6 +106,9 @@
 // Get Involved Banner 
 .get-involve-banner{
     background-image: url("../images/get-involved-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;margin-top:212px;
+    @include bp(tablet-max){margin-top: 175px;}
+    @include bp(sm-max){ margin-top: 144px;}
+    @include bp(xxs-max){margin-top: 195px;}
     .container{
         .content{
             padding: 40px 0 92px;text-align: center;
