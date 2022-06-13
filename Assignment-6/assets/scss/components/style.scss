@@ -116,11 +116,11 @@ footer div{overflow: hidden;}
 /*============================================ABOUT US PAGE============================*/
 
 /*-------------------Facing suicide section---------------------*/
-.facing-suicide-block{background-color: $off-white2;margin-top: 212px;
+.facing-suicide-block{background-color: $off-white2;padding-top: 212px;
     @include bp(tablet-max){margin-top: 175px;}
     @include bp(sm-max){ margin-top: 144px;}
     @include bp(xxs-max){margin-top: 195px;}
-    .content-block{display: flex;align-items:center;padding:27px;
+    .content-block{display: flex;align-items:center;padding:27px; margin: 0 -27px;
         @include bp(tablet-max){padding: 27px 0;}
         @include bp(md-max){flex-direction: column;}
        .left-block{flex: 0 0 60%; max-width: 60%;padding-right:80px;
