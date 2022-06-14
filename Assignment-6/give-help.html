@@ -18,371 +18,395 @@
 <body>
     <div class="wrapper">
         <!-- Header start  -->
-    <header class="header">
-        <div class="local-header">
-          <div class="content">
-            <p class="text">In a crisis?</p>
-            <p class="call">
-              <em><img src="./public/images/call.svg" alt="call-image"></em>
-              <a href="tel:215174173671">1.800.273.TALK</a>
-            </p>
-            <span class="or">or</span>
-            <p class="chat">
-              <em><img src="./public/images/message.svg" alt="message-image"></em>
-              <span class="chat-text">text VT to 741741</span>
-            </p>
-          </div>
-        </div>
-        <div class="global-header">
-          <div class="logo-block">
-          <a href="#" class="logo" title="Facing Suicide">
-            <img src="./public/images/facing-suicide-logo.svg" alt="logo-image">
-          </a>
-          </div>
-          <!---hamburger menu---->
-          <div id="menu-bar">
-            <div id="menu" onclick="onClickMenu()">
-              <div id="bar1" class="bar"></div>
-              <div id="bar2" class="bar"></div>
-              <div id="bar3" class="bar"></div>
+        <header class="header">
+            <div class="local-header">
+                <div class="content">
+                    <p class="text">In a crisis?</p>
+                    <p class="call">
+                        <em><img src="./public/images/call.svg" alt="call-image"></em>
+                        <a href="tel:215174173671">1.800.273.TALK</a>
+                    </p>
+                    <span class="or">or</span>
+                    <p class="chat">
+                        <em><img src="./public/images/message.svg" alt="message-image"></em>
+                        <span class="chat-text">text VT to 741741</span>
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="main-nav  nav" id="nav" onclick="onClickNav()">
-            <div class="navbar" >
-              <ul>
-                <li><a href="./get-help.html" title="GET HELP">GET HELP </a></li>
-                <li><a href="./give-help.html" title="GIVE HELP">GIVE HELP </a></li>
-                <li><a href="./get-involved.html" title="GET INVOLVED">GET INVOLVED </a></li>
-                <li><a href="./community-resource.html" title="RESOURCES">RESOURCES </a></li>
-                <li><a href="./real-stories.html" title="REAL STORIES">REAL STORIES</a></li>
-                <li class="search-hide">
-                  <div class="search">
+            <div class="global-header">
+                <div class="logo-block">
+                    <a href="#" class="logo" title="Facing Suicide">
+                        <img src="./public/images/facing-suicide-logo.svg" alt="logo-image">
+                    </a>
+                </div>
+                <!---hamburger menu---->
+                <div id="menu-bar">
+                    <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                </div>
+                <div class="main-nav  nav" id="nav" onclick="onClickNav()">
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="./get-help.html" title="GET HELP">GET HELP </a></li>
+                            <li><a href="./give-help.html" title="GIVE HELP">GIVE HELP </a></li>
+                            <li><a href="./get-involved.html" title="GET INVOLVED">GET INVOLVED </a></li>
+                            <li><a href="./community-resource.html" title="RESOURCES">RESOURCES </a></li>
+                            <li><a href="./real-stories.html" title="REAL STORIES">REAL STORIES</a></li>
+                            <li class="search-hide">
+                                <div class="search">
+                                    <em class="search-btn">
+                                        <img src="./public/images/search-brown.svg" alt="search-icon">
+                                    </em>
+                                    <div class="search-model">
+                                        <div class="overlay-model">
+                                            <div class="search-box">
+                                                <input type="search" placeholder="Search...">
+                                                <i class="fa fa-times close-icon" aria-hidden="true"></i>
+                                                <img src="./public/images/search-brown.svg" alt="search-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn crisis-btn" title="Crisis Hotline">Crisis Hotline</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search">
                     <em class="search-btn">
-                      <img src="./public/images/search-brown.svg" alt="search-icon">
+                        <img src="./public/images/search-brown.svg" alt="search-icon">
                     </em>
                     <div class="search-model">
-                      <div class="overlay-model">
-                        <div class="search-box">
-                          <input type="search" placeholder="Search...">
-                          <i class="fa fa-times close-icon" aria-hidden="true"></i>
-                          <img src="./public/images/search-brown.svg" alt="search-icon">
+                        <div class="overlay-model">
+                            <div class="search-box">
+                                <input type="search" placeholder="Search...">
+                                <i class="fa fa-times close-icon" aria-hidden="true"></i>
+                                <img src="./public/images/search-brown.svg" alt="search-icon">
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <a href="#" class="btn crisis-btn" title="Crisis Hotline">Crisis Hotline</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="search">
-            <em class="search-btn">
-              <img src="./public/images/search-brown.svg" alt="search-icon">
-            </em>
-            <div class="search-model">
-              <div class="overlay-model">
-                <div class="search-box">
-                  <input type="search" placeholder="Search...">
-                  <i class="fa fa-times close-icon" aria-hidden="true"></i>
-                  <img src="./public/images/search-brown.svg" alt="search-icon">
-                </div>
-              </div>
-            </div>
-            <a href="#" class="btn crisis-btn" title="Crisis Hotline">Crisis Hotline</a>
-          </div>
-        </div>
-      </header>
-      <!-- Header end  -->
-        <!-- Give help banner start  -->
-        <div class="givehelp-banner">
-            <div class="container">
-                <div class="content">
-                    <h2 data-aos="zoom-in"> Anyone can experience suicide risk, but some groups are at higher risk in Vermont. </h2>
-                    <div class="row">
-                        <div class="col-3" data-aos="fade-up" data-aos-delay="100">
-                            <div class="card">
-                                <h3><span class="counter">36</span>%</h3>
-                                <p class="text">
-                                    36% of LGBTQ+ high school students made a suicide plan vs. 9% of their peers.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-3" data-aos="fade-up" data-aos-delay="300">
-                            <div class="card">
-                                <h3><span class="counter">5</span>x</h3>
-                                <p class="text">
-                                    Adults with a disability are 5x more likely to seriously consider suicide.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-3" data-aos="fade-up" data-aos-delay="500">
-                            <div class="card">
-                                <h3><span class="counter">3</span>x</h3>
-                                <p class="text">
-                                    Men are 3x more likely to die by suicide than women. 29.3 vs 7.1
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-3" data-aos="fade-up" data-aos-delay="700">
-                            <div class="card">
-                                <h3><span class="counter">42</span>%</h3>
-                                <p class="text">
-                                    42% of VT adults store a firearm at home. Firearms are involved in more than 1/2 of
-                                    suicide deaths.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="link-text" data-aos="zoom-in" data-aos-delay="900">
-                        <a href="#" class="link">View Sources</a>&nbsp;&nbsp; | &nbsp;
-                        <a href="#" class="link">Find more information about populations at greater risk for suicide</a>
-                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Give help banner end  -->
+        </header>
+        <!-- Header end  -->
+        <div class="main-wrap">
+            <!-- Give help banner start  -->
+            <div class="givehelp-banner">
+                <div class="container">
+                    <div class="content">
+                        <h2 data-aos="zoom-in"> Anyone can experience suicide risk, but some groups are at higher risk
+                            in Vermont. </h2>
+                        <div class="row">
+                            <div class="col-3" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card">
+                                    <h3><span class="counter">36</span>%</h3>
+                                    <p class="text">
+                                        36% of LGBTQ+ high school students made a suicide plan vs. 9% of their peers.
+                                    </p>
+                                </div>
+                            </div>
 
-        <!-- Community section start  -->
-        <section class="community-section">
-            <div class="inner-conteiner">
-                <div class="content">
-                    <h3 data-aos="zoom-in">Learn about dedicated resources for different communities in Vermont. </h3>
-                    <div class="row">
-                        <div class="col-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="link-text">
-                                <a href="#" title="Living with Disabilities" class="link">Living with Disabilities</a>
-                                <br>
-                                <a href="#" title="First Responders" class="link">First Responders</a>
+                            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card">
+                                    <h3><span class="counter">5</span>x</h3>
+                                    <p class="text">
+                                        Adults with a disability are 5x more likely to seriously consider suicide.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3" data-aos="fade-up" data-aos-delay="500">
+                                <div class="card">
+                                    <h3><span class="counter">3</span>x</h3>
+                                    <p class="text">
+                                        Men are 3x more likely to die by suicide than women. 29.3 vs 7.1
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-3" data-aos="fade-up" data-aos-delay="700">
+                                <div class="card">
+                                    <h3><span class="counter">42</span>%</h3>
+                                    <p class="text">
+                                        42% of VT adults store a firearm at home. Firearms are involved in more than 1/2
+                                        of
+                                        suicide deaths.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-4 col2" data-aos="fade-up" data-aos-delay="300">
-                            <div class="link-text">
-                                <a href="#" title="LGBTQIA+" class="link">LGBTQIA+</a> <br>
-                                <a href="#" title="Men" class="link">Men </a>
-                            </div>
-                        </div>
-
-                        <div class="col-4 col3" data-aos="fade-up" data-aos-delay="500">
-                            <div class="link-text">
-                                <a href="#" title="Rural Communities" class="link">Rural Communities</a> <br>
-                                <a href="#" title="Veterans" class="link">Veterans</a>
-                            </div>
+                        <div class="link-text" data-aos="zoom-in" data-aos-delay="900">
+                            <a href="#" class="link">View Sources</a>&nbsp;&nbsp; | &nbsp;
+                            <a href="#" class="link">Find more information about populations at greater risk for
+                                suicide</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Community section end  -->
+            <!-- Give help banner end  -->
 
-        <!-- help-us section start  -->
-        <section class="helpus-section">
-            <div class="container">
-                <div class="content">
-                    <div class="left-block block" data-aos="fade-right">
-                        <h2>
-                            Learning the warning signs and how to talk about suicide can help us help others.
-                        </h2>
+            <!-- Community section start  -->
+            <section class="community-section">
+                <div class="inner-conteiner">
+                    <div class="content">
+                        <h3 data-aos="zoom-in">Learn about dedicated resources for different communities in Vermont.
+                        </h3>
+                        <div class="row">
+                            <div class="col-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="link-text">
+                                    <a href="#" title="Living with Disabilities" class="link">Living with
+                                        Disabilities</a>
+                                    <br>
+                                    <a href="#" title="First Responders" class="link">First Responders</a>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col2" data-aos="fade-up" data-aos-delay="300">
+                                <div class="link-text">
+                                    <a href="#" title="LGBTQIA+" class="link">LGBTQIA+</a> <br>
+                                    <a href="#" title="Men" class="link">Men </a>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col3" data-aos="fade-up" data-aos-delay="500">
+                                <div class="link-text">
+                                    <a href="#" title="Rural Communities" class="link">Rural Communities</a> <br>
+                                    <a href="#" title="Veterans" class="link">Veterans</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="right-block block" data-aos="fade-left">
-                        <div class="tabs">
-                            <ul id="tabs-nav">
-                                <li><a href="#tab1">Spotting Warning Signs</a></li>
-                                <li><a href="#tab2">If You See Warning Signs</a></li>
-                                <li><a href="#tab3">Common Myths</a></li>
-                            </ul> <!-- END tabs-nav -->
-                            <div id="tabs-content">
-                                <div id="tab1" class="tab-content">
-                                    <div class="text-content">
-                                        <div class="text">
-                                            <a href="#">#BeThe1To</a> promotes five action steps to help you communicate
-                                            with someone who may be thinking of suicide.
-                                        </div>
-                                        <div class="text">
-                                            <p> 1. Ask directly if they are thinking about suicide, then listen without
-                                                judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.</p>
-                                            <p> 2. Keep people safe by removing access to potentially dangerous
-                                                household items like firearms or medications. </p>
-                                            <p> 3. Be there. Make an emotional connection. Let them know that you care.
-                                            </p>
-                                            <p> 4. Help them connect to support. Ensure they have hotline numbers
-                                                programmed into their phone or written where they can easily find them.
-                                            </p>
-                                            <p> 5. Follow up with texts, calls or face-to-face visits.</p>
+                </div>
+            </section>
+            <!-- Community section end  -->
+
+            <!-- help-us section start  -->
+            <section class="helpus-section">
+                <div class="container">
+                    <div class="content">
+                        <div class="left-block block" data-aos="fade-right">
+                            <h2>
+                                Learning the warning signs and how to talk about suicide can help us help others.
+                            </h2>
+                        </div>
+                        <div class="right-block block" data-aos="fade-left">
+                            <div class="tabs">
+                                <ul id="tabs-nav">
+                                    <li><a href="#tab1">Spotting Warning Signs</a></li>
+                                    <li><a href="#tab2">If You See Warning Signs</a></li>
+                                    <li><a href="#tab3">Common Myths</a></li>
+                                </ul> <!-- END tabs-nav -->
+                                <div id="tabs-content">
+                                    <div id="tab1" class="tab-content">
+                                        <div class="text-content">
+                                            <div class="text">
+                                                <a href="#">#BeThe1To</a> promotes five action steps to help you
+                                                communicate
+                                                with someone who may be thinking of suicide.
+                                            </div>
+                                            <div class="text">
+                                                <p> 1. Ask directly if they are thinking about suicide, then listen
+                                                    without
+                                                    judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.
+                                                </p>
+                                                <p> 2. Keep people safe by removing access to potentially dangerous
+                                                    household items like firearms or medications. </p>
+                                                <p> 3. Be there. Make an emotional connection. Let them know that you
+                                                    care.
+                                                </p>
+                                                <p> 4. Help them connect to support. Ensure they have hotline numbers
+                                                    programmed into their phone or written where they can easily find
+                                                    them.
+                                                </p>
+                                                <p> 5. Follow up with texts, calls or face-to-face visits.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div id="tab2" class="tab-content">
-                                    <div class="text-content">
-                                        <div class="text">
-                                            <a href="#">#BeThe1To</a> promotes five action steps to help you communicate
-                                            with someone who may be thinking of suicide.
-                                        </div>
-                                        <div class="text">
-                                            <p> 1. Ask directly if they are thinking about suicide, then listen without
-                                                judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.</p>
-                                            <p> 2. Keep people safe by removing access to potentially dangerous
-                                                household items like firearms or medications. </p>
-                                            <p> 3. Be there. Make an emotional connection. Let them know that you care.
-                                            </p>
-                                            <p> 4. Help them connect to support. Ensure they have hotline numbers
-                                                programmed into their phone or written where they can easily find them.
-                                            </p>
-                                            <p> 5. Follow up with texts, calls or face-to-face visits.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tab3" class="tab-content">
-                                    <div class="text-content">
-                                        <div class="text">
-                                            <a href="#">#BeThe1To</a> promotes five action steps to help you communicate
-                                            with someone who may be thinking of suicide.
-                                        </div>
-                                        <div class="text">
-                                            <p> 1. Ask directly if they are thinking about suicide, then listen without
-                                                judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.</p>
-                                            <p> 2. Keep people safe by removing access to potentially dangerous
-                                                household items like firearms or medications. </p>
-                                            <p> 3. Be there. Make an emotional connection. Let them know that you care.
-                                            </p>
-                                            <p> 4. Help them connect to support. Ensure they have hotline numbers
-                                                programmed into their phone or written where they can easily find them.
-                                            </p>
-                                            <p> 5. Follow up with texts, calls or face-to-face visits.</p>
+                                    <div id="tab2" class="tab-content">
+                                        <div class="text-content">
+                                            <div class="text">
+                                                <a href="#">#BeThe1To</a> promotes five action steps to help you
+                                                communicate
+                                                with someone who may be thinking of suicide.
+                                            </div>
+                                            <div class="text">
+                                                <p> 1. Ask directly if they are thinking about suicide, then listen
+                                                    without
+                                                    judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.
+                                                </p>
+                                                <p> 2. Keep people safe by removing access to potentially dangerous
+                                                    household items like firearms or medications. </p>
+                                                <p> 3. Be there. Make an emotional connection. Let them know that you
+                                                    care.
+                                                </p>
+                                                <p> 4. Help them connect to support. Ensure they have hotline numbers
+                                                    programmed into their phone or written where they can easily find
+                                                    them.
+                                                </p>
+                                                <p> 5. Follow up with texts, calls or face-to-face visits.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div> <!-- END tabs-content -->
-                        </div> <!-- END tabs -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- help-us section end  -->
-
-        <!-------------------Prevention section------------->
-        <section class="prevention-block">
-            <div class="container">
-                <div class="content-block">
-                    <p class="main-text" data-aos="zoom-in">Early prevention can take on many forms. Here are some examples of what it
-                        looks like. </p>
-                    <div class="list-block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
-                        <div class="left-block" data-aos="fade-right" data-aos-delay="500">
-                            <div class="list">
-                                <span class="number">1</span>
-                                <span class="text">Talking to someone you haven’t heard from in a while.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">2</span>
-                                <span class="text">Connecting with community and peer support programs.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">3</span>
-                                <span class="text">Learning to recognize the warning signs.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">4</span>
-                                <span class="text">Not shying away from talking about suicide.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">5</span>
-                                <span class="text">Storing firearms locked and unloaded.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">6</span>
-                                <span class="text"> Supporting community center development.</span>
-                            </div>
-                            <div class="list">
-                                <span class="number">7</span>
-                                <span class="text">Participating in after school programs.</span>
-                            </div>
-
-                        </div>
-                        <div class="right-block" data-aos="fade-left" data-aos-delay="500">
-                            <i><img src="./public/images/give-help-list.jpg" alt="give-help"></i>
+                                    <div id="tab3" class="tab-content">
+                                        <div class="text-content">
+                                            <div class="text">
+                                                <a href="#">#BeThe1To</a> promotes five action steps to help you
+                                                communicate
+                                                with someone who may be thinking of suicide.
+                                            </div>
+                                            <div class="text">
+                                                <p> 1. Ask directly if they are thinking about suicide, then listen
+                                                    without
+                                                    judgment. If someone says they are, call 1-800-273-8255 or 9-1-1.
+                                                </p>
+                                                <p> 2. Keep people safe by removing access to potentially dangerous
+                                                    household items like firearms or medications. </p>
+                                                <p> 3. Be there. Make an emotional connection. Let them know that you
+                                                    care.
+                                                </p>
+                                                <p> 4. Help them connect to support. Ensure they have hotline numbers
+                                                    programmed into their phone or written where they can easily find
+                                                    them.
+                                                </p>
+                                                <p> 5. Follow up with texts, calls or face-to-face visits.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END tabs-content -->
+                            </div> <!-- END tabs -->
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <!-- help-us section end  -->
 
-        <!--------------------Save lives section-------------->
-        <section class="save-lives-block info-block get-help-block">
-            <div class="container">
-                <div class="content">
+            <!-------------------Prevention section------------->
+            <section class="prevention-block">
+                <div class="container">
+                    <div class="content-block">
+                        <p class="main-text" data-aos="zoom-in">Early prevention can take on many forms. Here are some
+                            examples of what it
+                            looks like. </p>
+                        <div class="list-block" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+                            <div class="left-block" data-aos="fade-right" data-aos-delay="500">
+                                <div class="list">
+                                    <span class="number">1</span>
+                                    <span class="text">Talking to someone you haven’t heard from in a while.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">2</span>
+                                    <span class="text">Connecting with community and peer support programs.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">3</span>
+                                    <span class="text">Learning to recognize the warning signs.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">4</span>
+                                    <span class="text">Not shying away from talking about suicide.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">5</span>
+                                    <span class="text">Storing firearms locked and unloaded.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">6</span>
+                                    <span class="text"> Supporting community center development.</span>
+                                </div>
+                                <div class="list">
+                                    <span class="number">7</span>
+                                    <span class="text">Participating in after school programs.</span>
+                                </div>
+
+                            </div>
+                            <div class="right-block" data-aos="fade-left" data-aos-delay="500">
+                                <i><img src="./public/images/give-help-list.jpg" alt="give-help"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--------------------Save lives section-------------->
+            <section class="save-lives-block info-block get-help-block">
+                <div class="container">
+                    <div class="content">
+                        <div class="left-block" data-aos="fade-right">
+                            <p>Limiting access to potentially dangerous things can save lives.</p>
+                        </div>
+                        <div class="right-block" data-aos="fade-left">
+                            <p><span><a href="#" class="link">Lock to Live</a></span> can help you make decisions about
+                                temporarily reducing access
+                                to potentially dangerous things. <span><a href="#" class="link">BeSMART</a></span>
+                                teaches
+                                you how to keep kids safe by properly storing firearms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!---------------------Story section------------------>
+            <section class="story-block survival-block">
+                <div class="story-content">
                     <div class="left-block" data-aos="fade-right">
-                        <p>Limiting access to potentially dangerous things can save lives.</p>
+                        <i><img src="./public/images/give-help-two-col.jpg" alt="give-help"></i>
+                        <span>FPO</span>
                     </div>
                     <div class="right-block" data-aos="fade-left">
-                        <p><span><a href="#" class="link">Lock to Live</a></span> can help you make decisions about
-                            temporarily reducing access
-                            to potentially dangerous things. <span><a href="#" class="link">BeSMART</a></span> teaches
-                            you how to keep kids safe by properly storing firearms.</p>
+                        <p>FPO Hear Richard share the important role other people played in his survival story.</p>
+                        <a href="#">Lorem ipsum</a>
                     </div>
                 </div>
+            </section>
+        </div>
+    </div>
+    <!-------------FOOTER------------->
+    <footer>
+        <div class="content">
+            <div class="footer-nav">
+                <ul data-aos="fade-right">
+                    <li><a href="./about.html" title="About">About</a></li>
+                    <li><a href="./what-we-are-doing.html" title="What We’re Doing">What We’re Doing </a></li>
+                    <li><a href="#" title="Contact Us">Contact Us</a></li>
+                    <li><a href="#" title="FAQs">FAQs</a></li>
+                    <li><a href="#" title="Calander">Calander</a></li>
+                </ul>
+                <div class="media" data-aos="fade-left">
+                    <a href="#" class="facebook" title="facebook">
+                        <img src="./public/images/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#" class="twitter" title="twitter">
+                        <img src="./public/images/twitter.svg" alt="twitter">
+                    </a>
+                </div>
             </div>
-        </section>
-
-        <!---------------------Story section------------------>
-        <section class="story-block survival-block">
-            <div class="story-content">
+            <div class="footer-details">
                 <div class="left-block" data-aos="fade-right">
-                    <i><img src="./public/images/give-help-two-col.jpg" alt="give-help"></i>
-                    <span>FPO</span>
+                    <p class="text">
+                        Facing Suicide VT is a statewide prevention initiative supported by the Vermont Department of
+                        Health and Department of Mental Health through funding from the Centers for Disease Control and
+                        Prevention Comprehensive Suicide Prevention Program
+                    </p>
+                    <p class="text-copy">
+                        © FacingSuicide 2022
+                    </p>
                 </div>
                 <div class="right-block" data-aos="fade-left">
-                    <p>FPO Hear Richard share the important role other people played in his survival story.</p>
-                    <a href="#">Lorem ipsum</a>
+                    <em class="footer-logo">
+                        <img src="./public/images/footer-logo.png" alt="footer-logo">
+                    </em>
+                    <a href="#" class="text">
+                        Terms of Service & Privacy Policy
+                    </a>
                 </div>
             </div>
-        </section>
-    </div>
-   <!-------------FOOTER------------->
- <footer>
-    <div class="content">
-        <div class="footer-nav">
-            <ul data-aos="fade-right">
-                <li><a href="./about.html" title="About">About</a></li>
-                <li><a href="./what-we-are-doing.html" title="What We’re Doing">What We’re Doing </a></li>
-                <li><a href="#" title="Contact Us">Contact Us</a></li>
-                <li><a href="#" title="FAQs">FAQs</a></li>
-                <li><a href="#" title="Calander">Calander</a></li>
-            </ul>
-            <div class="media" data-aos="fade-left">
-                <a href="#" class="facebook" title="facebook">
-                    <img src="./public/images/facebook.svg" alt="facebook">
-                </a>
-                <a href="#" class="twitter" title="twitter">
-                    <img src="./public/images/twitter.svg" alt="twitter">
-                </a>
-            </div>
         </div>
-        <div class="footer-details" >
-            <div class="left-block" data-aos="fade-right">
-                <p class="text">
-                    Facing Suicide VT is a statewide prevention initiative supported by the Vermont Department of
-                    Health and Department of Mental Health through funding from the Centers for Disease Control and
-                    Prevention Comprehensive Suicide Prevention Program
-                </p>
-                <p class="text-copy">
-                    © FacingSuicide 2022
-                </p>
-            </div>
-            <div class="right-block" data-aos="fade-left">
-                <em class="footer-logo">
-                    <img src="./public/images/footer-logo.png" alt="footer-logo">
-                </em>
-                <a href="#" class="text">
-                    Terms of Service & Privacy Policy
-                </a>
-            </div>
-        </div>
-    </div>
-  </footer>
+    </footer>
 
 
     <script src="public/js/vendor.js"></script>
