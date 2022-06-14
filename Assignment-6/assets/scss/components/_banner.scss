@@ -1,9 +1,11 @@
 // Home banner 
+.img-wrapper{padding-top: 216px;
+    @include bp(tablet-max){padding-top: 175px;}
+    @include bp(sm-max){min-height: 380px; padding-top: 144px;}
+    @include bp(xxs-max){padding-top: 195px;}
+}
 .banner{
-    background-image: url("../images/home_banner_img.jpg");min-height:570px; background-size: cover;background-repeat: no-repeat;background-position: center;display: flex;align-items: center;margin-top: 212px;
-    @include bp(tablet-max){margin-top: 175px;}
-    @include bp(sm-max){min-height: 380px; margin-top: 144px;}
-    @include bp(xxs-max){margin-top: 195px;}
+    background-image: url("../images/home_banner_img.jpg");min-height:570px; background-size: cover;background-repeat: no-repeat;background-position: center;display: flex;align-items: center;
         .banner-text{ max-width: 400px;
             @include bp(md-max){max-width: 350px;}
             @include bp(sm-max){max-width: 236px;}
@@ -41,10 +43,7 @@
    
 // Get Help banner 
 .help-banner{
-    width: 100%;background-image: url("../images/get-help-banner.jpg");background-size: cover;background-repeat: no-repeat;background-position: center;margin-top:212px;
-    @include bp(tablet-max){margin-top: 175px;}
-    @include bp(sm-max){ margin-top: 144px;}
-    @include bp(xxs-max){margin-top: 195px;}
+    width: 100%;background-image: url("../images/get-help-banner.jpg");background-size: cover;background-repeat: no-repeat;background-position: center;
     .container{
         .content{max-width: 592px;padding:123px 0 83px 0;
             .text-div{
@@ -79,7 +78,7 @@
 
 //Give Help banner
 .givehelp-banner{
-    background-image: url("../images/give-help-banner.jpg");background-size: cover;background-position: center;margin-top:211px;
+    background-image: url("../images/give-help-banner.jpg");background-size: cover;background-position: center;
     .content{
         padding:47px 0 68px 0;
         h2{font-size: 32px;color: $white;text-align: center;line-height: 42px; max-width: 688px; margin: 0 auto;margin-bottom: 58px;}
@@ -105,10 +104,7 @@
 
 // Get Involved Banner 
 .get-involve-banner{
-    background-image: url("../images/get-involved-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;margin-top:212px;
-    @include bp(tablet-max){margin-top: 175px;}
-    @include bp(sm-max){ margin-top: 144px;}
-    @include bp(xxs-max){margin-top: 195px;}
+    background-image: url("../images/get-involved-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;
     .container{
         .content{
             padding: 40px 0 92px;text-align: center;
@@ -120,7 +116,7 @@
 
 //community resource banner
 .resource-banner{
-    background-image: url("../images/community-resource-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;margin-top:212px;min-height:574px;display:flex;align-items:center;
+    background-image: url("../images/community-resource-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:574px;display:flex;align-items:center;
     .banner-text{max-width: 390px;
         h2{color:$white;font-size: 32px;line-height: 42px;padding-bottom: 13px;}
         p{color: $white;font-size: 21px;line-height: 28px;padding-top: 13px;}
@@ -128,7 +124,7 @@
 }
 
 //Resource-1 banner
-.resource-1-banner{background-color: $slate; margin-top:212px;min-height:400px;display:flex;align-items:center;
+.resource-1-banner{background-color: $slate; min-height:400px;display:flex;align-items:center;
     .banner-text{max-width: 660px;margin:0 auto;text-align:center;
        .bold-text{color: $white;font-size: 32px;font-weight: bold;line-height: 42px;padding-bottom: 15px;}
        .small-text{color: $white;font-size: 18px;font-weight: normal;padding-top: 15px;}
@@ -145,7 +141,7 @@
 
 //Resource-2 banner
 .resource-2-banner{
-    background-image: url("../images/resources-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;margin-top:212px;min-height:400px;display:flex;align-items:center;
+    background-image: url("../images/resources-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:400px;display:flex;align-items:center;
 }
 .resource-2-text{
     .banner-text{justify-content: center;padding: 24px 0;}
@@ -158,8 +154,15 @@
 
 //Community headerimages banner
 .header-images-banner{background-image: url("../images/community_img_1.jpg");min-height: 574px;
+    @include bp(tablet-max){min-height: 440px;}
+    @include bp(xxs-max){min-height: 260px;}
        .banner-text{max-width: 264px;
-           h1{font-size: 32px;line-height: 42px;}
-           p{font-size: 21px; line-height: 28px;padding: 0;}
+        @include bp(xxs-max){max-width:188px;background:rgb(255 255 255 / 42%);;text-align: center;}
+           h1{font-size: 32px;line-height: 42px;
+           @include bp(xxs-max){font-size: 24px; line-height: 32px;}
+        }
+           p{font-size: 21px; line-height: 28px;padding: 0;
+            @include bp(xxs-max){font-size:15px; line-height:20px;}
+        }
        }
 }

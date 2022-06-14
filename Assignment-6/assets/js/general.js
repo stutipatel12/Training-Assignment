@@ -168,9 +168,11 @@ $(document).ready(function() {
  }
 });
 
+//Animations
 
 AOS.init({
-  duration: 800,
+  once:true,
+  duration: 1000,
   easing: 'ease', 
 }
 );

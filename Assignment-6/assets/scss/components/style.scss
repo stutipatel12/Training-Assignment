@@ -119,24 +119,25 @@ footer div{overflow: hidden;}
 
 /*-------------------Facing suicide section---------------------*/
 .facing-suicide-block{background-color: $off-white2;padding-top: 212px;
-    @include bp(tablet-max){margin-top: 175px;}
-    @include bp(sm-max){ margin-top: 144px;}
-    @include bp(xxs-max){margin-top: 195px;}
-    .content-block{display: flex;align-items:center;padding:27px; margin: 0 -27px;
+    @include bp(tablet-max){padding-top: 175px;}
+    @include bp(sm-max){ padding-top: 144px;}
+    @include bp(xxs-max){padding-top: 195px;}
+    .content-block{display: flex;align-items:center;padding:27px 0;
         @include bp(tablet-max){padding: 27px 0;}
         @include bp(md-max){flex-direction: column;}
        .left-block{flex: 0 0 60%; max-width: 60%;padding-right:80px;
         @include bp(md-max){flex: 0 0 100%; max-width: 100%; padding-right: 0;text-align: center;margin-bottom: 20px;}
             h2{color: $black1;font-size: 48px;line-height: 53px;padding-right: 124px;padding-bottom:20px;
+                span{display: inline-block;}
             @include bp(md-max){font-size: 40px;padding: 0 0 10px 0;}
             @include bp(xs-max){font-size:30px;}
             @include bp(xxs-max){font-size: 26px;}
             }
             p{font-size:18px;line-height: 28px;padding-top: 20px;
                 @include bp(md-max){font-size: 16px;}
-                @include bp(xs-max){font-size: 13.5px;padding-top: 0;}
+                @include bp(xs-max){font-size: 15px;padding-top: 0;}
             }
-            span{color: $brown;text-decoration: underline;cursor: pointer;
+            .brown-text{color: $brown;text-decoration: underline;cursor: pointer;
               &:hover{color: $black1;}
             }
     }
@@ -158,11 +159,14 @@ footer div{overflow: hidden;}
                 @include bp(md-max){font-size: 30px;}
                 @include bp(xs-max){font-size: 28px;}
             }
-            .text{
-                font-size: 18px;color: $black1;line-height: 28px;
-                @include bp(md-max){font-size: 16px;}
-                &.main-text{margin-bottom: 33px;}
-                span{color: $brown;font-weight: bold;}
+            .main-text{margin-bottom: 33px;font-size: 18px;color: $black1;line-height: 28px;
+                @include bp(md-max){font-size: 15px;}
+            }
+            ol{list-style-type: style; padding-left:22px;
+                li{font-size: 18px;color: $black1;line-height: 28px;
+                    @include bp(md-max){font-size: 15px;}
+                &::marker{color: $brown;font-weight: bold;}
+                }
             }
         }        
     }
@@ -563,7 +567,8 @@ footer div{overflow: hidden;}
 .resource-block{padding: 34px 0 43px 0;
     .resource-container{max-width: 1512px;margin:0 auto;padding:0 20px;
         .content-block{display: flex;flex-wrap:wrap;
-            .card{max-width: 338px;background-color: #effbfc;margin:15px;padding:28px 30px 25px 30px;border-radius:6px;
+            .card{max-width:338px;background-color: #effbfc;margin:15px;padding:28px 28px 25px 28px;border-radius:6px;
+                
               h3{font-size: 14px;color: $off-white4;padding-bottom: 33px;}
               h4{font-size: 24px;color: $black1;line-height: 32px;text-decoration: underline;padding-top: 33px;padding-bottom: 21px;}
               p{font-size: 16px;color: $black1;line-height: 24px;font-weight: 600;}
@@ -732,7 +737,16 @@ footer div{overflow: hidden;}
 }
 
 /*=====================Community headerimages==============*/
-.images-section{
+.images-section{padding-top: 87px;
+    @include bp(tablet-max){padding-top: 40px;}
+    @include bp(xxs-max){padding-top: 25px;}
+    .img-wrap{padding: 87px 0;
+        @include bp(tablet-max){padding: 40px 0;}
+        @include bp(xxs-max){padding: 25px 0;}
+        &:last-child{padding-bottom: 120px;
+        @include bp(tablet-max){padding-bottom: 80px;}
+        @include bp(xxs-max){padding-bottom: 50px;}
+        }
     .header-img-1{background-image: url("../images/community_img_2.jpg");}
     .header-img-2{background-image: url("../images/community_img_3.jpg");}
     .header-img-3{background-image: url("../images/community_img_4.jpg");}
@@ -740,12 +754,22 @@ footer div{overflow: hidden;}
         
         
     }
-    .header-img-5{background-image: url("../images/community_img_6.jpg");margin-bottom: 168px;
-        .banner-text{max-width:273px;}
+    .header-img-5{background-image: url("../images/community_img_6.jpg");
+        .banner-text{max-width:273px;
+            @include bp(xxs-max){max-width:188px;}
+        }
     }
     .banner-text{max-width: 345px;
-        h1{color: $white;font-size: 32px;line-height: 42px;padding-bottom: 24px;}
-        p{color: $white;font-size: 21px; line-height: 28px;padding: 0;}
+        @include bp(xxs-max){max-width:188px;background: #6361616b;text-align: center;}
+        h1{color: $white;font-size: 32px;line-height: 42px;padding-bottom: 24px;
+            @include bp(xxs-max){font-size: 24px; line-height: 32px;}
+        }
+        p{color: $white;font-size: 21px; line-height: 28px;padding: 0;
+            @include bp(xxs-max){font-size:15px; line-height:20px;}
+        }
     }
-    .banner{margin-top: 168px;}
+    .banner{ @include bp(tablet-max){min-height: 440px;}
+       @include bp(xxs-max){min-height:320px;}
+}
+}
 }
