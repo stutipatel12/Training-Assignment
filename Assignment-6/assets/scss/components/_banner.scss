@@ -117,9 +117,14 @@
 //community resource banner
 .resource-banner{
     background-image: url("../images/community-resource-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:574px;display:flex;align-items:center;
+    @include bp(tablet-max){min-height: 380px;}
     .banner-text{max-width: 390px;
-        h2{color:$white;font-size: 32px;line-height: 42px;padding-bottom: 13px;}
-        p{color: $white;font-size: 21px;line-height: 28px;padding-top: 13px;}
+        h2{color:$white;font-size: 32px;line-height: 42px;padding-bottom: 13px;
+        @include bp(xs-max){font-size: 28px; line-height: 34px;}
+        }
+        p{color: $white;font-size: 21px;line-height: 28px;padding-top: 13px;
+            @include bp(xs-max){font-size:16px; line-height:24px;}
+        }
     }
 }
 

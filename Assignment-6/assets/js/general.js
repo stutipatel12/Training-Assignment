@@ -153,7 +153,7 @@ function onClickMenu(){
 }
 
 // --------------story block---------
-$(document).ready(function() {
+function left_image(){
  if ($(".story-block").length > 0){
    if ($(window).width()> 766){
      var img_right = $('.story-block .right-block').offset().left;
@@ -166,7 +166,20 @@ $(document).ready(function() {
      });
    }
  }
+}
+$(document).ready(function(){
+  setTimeout(function(){
+    left_image();
+  },1000);
 });
+$(window).on("load", function(){
+  setTimeout(function(){
+    left_image();
+  },1000);
+});
+$(window).on("resize", function(){
+  left_image();
+})
 
 //Animations
 
