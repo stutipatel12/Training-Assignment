@@ -129,7 +129,7 @@ $(window).scroll(function() {
   if (windscroll >= 100) {
       $('section').each(function(i) {
       // The number at the end of the next line is how pany pixels you from the top you want it to activate.
-          if ($(this).position().top  <= windscroll + 100) {
+          if ($(this).position().top  <= windscroll) {
               $('nav li.active').removeClass('active');
               $('nav li').eq(i).addClass('active');
           }
@@ -143,11 +143,13 @@ $(document).on('click', '.sub-nav ul li a', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top - 280
+      scrollTop: $($.attr(this, 'href')).offset().top - 260
   }, 500);
 });
 
-/*----------hameburger menu-------------*/
+
+
+/*----------hamburger menu-------------*/
 function onClickMenu(){
   document.getElementById("body").classList.toggle("open-menu");
 }

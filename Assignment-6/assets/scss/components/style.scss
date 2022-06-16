@@ -6,7 +6,7 @@
 section{overflow: hidden;}
 footer div{overflow: hidden;}
 .banner-below-text{overflow: hidden;}
-
+.resource-1-block{overflow: unset;}
 
 /*=====================================HOME PAGE==============================================*/
 
@@ -689,29 +689,39 @@ footer div{overflow: hidden;}
         .active-nav{
             .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;
                 @include bp(sm-max){top: 140px;}
+                @include bp(xxs-max){top: 194px; padding: 20px 0;}
                 ul{display: flex;justify-content: space-between;max-width: 1100px;margin:0 auto;
-                    @include bp(md-max){max-width: 780px;}
+                    @include bp(sm-max){white-space: nowrap; overflow: auto;padding-bottom: 15px;}
                   .link{padding-bottom: 5px;
-                    &:hover{border-bottom: 3px solid $brown;}
+                    @include bp(sm-max){padding:0 15px 5px 15px;}
+                   
                       a{color: $black1;font-size: 18px;font-weight: bold;
-                       @include bp(md-max){font-size: 14px;}
-                       @include bp(sm-max){font-size: 13px; letter-spacing: -0.2px;}
+                       @include bp(md-max){font-size: 15px; font-weight: 500;}
+                       &:hover{border-bottom: 3px solid $brown;
+                    @include bp(md-max){border-bottom: 2px solid $brown;}
+                    }
                     }
                     }
                    .active a{color: $brown;}
                 }
             }
             .crisis-block{padding: 50px 0; margin: 0 -20px;
+                @include bp(xs-max){padding: 15px 0;}
                 h2{font-size: 36px;color: $black1;text-align: center;
                 @include bp(md-max){font-size: 28px;}
+                @include bp(xs-max){font-size: 22px;}
                 }
                 .card-block{padding: 52px 0 0 0;display:flex;flex-wrap:wrap;
                     @include bp(llg-max){justify-content: center;}
+                    @include bp(xs-max){padding: 30px 0;}
                     .card{flex: 0 0 30.06%; max-width: 30.06%; margin: 0 20px;
                         @include bp(llg-max){flex: 0 0 28%; max-width: 28%;}
-                        @include bp(sm-max){flex: 0 0 44%; max-width: 44%; margin-bottom: 30px;}
+                        @include bp(sm-max){flex: 0 0 36%; max-width: 36%; margin-bottom: 30px;}
+                        @include bp(xs-max){flex: 0 0 87%; max-width: 87%;}
                         .img-block{background-color: $off-white2;height:327px;display:flex;align-items:center; justify-content: center;margin-bottom:20px;border-radius:6px;
-                          .resource-1{width: 285px;height: 90px;
+                          @include bp(sm-max){height: 270px;}
+                          @include bp(xs-max){height: 216px;}
+                            .resource-1{width: 285px;height: 90px;
                             @include bp(lg-max){width: 250px; height: 86px;}
                             @include bp(md-max){width: 180px; height: 74px;}
                         }
@@ -745,9 +755,11 @@ footer div{overflow: hidden;}
                         .content-block{max-width: 320px;
                             h4{color: $off-white4;font-size: 14px;margin-bottom:10px;
                                 @include bp(md-max){font-size: 12.5px;}
+                                @include bp(xs-max){font-size: 11px;}
                             }
                             h3{font-size: 24px;color: $black1;text-decoration: underline;margin: 14px 0;line-height: 36px;
-                                @include bp(md-max){font-size: 20px;}
+                                @include bp(md-max){font-size: 20px; line-height: 28px;}
+                                @include bp(xs-max){font-size: 18px;}
                             }
                             p{font-size: 16px;line-height: 24px;color: $black1;font-weight: 600;
                                 @include bp(md-max){font-size: 13.5px; line-height: 20px;}
@@ -759,7 +771,7 @@ footer div{overflow: hidden;}
                     }
                 }
             }
-            .prevention-block{
+            .prevention-block-1{
                 .card-block{
                     .card{
                         .img-block{background-color: $light-blue;

@@ -10,12 +10,17 @@
   $tablet-max: "(max-width: 1024px)";  
   $lg-min: "(min-width: 1200px)";
   $lg-max: "(max-width: 1199px)";
+  $llg-max:"(max-width: 1210px)";
   $xlg-max: "(max-width: 1439px)";
   $xxlg-max: "(max-width: 1440px)";
   $xxx-h-min: "(max-height: 480px)";
   $xlarge-max: "(max-width: 1700px)";
 
-
+  @if $point==llg-max {
+    @media #{$llg-max} {
+      @content;
+    }
+  }
 
   @if $point==md-max {
     @media #{$md-max} {

@@ -106,10 +106,14 @@
 .get-involve-banner{
     background-image: url("../images/get-involved-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;
     .container{
-        .content{
+        .content{max-width: 495px; margin: 0 auto;
             padding: 40px 0 92px;text-align: center;
-            h2{font-size: 32px;font-weight: bold;line-height: 42px;margin-bottom: 30px;color: $black1;}
-            .text{font-size: 18px;line-height: 28px;color: $black1;}
+            h2{font-size: 32px;font-weight: bold;line-height: 42px;margin-bottom: 30px;color: $black1;
+            @include bp(xs-max){font-size: 28px; line-height: 34px;}
+            }
+            .text{font-size: 18px;line-height: 28px;color: $black1;
+            @include bp(xs-max){font-size: 15px; line-height: 24px;}
+            }
         }
     }
 }
