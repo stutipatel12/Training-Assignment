@@ -2,6 +2,7 @@
 @mixin bp($point) {
   $xxxs-max: "(max-width: 374px)";
   $xxs-max: "(max-width: 479px)";
+  $s-max: "(max-width: 500px)";
   $xs-max: "(max-width: 575px)";
   $sm-max: "(max-width: 767px)";
   $sm-min: "(min-width: 768px)";
@@ -18,6 +19,12 @@
 
   @if $point==llg-max {
     @media #{$llg-max} {
+      @content;
+    }
+  }
+  
+  @if $point==s-max {
+    @media #{$s-max} {
       @content;
     }
   }

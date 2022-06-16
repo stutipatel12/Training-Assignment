@@ -687,7 +687,7 @@ footer div{overflow: hidden;}
 .resource-1-block{padding-top: 12px;
     .content-block{
         .active-nav{
-            .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;
+            .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;margin: 0 -15px;
                 @include bp(sm-max){top: 140px;}
                 @include bp(xxs-max){top: 194px; padding: 20px 0;}
                 ul{display: flex;justify-content: space-between;max-width: 1100px;margin:0 auto;
@@ -787,22 +787,49 @@ footer div{overflow: hidden;}
 
 /*=======================RESOURCES-2==================================*/
 .resource-2-block{
+    .resource-2-container{max-width: 1500px; padding: 0 20px; margin: 0 auto;
+        @include bp(xxlg-max){max-width: 1200px;}
+        @include bp(md-max){padding: 0 15px;}
     .content-block{
         .active-nav{
-            .crisis-block{
-               .card-block{padding:52px 25px 0 25px;
-                   .card{max-width: 327px;
-                       .content-block{background-color: $off-white2;height:330px;padding: 25px 30px 27px 26px;border-radius:6px;
-                          h4{padding-bottom:24px;}
-                          h3{padding: 28px 0 16px 0;}
-                     }
+            .crisis-block{margin: 0 -15px;
+               .card-block{
+                @include bp(s-max){flex-direction: column;}
+                   .card{ flex: 0 0 22.98%; max-width: 22.98%; margin: 0 15px 30px 15px;
+                    @include bp(xxlg-max){flex: 0 0 22.47%; max-width: 22.47%;}
+                    @include bp(lg-max){flex: 0 0 28%; max-width: 28%;}
+                    @include bp(md-max){margin: 0 10px 30px 10px ;}
+                    @include bp(sm-max){flex: 0 0 46%; max-width: 46%;}
+                    @include bp(s-max){flex: 100%; max-width: 100%;}
+                    
+                     .content-block-2{background-color: $off-white2;height:330px;padding: 25px 30px 27px 26px;border-radius:6px;
+                        @include bp(xxlg-max){height:360px;}
+                        @include bp(lg-max){height: 300px;}
+                        @include bp(md-max){height: 330px;padding: 25px 16px 27px 16px;}
+                        @include bp(sm-max){height: 270px;}
+                        @include bp(s-max){height: 240px;}
+                        h4{color: $off-white4;font-size: 14px;margin-bottom:24px;
+                            @include bp(md-max){font-size: 11px;margin-bottom: 10px;}
+                            @include bp(xs-max){font-size: 10px;}
+                        }
+                        h3{font-size: 24px;color: $black1;text-decoration: underline;margin: 28px 0 16px 0;;line-height: 36px;
+                            @include bp(xxlg-max){font-size: 20px; line-height: 28px;}
+                            @include bp(md-max){font-size: 18px; margin:14px 0;}
+                        }
+                        p{font-size: 16px;line-height: 24px;color: $black1;font-weight: 600;
+                            @include bp(md-max){font-size: 13.5px; line-height: 20px;}
+                            @include bp(xxlg-max){line-height: 21px;}
+                        }
                     }
+                    }
+                    .below-card{padding-top: 0;
+                        }
                   }
                 }
-            .prevention-block{
+            .prevention-block-1{
                 .card-block{
                     .card{
-                        .content-block{background-color: $light-blue;
+                        .content-block-2{background-color: $light-blue;
 
                         }
                     }
@@ -811,6 +838,7 @@ footer div{overflow: hidden;}
             }
         }
     }
+}
 
 /*=========================REAL STORIES==============================*/
 .real-stories-block{padding-bottom:56px;
