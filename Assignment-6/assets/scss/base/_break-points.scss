@@ -12,6 +12,7 @@
   $lg-min: "(min-width: 1200px)";
   $lg-max: "(max-width: 1199px)";
   $llg-max:"(max-width: 1210px)";
+  $large-max:"(max-width: 1250px)";
   $xlg-max: "(max-width: 1439px)";
   $xxlg-max: "(max-width: 1440px)";
   $xxx-h-min: "(max-height: 480px)";
@@ -19,6 +20,12 @@
 
   @if $point==llg-max {
     @media #{$llg-max} {
+      @content;
+    }
+  }
+
+  @if $point==large-max {
+    @media #{$large-max} {
       @content;
     }
   }

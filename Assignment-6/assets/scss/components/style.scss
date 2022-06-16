@@ -337,17 +337,28 @@ footer div{overflow: hidden;}
 /*----------------community section--------------*/
 .community-section{
     background-color: $black1;
-    .inner-conteiner{
+    .inner-container{
         max-width: 913px;margin:0 auto;padding: 0 15px;
         .content{padding:56px 0 68px 0;
-            h3{font-size: 21px;font-weight: bold;text-align: center;color: $white;margin-bottom: 48px;}
+            @include bp(xs-max){padding: 30px 0;}
+            h3{font-size: 21px;font-weight: bold;text-align: center;color: $white;margin-bottom: 48px;
+            @include bp(sm-max){font-size: 18px; line-height: 26px;}
+            }
             .row{
-                display: flex;flex-wrap: wrap;margin:0 -15px;
+                display: flex;flex-wrap: wrap;margin:0 -15px;text-align:center;
+                @include bp(md-max){justify-content: center;}
                 .col-4{
                     flex:0 0 39%;max-width: 39%;padding:0 15px;
-                    &.col3{flex:0 0 22%;max-width: 22%;}
+                    @include bp(md-max){flex: 34%; max-width: 34%;}
+                    @include bp(xxs-max){flex: 0 0 100%; max-width: 100%; margin-bottom: 15px;}
+                    &.col3{flex:0 0 22%;max-width: 22%;
+                        @include bp(md-max){flex: 32%; max-width: 32%;}
+                        @include bp(xxs-max){flex: 0 0 100%; max-width: 100%;}
+                    }
                     .link-text{
                         .link{color: $white;border-bottom: 1px solid $white;font-size: 18px;margin-bottom: 22px;display: inline-block;
+                            @include bp(sm-max){font-size: 15px;}
+                            @include bp(xs-max){font-size: 12.5px;margin-bottom: 15px;}
                             &:hover{color: $black3;border-bottom: 1px solid $black3;}
                             &:last-child{margin:0}
                         } 
@@ -364,17 +375,27 @@ footer div{overflow: hidden;}
     .container{
         .content{
             display: flex;flex-wrap: wrap;margin:0 -15px;padding:93px 0 103px;
+            @include bp(sm-max){padding: 50px 0;}
+            @include bp(xxs-max){padding: 20px 0;}
             .block{                
                 &.left-block{
                     flex:0 0 48%;max-width: 48%;padding:0 15px;
-                    h2{font-size: 36px;color: $black1;font-weight: bold;line-height: 42px;max-width: 434px;}
+                    @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
+                    h2{font-size: 36px;color: $black1;font-weight: bold;line-height: 42px;max-width: 434px;
+                    @include bp(md-max){font-size: 30px;line-height: 38px;}
+                    @include bp(sm-max){max-width: 100%; font-size: 28px;margin-bottom: 30px;}
+                    @include bp(xxs-max){font-size: 25px; line-height: 30px;}
+                    }
                 }
                 &.right-block{
                     flex:0 0 52%;max-width: 52%;padding:0 15px;
+                    @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
                     .tabs {
                         border-radius: 5px 5px 5px 5px;
                     }
                     ul {
+                        @include bp(large-max){display: flex; overflow: auto; white-space: nowrap;padding-bottom: 16px;}
+                        @include bp(sm-max){justify-content: space-between;}
                         &#tabs-nav{
                             list-style: none;
                             margin: 0 0 43px 0;
@@ -384,6 +405,7 @@ footer div{overflow: hidden;}
                                 &:last-child{padding-right: 0;}                              
                                 a{
                                     color: $black1;font-size: 18px;font-weight: bold;
+                                    @include bp(sm-max){font-size: 16px;}
                                 }
                                 &:hover{
                                     a{color: $black3;}
@@ -399,7 +421,10 @@ footer div{overflow: hidden;}
                             .text-content{
                                 .text{
                                     font-size: 16px;line-height: 24px;color: $black1;
-                                    a{border-bottom: 1px solid $black1;color: $black1;font-weight: bold;}
+                                    @include bp(xs-max){font-size: 14.5px;}
+                                    a{border-bottom: 1px solid $black1;color: $black1;font-weight: bold;
+                                       
+                                    }
                                 }
                             }
                         }
@@ -463,8 +488,11 @@ footer div{overflow: hidden;}
 /*----------------Save Lives section-----------------------*/
 .save-lives-block{
     .content{
-        .left-block{padding-right: 59px;}
+        .left-block{padding-right: 59px;
+        @include bp(sm-max){padding-right: 0;}
+        }
         .right-block{padding: 30px 45px;
+            @include bp(sm-max){padding-left: 0;}
             .link{font-weight: normal;}
         }
     }
@@ -637,33 +665,51 @@ footer div{overflow: hidden;}
 /*==========================COMMUNITY RESOURCE=========================*/
 /*----------------------resource cards------------------*/
 .resource-block{padding: 34px 0 43px 0;
-    .resource-container{max-width: 1512px;margin:0 auto;padding:0 15px;
-        .content-block{display: flex;flex-wrap:wrap;margin:0 -15px;
+    @include bp(sm-max){padding-bottom: 20px;}
+    .resource-container{max-width: 1512px; padding: 0 20px; margin: 0 auto;
+        
+        @include bp(md-max){padding: 0 15px;}
+        
+        .content-block{display: flex;flex-wrap:wrap;margin: 0 -15px;
             @include bp(xs-max){margin: 0;}
-            .card{margin: 0 15px 30px 15px;background-color: #effbfc;flex: 0 0 22.85%;max-width:22.85%;
-                @include bp(xlg-max){flex: 0 0 31%; max-width: 31%;}
-                @include bp(lg-max){flex: 0 0 40%; max-width: 40%;}
-                @include bp(xs-max){flex: 0 0 100%; max-width: 100%;margin: 0 0 30px 0;}
+            @include bp(xlg-max){justify-content: center;}
+            .card{margin: 0 15px 30px 15px;background-color: #effbfc;flex: 0 0 22.9%;max-width:22.9%;
+                @include bp(xlg-max){flex: 0 0 22.3%; max-width: 22.3%;}
+                @include bp(lg-max){flex: 0 0 46%; max-width: 46%;}
+                @include bp(sm-max){margin: 0 10px 20px 10px;}
+                @include bp(xs-max){flex: 0 0 100%; max-width: 100%;}
                 .content{padding:28px 28px 25px 28px;border-radius:6px;
-                 h3{font-size: 14px;color: $off-white4;padding-bottom: 33px;}
-              h4{font-size: 24px;color: $black1;line-height: 32px;text-decoration: underline;padding-top: 33px;padding-bottom: 21px;}
-              p{font-size: 16px;color: $black1;line-height: 24px;font-weight: 600;}
+                 h3{font-size: 14px;color: $off-white4;margin-bottom: 33px;
+                    @include bp(md-max){font-size: 11px;margin-bottom:20px;}
+                    @include bp(xs-max){font-size: 10px;}
+                }
+              h4{font-size: 24px;color: $black1;line-height: 32px;text-decoration: underline;margin-top: 33px;margin-bottom: 21px;
+                @include bp(xxlg-max){font-size: 20px; line-height: 28px;}
+                @include bp(md-max){font-size: 18px; margin:16px 0;}
+            }
+              p{font-size: 16px;color: $black1;line-height: 24px;font-weight: 600;
+                @include bp(md-max){font-size: 13.5px; line-height: 20px;}
+                @include bp(xxlg-max){line-height: 21px;}
+            }
             }
         }
         }
     }
 }
-.lifeline-block2{padding:43px 0 50px 0;}
+.lifeline-block2{padding:43px 0 50px 0;
+@include bp(sm-max){padding: 20px 0;}
+}
 
 /*-----------------improving wellness block-----------*/
 .wellness-block{padding: 50px 0;
+    @include bp(sm-max){padding: 20px 0;}
     .content{display: flex; margin: 0 -15px;
         @include bp(sm-max){flex-direction: column;}
         .left-block{flex: 0 0 50%;max-width:50%;padding: 0 15px;
             @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
         p{font-size: 43px;font-weight: 700;line-height: 53px;color: $black1; max-width: 360px;
-        @include bp(sm-max){max-width: 100%;font-size: 34px; line-height: 40px;}
-        @include bp(xs-max){font-size: 28px;}
+        @include bp(sm-max){max-width: 100%;font-size: 28px; line-height: 40px; margin-bottom: 20px;}
+        @include bp(xs-max){font-size: 23px;}
         }
         }
         .right-block{margin: -20px 0;flex:0 0 50%; max-width: 50%;display:flex;justify-content:flex-end;padding: 0 15px;
@@ -671,7 +717,7 @@ footer div{overflow: hidden;}
           .text{max-width: 532px;
             @include bp(sm-max){max-width: 100%;}
             p,a{font-size: 18px;line-height: 28px;font-weight: normal;margin:30px 0;
-            @include bp(sm-max){font-size: 15px; line-height: 24px;}
+            @include bp(sm-max){font-size: 15px; line-height: 21px; margin: 15px 0;}
             @include bp(xs-max){font-size:13.5px;}
                     }
             p{color: $black1;}
