@@ -12,6 +12,7 @@ footer div{overflow: hidden;}
 
 /*------------------------------SLIDER-SECTION-----------------------------*/
 .slider-block{padding:100px 0 50px 0;
+    @include bp(sm-max){padding: 50px 0 30px 0;}
     .main-slide{@include bp(xxlg-max){padding: 0 30px;}
                @include bp(xxxs-max){padding: 0 15px;}
     .slider{margin: 0 -10px;
@@ -48,19 +49,21 @@ footer div{overflow: hidden;}
 
 
 /*---------------------------ABOUT US----------------------------------*/
-.info-block{padding:50px 0 44px 0;
+.info-block{padding:50px 0;
+    @include bp(sm-max){padding: 30px 0;}
     .content{background-color: $brown;display: flex;padding:50px;border-radius:10px;box-shadow: 0px 12px 0px 0px $off-white;margin: 0 -11px;
-        @include bp(md-max){padding: 20px;}
-        @include bp(sm-max){flex-direction: column;}
+        @include bp(md-max){padding:36px;}
+        @include bp(sm-max){flex-direction: column; padding:20px;}
       .left-block{padding:0 11px;flex:0 0 50%; max-width: 50%;
         @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding:15px 0;}
-        h3{color:$white;font-size: 16px;padding-bottom: 40px;
-        @include bp(sm-max){font-size: 14px;padding-bottom: 0;}
+        h3{color:$white;font-size: 16px;margin-bottom: 80px;
+        @include bp(sm-max){font-size: 14px;margin-bottom: 40px;}
         }
-        p{color:$white;font-size: 48px;font-weight: 700;padding-top: 40px;
-            span{display: block;
-            @include bp(sm-max){display: inline-block;}
+        p{color:$white;font-size: 48px;font-weight: 700;
+            span{display:block;
+            @include bp(sm-max){display: contents;}
             }
+            @include bp(tablet-max){font-size: 40px;}
         @include bp(md-max){font-size: 34px;}
         @include bp(sm-max){font-size: 28px;}
         }
@@ -75,7 +78,9 @@ footer div{overflow: hidden;}
     }
 }
 
-.number-section{
+.number-section{padding: 50px 0 0 0;
+    @include bp(sm-max){padding: 30px 0 0 0;}
+    .number-content{
     background-color: $off-white2;
     .container{
         h4{color: $black3;font-weight: bold;text-align: center;padding:45px 0 42px 0;}
@@ -112,6 +117,7 @@ footer div{overflow: hidden;}
         }
     }
 }
+}
 
 
 
@@ -124,9 +130,9 @@ footer div{overflow: hidden;}
     @include bp(xxs-max){padding-top: 195px;}
     .content-block{display: flex;align-items:center;padding:27px 0;
         @include bp(tablet-max){padding: 27px 0;}
-        @include bp(md-max){flex-direction: column;}
-       .left-block{flex: 0 0 60%; max-width: 60%;padding-right:80px;
-        @include bp(md-max){flex: 0 0 100%; max-width: 100%; padding-right: 0;text-align: center;margin-bottom: 20px;}
+        @include bp(sm-max){flex-direction: column;}
+       .left-block{flex: 0 0 50%; max-width: 50%;padding:0 10px;
+        @include bp(sm-max){flex: 0 0 100%; max-width: 100%; padding-right: 0;text-align: center;margin-bottom: 20px;}
             h2{color: $black1;font-size: 48px;line-height: 53px;padding-right: 124px;padding-bottom:20px;
                 span{display: inline-block;}
             @include bp(md-max){font-size: 40px;padding: 0 0 10px 0;}
@@ -141,8 +147,8 @@ footer div{overflow: hidden;}
               &:hover{color: $black1;}
             }
     }
-       .right-block{flex: 0 0 40%; max-width: 40%;display:flex;justify-content:flex-end;
-        @include bp(md-max){flex: 0 0 100%; max-width: 100%; justify-content: center;margin-top: 20px;}
+       .right-block{flex: 0 0 50%; max-width: 50%;display:flex;justify-content:flex-end;padding: 0 10px;
+        @include bp(sm-max){flex: 0 0 100%; max-width: 100%; justify-content: center;margin-top: 20px;}
            img{width: 367px;height: 402px;
            @include bp(xxxs-max){height: 340px;}
         }
@@ -153,6 +159,7 @@ footer div{overflow: hidden;}
 /*-------------------Goal section---------------------*/
 .goal-section{
     padding:43px 0 119px 0;
+    @include bp(xs-max){padding: 40px 0;}
     .container{
         .content{max-width: 666px;
             h3{color: $black1;margin-bottom: 35px;
@@ -176,32 +183,32 @@ footer div{overflow: hidden;}
 /*=====================================GET HELP PAGE=================================*/
 
 /*----------------Thought section----------------*/
-.thought-section{
+.thought-section{padding: 85px 0 40px 0;
+    @include bp(sm-max){padding: 40px 0 30px 0;}
     .container{
         .content{
-            padding: 85px 0 40px;
-            @include bp(xxs-max){padding-top: 60px;}
             h2{font-size: 32px;font-weight: bold;line-height: 38px;color: $black1;text-align: center;margin-bottom: 73px;
-            @include bp(sm-max){font-size: 28px;}
+            @include bp(sm-max){font-size: 28px; margin-bottom: 50px;}
             @include bp(xxs-max){font-size: 20px;}
             }
             .row-block{
                 display: flex;flex-wrap: wrap;margin:0 -40px;
                 .col-3{
                     flex:0 0 25%;max-width: 25%;padding:0 40px;margin-bottom: 40px;
-                    @include bp(tablet-max){flex: 0 0 50%; max-width: 50%;}
-                    @include bp(xs-max){flex: 0 0 100%; max-width: 100%;}
+                    @include bp(tablet-max){flex: 0 0 50%; max-width: 50%; margin-bottom: 30px;}
+                    @include bp(xs-max){flex: 0 0 100%; max-width: 100%; margin-bottom: 20px;}
                     .card{
                         .image-wrap{
                             min-height: 112px;display: flex;justify-content: center;align-items: center;margin-bottom: 34px;
-                            @include bp(xxs-max){margin-bottom: 16px;}
+                            @include bp(xs-max){margin-bottom: 16px;}
                         }
                         .card-content{
                             h4{text-align: center;font-size: 21px;margin-bottom: 23px;font-weight: bold;color: $black1;
-                            @include bp(xxs-max){margin-bottom: 0;}
+                                @include bp(xs-max){font-size: 18px; margin-bottom: 0;}
                             }
                             .text{
                                 text-align: center; line-height: 24px;min-height: 95px; display: flex;flex-direction: column;align-items: center; justify-content: center;font-size: 16px;color: $black1;
+                                @include bp(xs-max){min-height: 80px;}
                                 p{
                                     .line{border-bottom: 1px solid $black1;color: $black1;}
                                 }
@@ -214,7 +221,8 @@ footer div{overflow: hidden;}
     }
 }
 /*--------------Lifeline call block---------------*/
-.lifeline-block{
+.lifeline-block{padding: 40px 0;
+    @include bp(sm-max){padding:30px 0 ;}
     .lifeline-container{background-color:$black1;
    .content{max-width: 750px;margin: 0 auto;padding: 56px 0;
     @include bp(xxs-max){padding: 20px;}
@@ -226,29 +234,31 @@ footer div{overflow: hidden;}
 }
 }
 /*---------------------get-help section------------*/
-.get-help-block{padding-top: 98px;
-    @include bp(xxs-max){padding-top: 54px;}
-    .content{padding: 86px;
-        @include bp(xs-max){padding: 30px;}
+.get-help-block{
+    .content{padding:80px;
+        @include bp(md-max){padding: 36px;}
+        @include bp(xs-max){padding: 15px 30px ;}
        .left-block{
-        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
            p{padding-top: 0;line-height: 1.3;
-           @include bp(xxs-max){line-height: 40px;font-size: 26px;}
+           @include bp(xxs-max){line-height: 32px;font-size: 26px;}
         }
         }
        .right-block{
-        @include bp(sm-max){flex: 0 0 100%; max-width: 100%;}
-           p{padding-bottom:42px;}
+           p{margin-bottom:42px;
+        @include bp(sm-max){margin-bottom: 24px}
+        }
            a{color: $white; font-size:18px;text-decoration: underline;font-weight: 700;line-height:1.3;
             &:hover{text-decoration: none;}
+            @include bp(sm-max){font-size: 15px;}
         }
     }
 }
 }
 /*-------------Story block--------------*/
-.story-block{margin-top: 50px;background-color: $off-white2;position: relative;
-    @include bp(sm-max){padding-bottom: 32px;}
-     .story-content{display: flex;align-items:center; 
+.story-block{padding: 40px 0;
+    @include bp(sm-max){padding:30px 0 ;}
+    .story-content{background-color: $off-white2;position: relative;
+     .content{display: flex;align-items:center; 
         @include bp(sm-max){flex-wrap: wrap;}
         .left-block{ flex: 0 0 50%; max-width: 50%;
             @include bp(sm-max){flex: 0 0 100%; max-width: 100%; margin-bottom: 15px;}
@@ -264,7 +274,7 @@ footer div{overflow: hidden;}
         }
         .right-block{flex: 0 0 50%; max-width: 50%;padding-left:60px;
             @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding-left: 0;}
-            .content{max-width: 429px; margin: 0 auto;
+            .right-content{max-width: 429px; margin: 0 auto;
                 @include bp(sm-max){max-width: 700px;}
             p{font-size: 36px;color: $black1;font-weight: 700;line-height: 42px;margin-bottom: 36px;
             @include bp(sm-max){font-size: 28px; margin-bottom: 15px;}
@@ -275,49 +285,50 @@ footer div{overflow: hidden;}
             }
         }
         }
+    }
 
      }
 }
 
 /*--------------Living through loss--------------*/
-.living-block{
-    .content{
-        .left-block{flex: 0 0 40%; max-width: 40%;
-            @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
-        }
-        .right-block{flex: 0 0 60%; max-width: 60%;
-            @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding: 20px;}
-        }
-    }
-}
+
 
 /*----------------support section----------------*/
 
-.support-block{background-color: $off-white2;
-    .support-content{display: flex;align-items:center;padding:48px 0 20px 0;
-        @include bp(md-max){flex-direction: column;}
-        .left-block{flex: 0 0 40%;max-width: 40%;padding-right:103px;
+.support-block{padding-top: 40px;
+    @include bp(sm-max){padding:30px 0 0 0 ;}
+    .support-content{background-color: $off-white2;
+    .content{display: flex;align-items:center;padding:48px 0 20px 0;
+        @include bp(sm-max){flex-direction: column; padding-bottom: 34px;}
+        .left-block{flex: 0 0 40%;max-width: 40%;
             @include bp(tablet-max){flex: 0 0 55%; max-width: 55%;}
-            @include bp(md-max){flex: 0 0 100%; max-width: 100%;padding-right: 0;margin-bottom: 15px;}
-            .point1{font-size: 32px;line-height: 38px;color: $black1;font-weight: 700;padding: 20px 68px 15px 0;
-            @include bp(xs-max){font-size: 24px;padding-right: 0;}
+            @include bp(sm-max){flex: 0 0 100%; max-width: 100%;padding-right: 0;margin-bottom: 15px;}
+            .text-block{ max-width: 330px;
+                @include bp(sm-max){max-width: 100%;}
+            .point1{font-size: 32px;line-height: 38px;color: $black1;font-weight: 700; margin-bottom: 36px;
+            @include bp(sm-max){font-size: 24px; margin-bottom:26px;}
+            span{display:block;
+                @include bp(sm-max){display: contents;}
             }
-            .point2{font-size: 16px;line-height: 21px;color: $black1;padding:15px 44px 22px 0;
-            @include bp(md-max){padding-right: 0;}
             }
-            .links-block{display: flex;justify-content:space-between;padding-top:22px;
+            .point2{font-size: 16px;line-height: 21px;color: $black1; margin-bottom: 50px;
+                @include bp(sm-max){margin-bottom: 30px;}
+            }
+        }
+            .links-block{display: flex;justify-content:space-between; max-width: 380px;
                 @include bp(xxxs-max){flex-direction: column; align-items: center;text-align:center;}
                 .block-1{display: flex;flex-direction: column;}
                 .block-2{display: flex;flex-direction: column;}
                 a{font-size: 16px;color: $brown;text-decoration: underline;font-weight: 700;margin-bottom:18px;
                     &:hover{text-decoration: none;}
                  }
+                }
             }
 
         }
         .right-block{flex: 0 0 60%;max-width: 60%;
             @include bp(tablet-max){flex: 0 0 45%; max-width: 45%;}
-            @include bp(md-max){flex: 0 0 100%; max-width: 100%;margin-top: 15px;}
+            @include bp(sm-max){flex: 0 0 100%; max-width: 100%;margin-top: 15px;}
             .slick-dotted.slick-slider{margin-bottom: 0;}
             .slider-2{
                 .slick-slide{padding: 0 15px;
@@ -345,8 +356,8 @@ footer div{overflow: hidden;}
             @include bp(sm-max){font-size: 18px; line-height: 26px;}
             }
             .row{
-                display: flex;flex-wrap: wrap;margin:0 -15px;text-align:center;
-                @include bp(md-max){justify-content: center;}
+                display: flex;flex-wrap: wrap;margin:0 -15px;
+                @include bp(md-max){justify-content: center;text-align:center;}
                 .col-4{
                     flex:0 0 39%;max-width: 39%;padding:0 15px;
                     @include bp(md-max){flex: 34%; max-width: 34%;}
@@ -370,7 +381,9 @@ footer div{overflow: hidden;}
 }
 
 /*-------------------Help us----------------------*/
-.helpus-section{
+.helpus-section{padding-bottom: 50px;
+    @include bp(sm-max){padding-bottom: 30px;}
+    .help-us-block{
     background-color: $off-white2;
     .container{
         .content{
@@ -434,8 +447,10 @@ footer div{overflow: hidden;}
         }
     }
 }
+}
 /*---------------------Prevention block------------------*/
-.prevention-block{padding-top: 150px;
+.prevention-block{padding:50px 0;
+    @include bp(sm-max){padding:30px 0;}
     .content-block{max-width: 1000px; margin: 0 auto;
         .main-text{font-size: 32px;line-height: 1.19;color: $black1;font-weight: 700;text-align: center;padding-bottom: 64px;
             @include bp(sm-max){font-size: 28px;}
@@ -484,18 +499,25 @@ footer div{overflow: hidden;}
         }    
     }
 
-
-/*----------------Save Lives section-----------------------*/
 .save-lives-block{
     .content{
-        .left-block{padding-right: 59px;
-        @include bp(sm-max){padding-right: 0;}
-        }
-        .right-block{padding: 30px 45px;
-            @include bp(sm-max){padding-left: 0;}
-            .link{font-weight: normal;}
+        @include bp(md-max){padding:30px;}
+        .right-block{
+            p{
+                @include bp(sm-max){margin-bottom: 0;}
+                span{
+                    a{
+                        @include bp(sm-max){font-size: 15px;}
+                    }
+                }
+            }
         }
     }
+}
+.survival-block{padding-bottom: 0;
+.content{
+    padding-bottom: 30px;
+}
 }
 
 /*=======================GET INVOLVED PAGE=========================*/
@@ -601,12 +623,16 @@ footer div{overflow: hidden;}
 }
 
 /*----------------peer support-----------------*/
-.peer-support{background-color: transparent;padding-bottom:120px;
-    .support-content{
-        .left-block{
-        .point1{padding-right: 0;}
-        .point2{padding-bottom: 10px;}
-        .links-block{padding-top: 10px;}
+.peer-support{padding: 50px 0;
+    @include bp(md-max){padding: 20px 0;}
+    .support-content{background-color: transparent;
+        .content{
+            .left-block{
+                .text-block{
+                    max-width: 356px;
+                    @include bp(sm-max){max-width: 100%;}
+                }
+            }
         }
     }
 }
