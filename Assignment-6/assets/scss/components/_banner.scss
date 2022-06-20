@@ -1,9 +1,9 @@
 // Home banner 
-.img-wrapper{padding-top: 216px;
-    @include bp(tablet-max){padding-top: 175px;}
-    @include bp(sm-max){min-height: 380px; padding-top: 144px;}
-    @include bp(xxs-max){padding-top: 195px;}
-}
+// .img-wrapper{padding-top: 216px;
+//     @include bp(tablet-max){padding-top: 175px;}
+//     @include bp(sm-max){min-height: 380px; padding-top: 144px;}
+//     @include bp(xxs-max){padding-top: 195px;}
+// }
 .banner{
     background-image: url("../images/home_banner_img.jpg");min-height:570px; background-size: cover;background-repeat: no-repeat;background-position: center;display: flex;align-items: center;
     @include bp(sm-max){min-height: 460px;}
