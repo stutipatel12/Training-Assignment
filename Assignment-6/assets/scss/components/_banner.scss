@@ -189,10 +189,13 @@
 //Resource-2 banner
 .resource-2-banner{
     background-image: url("../images/resources-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:400px;display:flex;align-items:center;
-   .banner-text{max-width: 475px;}
+    @include bp(xxs-max){min-height: 340px;}
+    .banner-text{max-width: 475px;}
 }
 .resource-2-text{
-    .banner-text{justify-content: center;padding: 24px 0;}
+    .banner-text{justify-content: center;padding: 24px 0;
+    p{margin: 0;}
+    }
 }
 
 //what are we doing banner
