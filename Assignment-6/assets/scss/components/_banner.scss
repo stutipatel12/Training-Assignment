@@ -54,10 +54,10 @@
                 @include bp(sm-max){font-size: 25px; margin-bottom: 28px;}
                 @include bp(xxs-max){font-size: 20px;margin-bottom:20px;}
                 }
-                .text-call{font-size: 52px;font-weight: bold;color: $off-white3;line-height: 64px;margin-bottom: 118px;
-                    @include bp(md-max){font-size: 40px;margin-bottom: 56px; line-height: 50px;}
-                    @include bp(sm-max){margin-bottom: 40px; font-size: 34px;}
-                    @include bp(xxs-max){font-size: 28px;margin-bottom:30px; line-height: 40px;}
+                .text-call{color: $off-white3;margin-bottom: 118px; line-height: 64px;
+                    @include bp(md-max){margin-bottom: 56px;}
+                    @include bp(sm-max){margin-bottom: 40px;line-height: 42px;}
+                    @include bp(xxs-max){margin-bottom:30px;line-height: 38px;}
                 }
             }  
             .two-block{
@@ -85,7 +85,7 @@
     background-image: url("../images/give-help-banner.jpg");background-size: cover;background-position: center;
     .content{
         padding:47px 0 68px 0;
-        h2{font-size: 32px;color: $white;text-align: center;line-height: 42px; max-width: 688px; margin: 0 auto;margin-bottom: 58px;}
+        h3{color: $white;text-align: center;max-width: 688px; margin: 0 auto;margin-bottom: 58px;}
         .row{
             display: flex;flex-wrap: wrap;justify-content:center;
             .col-3{flex:0 0 25%;max-width: 25%;padding:0 23px;position: relative;z-index: 2;margin-bottom: 50px;
@@ -140,12 +140,6 @@
     .container{
         .content{max-width: 495px; margin: 0 auto;
             padding: 40px 0 92px;text-align: center;
-            h2{font-size: 32px;font-weight: bold;line-height: 42px;margin-bottom: 30px;color: $black1;
-            @include bp(xs-max){font-size: 28px; line-height: 34px;}
-            }
-            .text{font-size: 18px;line-height: 28px;color: $black1;
-            @include bp(xs-max){font-size: 15px; line-height: 24px;}
-            }
         }
     }
 }
@@ -154,12 +148,15 @@
 .resource-banner{
     background-image: url("../images/community-resource-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:574px;display:flex;align-items:center;
     @include bp(tablet-max){min-height: 380px;}
+    @include bp(xs-max){min-height: 280px;}
     .banner-text{max-width: 390px;
-        h2{color:$white;font-size: 32px;line-height: 42px;padding-bottom: 13px;
-        @include bp(xs-max){font-size: 28px; line-height: 34px;}
+        @include bp(xs-max){max-width: 280px;}
+        h3{color:$white;margin-bottom: 26px;
+        @include bp(xs-max){margin-bottom: 15px;}
         }
-        p{color: $white;font-size: 21px;line-height: 28px;padding-top: 13px;
-            @include bp(xs-max){font-size:16px; line-height:24px;}
+        p{color: $white;font-size: 21px;line-height: 28px;
+            @include bp(sm-max){font-size: 18px; line-height: 24px;}
+            @include bp(xs-max){font-size: 15px; line-height: 21px;}
         }
     }
 }
@@ -198,12 +195,13 @@
     @include bp(tablet-max){min-height: 440px;}
     @include bp(xxs-max){min-height: 260px;}
        .banner-text{max-width: 264px;
-        @include bp(xxs-max){max-width:188px;background:rgb(255 255 255 / 42%);;text-align: center;}
-           h1{font-size: 32px;line-height: 42px;
-           @include bp(xxs-max){font-size: 24px; line-height: 32px;}
+        @include bp(xxs-max){max-width:188px;background:rgb(255 255 255 / 42%);text-align: center;}
+           h3{margin-bottom: 24px;
+            @include bp(xs-max){margin-bottom:15px;}
         }
-           p{font-size: 21px; line-height: 28px;padding: 0;
-            @include bp(xxs-max){font-size:15px; line-height:20px;}
+           p{padding: 0;font-weight: 600; font-size: 21px;
+            @include bp(sm-max){font-size: 18px; line-height: 24px;}
+            @include bp(xs-max){font-size: 15px; line-height: 21px;}
         }
        }
 }

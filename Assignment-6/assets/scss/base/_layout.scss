@@ -380,11 +380,41 @@ input[type=text] {
 img{width:100%;height: 100%;display: block;}
 a{text-decoration: none;@include transition(all 0.3s linear);}
 a:hover,a:focus{text-decoration: none;}
-h1{font-size:52px;}
-h2{font-size: 40px;}
-h3{font-size: 36px;}
-h4{font-size: 16px;}
+h1{font-size:52px;color: $black1;
+    @include bp(md-max){font-size: 40px;line-height: 50px;}
+    @include bp(sm-max){font-size: 34px;}
+    @include bp(xxs-max){font-size: 28px; line-height: 40px;}
+}
+h2{font-size: 48px;color: $black1;line-height: 53px;
+    @include bp(md-max){font-size: 40px;line-height: 48px;}
+    @include bp(sm-max){font-size: 30px; line-height: 36px;}
+    @include bp(xs-max){font-size:26px; }
+    @include bp(xxs-max){font-size: 22px; line-height:28px;}
+}
+h3{font-size: 32px;color: $black1;line-height: 42px;
+    @include bp(sm-max){font-size: 28px; line-height: 34px;}
+    @include bp(xs-max){font-size: 22px; line-height: 28px;}
+}
+h4{font-size: 24px;line-height: 28px;color: $black1;
+    @include bp(xxlg-max){font-size: 20px; line-height: 28px;}
+    @include bp(md-max){font-size: 18px;}
+}
+h5{font-size: 14px;color: $off-white4; line-height: 20px;
+    @include bp(md-max){font-size: 11px;}
+    @include bp(xs-max){font-size: 10px;}
+}
+p{font-size: 18px;color: $black1; line-height: 28px;font-weight: normal;
+    @include bp(md-max){font-size: 16px; line-height: 21px;}
+    @include bp(xs-max){font-size: 15px;}
+}
+
+.brown-text{ font-size:  18px; color: $brown;text-decoration: underline; font-weight: 500;
+    &:hover{text-decoration: none;}
+    @include bp(md-max){font-size: 16px; line-height: 24px;}
+    @include bp(xs-max){font-size: 15px;}
+}
+
 .btn{@include transition(all 0.3s linear)}
-em{display: block;}
+em, i{display: block;}
 
 .btn{padding:15px 24px;font-size: 18px;font-weight: bold;line-height: 15px;border-radius: 6px;box-shadow: 0 6px 0 0 $off-white;min-height: 48px;}

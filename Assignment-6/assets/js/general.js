@@ -181,7 +181,7 @@ $(window).on("load", function(){
 });
 $(window).on("resize", function(){
   left_image();
-})
+});
 
 //Animations
 

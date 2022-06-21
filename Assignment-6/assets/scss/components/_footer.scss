@@ -1,8 +1,8 @@
 footer{
     .content{
-        padding: 57px 20px 175px 20px;background-color: $black1;
+        padding: 60px 20px;background-color: $black1; min-height: 470px;
         .footer-nav{
-            display: flex;justify-content: space-between;margin: 0 0 100px 0;
+            display: flex;justify-content: space-between;margin: 0 0 98px 0;
             @include bp(sm-max){flex-direction: column;align-items: center;}
             ul{
                 display: flex;align-items: center;
