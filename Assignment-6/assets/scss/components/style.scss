@@ -6,6 +6,7 @@
 
 section, footer div{overflow: hidden;}
 .banner-below-text{overflow: hidden;}
+.resource-1-block{overflow:visible;}
 
 
 /*=====================================HOME PAGE==============================================*/
@@ -715,7 +716,7 @@ section, footer div{overflow: hidden;}
 .resource-1-block{padding-top: 12px;
     .content-block{
         .active-nav{
-            .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;
+            .sub-nav{padding:50px 10px; background-color: $white; z-index:80;position:sticky; top: 160px;
                 @include bp(sm-max){top: 140px;}
                 @include bp(xxs-max){top: 194px; padding: 20px 0;}
                 ul{display: flex;justify-content: space-between;max-width: 1100px;margin:0 auto;
@@ -740,12 +741,10 @@ section, footer div{overflow: hidden;}
                 @include bp(xs-max){font-size: 22px;}
                 }
                 .card-block{padding: 52px 0 0 0;display:flex;flex-wrap:wrap;
-                    @include bp(llg-max){justify-content: center;}
+                   
                     @include bp(xs-max){padding: 30px 0;}
-                    .card{flex: 0 0 30.06%; max-width: 30.06%; margin: 0 20px;
-                        @include bp(llg-max){flex: 0 0 28%; max-width: 28%;}
-                        @include bp(sm-max){flex: 0 0 36%; max-width: 36%; margin-bottom: 30px;}
-                        @include bp(xs-max){flex: 0 0 87%; max-width: 87%;}
+                    .card{ padding: 0 20px; flex: 0 0 33.33%; max-width: 33.33%;
+                    
                         .img-block{background-color: $off-white2;height:327px;display:flex;align-items:center; justify-content: center;margin-bottom:20px;border-radius:6px;
                           @include bp(sm-max){height: 270px;}
                           @include bp(xs-max){height: 216px;}
@@ -794,9 +793,9 @@ section, footer div{overflow: hidden;}
                             }
                         }
                     }
-                    .below-card{padding-top: 70px;
-                    @include bp(sm-max){padding-top: 0;}
-                    }
+                    // .below-card{padding-top: 70px;
+                    // @include bp(sm-max){padding-top: 0;}
+                    // }
                 }
             }
             .prevention-block-1{
@@ -813,22 +812,24 @@ section, footer div{overflow: hidden;}
     }
     }
 
+
+
 /*=======================RESOURCES-2==================================*/
 .resource-2-block{
-    .resource-2-container{max-width: 1500px; padding: 0 20px; margin: 0 auto;
-        @include bp(xxlg-max){max-width: 1200px;}
-        @include bp(md-max){padding: 0 15px;}
+    // .resource-2-container{max-width: 1500px; padding: 0 20px; margin: 0 auto;
+    //     @include bp(xxlg-max){max-width: 1200px;}
+    //     @include bp(md-max){padding: 0 15px;}
     .content-block{
         .active-nav{
             .crisis-block{margin: 0 -15px;
                .card-block{
                 @include bp(s-max){flex-direction: column;}
-                   .card{ flex: 0 0 22.98%; max-width: 22.98%; margin: 0 15px 30px 15px;
-                    @include bp(xxlg-max){flex: 0 0 22.47%; max-width: 22.47%;}
-                    @include bp(lg-max){flex: 0 0 28%; max-width: 28%;}
-                    @include bp(md-max){margin: 0 10px 30px 10px ;}
-                    @include bp(sm-max){flex: 0 0 46%; max-width: 46%;}
-                    @include bp(s-max){flex: 100%; max-width: 100%;}
+                   .card{ flex: 0 0 25%; max-width: 25%; padding: 0 15px 30px 15px;
+                    // @include bp(xxlg-max){flex: 0 0 22.47%; max-width: 22.47%;}
+                    // @include bp(lg-max){flex: 0 0 28%; max-width: 28%;}
+                    // @include bp(md-max){margin: 0 10px 30px 10px ;}
+                    // @include bp(sm-max){flex: 0 0 46%; max-width: 46%;}
+                    // @include bp(s-max){flex: 100%; max-width: 100%;}
                     
                      .content-block-2{background-color: $off-white2;height:330px;padding: 25px 30px 27px 26px;border-radius:6px;
                         @include bp(xxlg-max){height:360px;}
@@ -866,7 +867,6 @@ section, footer div{overflow: hidden;}
             }
         }
     }
-}
 
 /*=========================REAL STORIES==============================*/
 .real-stories-block{padding-bottom:56px;
