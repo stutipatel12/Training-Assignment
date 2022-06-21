@@ -384,12 +384,13 @@ h1{font-size:52px;color: $black1;
     @include bp(md-max){font-size: 40px;line-height: 50px;}
     @include bp(sm-max){font-size: 34px;}
     @include bp(xxs-max){font-size: 28px; line-height: 40px;}
+    @include bp(xxxs-max){font-size: 24px; line-height: 30px;}
 }
 h2{font-size: 48px;color: $black1;line-height: 53px;
     @include bp(md-max){font-size: 40px;line-height: 48px;}
     @include bp(sm-max){font-size: 30px; line-height: 36px;}
     @include bp(xs-max){font-size:26px; }
-    @include bp(xxs-max){font-size: 22px; line-height:28px;}
+    @include bp(xxs-max){font-size: 24px; line-height:28px;}
 }
 h3{font-size: 32px;color: $black1;line-height: 42px;
     @include bp(sm-max){font-size: 28px; line-height: 34px;}

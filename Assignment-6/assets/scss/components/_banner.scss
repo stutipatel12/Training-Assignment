@@ -163,15 +163,24 @@
 
 //Resource-1 banner
 .resource-1-banner{background-color: $slate; min-height:400px;display:flex;align-items:center;
+    @include bp(xxs-max){min-height: 340px;}
     .banner-text{max-width: 660px;margin:0 auto;text-align:center;
-       .bold-text{color: $white;font-size: 32px;font-weight: bold;line-height: 42px;padding-bottom: 15px;}
-       .small-text{color: $white;font-size: 18px;font-weight: normal;padding-top: 15px;}
+       .bold-text{color: $white;;padding-bottom: 15px;}
+       .small-text{color: $white;padding-top: 15px;}
     }
 }
 .banner-below-text{background-color: $black1;
    .banner-text{display: flex;justify-content:flex-end;align-items:center;padding:24px 30px 28px 30px;
-       p{color: $white;margin-right: 32px;}
+    @include bp(xxs-max){padding: 20px 15px; justify-content: center; text-align: center;}
+    @include bp(xxxs-max){flex-direction: column;}
+       p{color: $white;margin-right: 32px;
+    @include bp(sm-max){font-size: 14px;}
+    @include bp(xxs-max){margin-right: 20px; font-size: 12.5px;}
+    @include bp(xxxs-max){margin-bottom: 15px;}
+    }
        .email-btn{color: $white;background-color: $brown;
+        @include bp(sm-max){min-height: 32px; padding: 10px 20px; font-size: 14px;}
+        @include bp(xxs-max){font-size: 12.5px;padding: 8px 14px;}
           &:hover{color: $brown;background-color: $off-white2;}
         }
     }
@@ -180,6 +189,7 @@
 //Resource-2 banner
 .resource-2-banner{
     background-image: url("../images/resources-banner.jpg");background-position: center;background-size: cover;background-repeat: no-repeat;min-height:400px;display:flex;align-items:center;
+   .banner-text{max-width: 475px;}
 }
 .resource-2-text{
     .banner-text{justify-content: center;padding: 24px 0;}
