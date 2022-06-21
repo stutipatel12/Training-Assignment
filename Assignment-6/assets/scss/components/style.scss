@@ -715,7 +715,7 @@ section, footer div{overflow: hidden;}
 .resource-1-block{padding-top: 12px;
     .content-block{
         .active-nav{
-            .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;margin: 0 -15px;
+            .sub-nav{padding:50px 0; background-color: $white; z-index:80;position:sticky; top: 160px;
                 @include bp(sm-max){top: 140px;}
                 @include bp(xxs-max){top: 194px; padding: 20px 0;}
                 ul{display: flex;justify-content: space-between;max-width: 1100px;margin:0 auto;
@@ -733,7 +733,7 @@ section, footer div{overflow: hidden;}
                    .active a{color: $brown;}
                 }
             }
-            .crisis-block{padding: 50px 0; margin: 0 -20px;
+            .crisis-block{padding: 50px 0;
                 @include bp(xs-max){padding: 15px 0;}
                 h2{font-size: 36px;color: $black1;text-align: center;
                 @include bp(md-max){font-size: 28px;}
