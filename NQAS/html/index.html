@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <title>Document</title>
 </head>
@@ -16,46 +19,108 @@
 <body>
 
     <div class="wrapper">
-       <!--- Header start --->
-          <header class="header">
+        <!--- Header start --->
+        <header class="header">
             <div class="upper-header">
-               <div class="container">
-                <div class="content-block">
-                    <div class="left-block">
-                        <div class="flag-block">
-                           <i><img src="./images/flag.png"></i>
+                <div class="container">
+                    <div class="content-block">
+                        <div class="left-block">
+                            <div class="flag-block">
+                                <i><img src="./images/flag.png"></i>
+                            </div>
+                            <div class="country-name">
+                                <select name="country-names" id="country-names">
+                                    <option value="rigatoni">AUS</option>
+                                    <option value="dave">IND</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="country-name">
-                            <select name="country-names" id="country-names">
-                                <option value="rigatoni">AUS</option>
-                                <option value="dave">IND</option>
-                              </select>
-                        </div>     
-                    </div>
-                    <div class="right-block">
-                        <div class="text-block">
-                            <h6>Welcome Lisa Usher, Cairns | Customer ID: 0123456 | Company: Australia </h6>
-                        </div>
-                        <div class="account">
-                            <i><img src="./images/account.png"></i>
-                            <h6>MY ACCOUNT</h6>
-                        </div>
-                        <div class="sign-out">
-                            <i><img src="./images/sign-out.png"></i>
-                            <h6>SIGN OUT</h6>
+                        <div class="right-block">
+                            <div class="text-block">
+                                <h6>Welcome Lisa Usher, Cairns | Customer ID: 0123456 | Company: Australia </h6>
+                            </div>
+                            <div class="account">
+                                <i><img src="./images/account.png"></i>
+                                <h6>MY ACCOUNT</h6>
+                            </div>
+                            <div class="sign-out">
+                                <i><img src="./images/sign-out.png"></i>
+                                <h6>SIGN OUT</h6>
+                            </div>
                         </div>
                     </div>
                 </div>
-               </div>
             </div>
             <div class="logo-block">
-
+                <div class="container">
+                    <div class="content-block">
+                        <a href="#">
+                            <i><img src="./images/logo.png"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="below-header">
-
+                <div class="container">
+                    <div class="navbar">
+                        <div class="menu-block">
+                            <ul class="menu-items">
+                                <li><a href="#">PRODUCT FUNCTION</a></li>
+                                <li><a href="#">PRODUCT TYPE</a></li>
+                                <li><a href="#">BRANDS</a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <em class="search-btn">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </em>
+                            <div class="search-model">
+                                <div class="overlay-model">
+                                    <div class="search-box">
+                                        <input type="search" placeholder="Search...">
+                                        <i class="fa fa-times close-icon" aria-hidden="true"></i>
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </header>
+        </header>
         <!--- Header end --->
+
+        <!---- Main wrap start ---->
+        <div class="main-wrap">
+
+        </div>
+        <!---- Main wrap end ---->
+
+        <!---  footer start  --->
+       <footer class="footer">
+        <div class="container">
+            <div class="content-block">
+                <div class="logo-block">
+                    <a href="#">
+                        <i><img src="./images/logo.png"></i>
+                    </a>
+                </div>
+                <div class="footer-menu">
+                        <ul class="menu-items">
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">PRIVACY AND COOKIE POLICY</a></li>
+                            <li><a href="#">FAQS</a></li>
+                            <li><a href="#">SITE MAP</a></li>
+                            <li><a href="#">WARRANTY</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+       </footer>
+    <!---  footer end  --->
     </div>
     <script src="js\main.js"></script>
 </body>
