@@ -210,19 +210,19 @@ $(window).on("resize", function(){
 })
 
 
-// function footer_adj() {
-//   var footer_height = $("footer").outerHeight();
-//   $(".wrapper").css({
-//       "padding-bottom": footer_height + "px"
-//   });
-//   $("footer").css({
-//       "margin-top": -footer_height + "px"
-//   });
-// }
+function footer_adj() {
+  var footer_height = $("footer").outerHeight();
+  $(".wrapper").css({
+      "padding-bottom": footer_height + "px"
+  });
+  $("footer").css({
+      "margin-top": -footer_height + "px"
+  });
+}
 
-// $(document).ready(function(){
-//   footer_adj();
-// });
-// $(window).on("resize", function(){
-//   footer_adj();
-// })
+$(document).ready(function(){
+  footer_adj();
+});
+$(window).on("resize", function(){
+  footer_adj();
+})
