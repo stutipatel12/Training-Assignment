@@ -111,6 +111,36 @@ i, em{display: block;}
 .tabs-block .load-more-btn{text-align: center;padding: 15px 0;}
 .tabs-block .load-more-btn .btn{background-color:white; border: 2px solid #006137; color: #006137;}
 
+/*========== TWO COL SECTION =========*/
+.two-col-block{padding: 30px 0;}
+.two-col-block .content-block{display: flex; margin: 0 -15px;}
+.two-col-block .col-block{padding: 0 15px; flex: 0 0 50%; max-width: 50%;}
+.two-col-block .col-block .col-content{border-bottom: 5px solid #ffde17;}
+
+/*========== SLIDER-2 SECTION ========*/
+.slider-section .slick-next, .slider-section .slick-prev{background: white;background-image: url(../images/prelg-arrow-green.png); width:50px;height: 50px; background-size: 12px;background-repeat: no-repeat; background-position: center; border: 2px solid #006137; border-radius: 6px;}
+.slider-section .slick-next:hover , .slider-section .slick-prev:hover{background-color: #006137;background-image: url(../images/prevlg-arrow.png);}
+.slider-section .slider-2 .image-1{ width: 169px; height: 57px;}
+.slider-section .slider-2 .image-2{ width: 122px; height: 121px;}
+.slider-section .slider-2 .image-3{ width: 171px; height: 54px;}
+.slider-section .slider-2 .image-4{ width: 114px; height: 108px;}
+.slider-section .slider-2 .image-5{ width: 144px; height: 57px;}
+.slider-section .slider-2 .image-6{ width: 175px; height: 33px;}
+.slider-section .content-block{background-color: #ffff;border-bottom: 5px solid #ffde17;}
+.slider-section{padding: 35px 0;}
+.slider-section .slick-next{top: 138px;}
+.slider-section .slick-prev{top: 166px;}
+.slider-section  .slick-slider{padding: 104px 0;}
+.slider-section .slider-2 .slick-slide{padding: 0 15px;}
+.slider-section .slider-2 .slick-list{max-width: 1220px; margin: 0 auto;padding: 0 15px;}
+.slider-section .slider-2 .image{height: 100%;display: flex; justify-content: center; align-items: center;}
+/*=============== ABOUT NQAS ===========*/
+.about-section{padding: 35px 0 0 0;}
+.about-content{background-image: url(../images/ing.png); background-repeat: no-repeat;min-height: 414px; background-color: #206630;background-size: cover;background-position: center;border-bottom: 5px solid #ffde17;}
+.about-section h3{color: #ffff;text-align: center; margin-bottom: 29px;}
+.about-section .content-block{padding: 69px 0 71px 0; max-width: 868px; margin: 0 auto;}
+.about-section p{text-align: center; margin-bottom: 29px;}
+.about-section p:last-child{margin-bottom: 0;}
 /*===========   FOOTER   ===========*/
 .footer{padding: 44px 0;}
 .footer .logo-block{display: flex; justify-content: center;margin-bottom: 26px;}

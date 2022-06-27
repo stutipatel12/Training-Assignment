@@ -65,7 +65,7 @@ $(window).scroll(function(){
   }
 });
 
-/*------- Active yab --------*/
+/*------- Active tab --------*/
 $('#tabs-nav li:first-child').addClass('active');
 $('.tab-content').hide();
 $('.tab-content:first').show();
@@ -108,7 +108,52 @@ function equalHeight() {
   setTimeout(function () {
     $('.tabs-block .tabs .tab-content .text-content .card-block .card .text-block p').equalHeight();
     $('.tabs-block .tabs .tab-content .text-content .card-block .card .img-block').equalHeight();
+    $('.slider-section .content-block .slider-2 .slide').equalHeight();
   }, 700);
 }
 
-
+/*========== Slider 2 ==========*/
+$('.slider-2').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  responsive: [
+    {
+      breakpoint: 1360,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: false,
+  infinite: false,
+      }
+    },
+    // {
+    //   breakpoint: 1285,
+    //   settings: {
+    //     slidesToShow: 6,
+    //     slidesToScroll: 6,
+    //     dots: false,
+    //     infinite: false,
+    //   }
+    // },
+    {
+      breakpoint: 788,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint:480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
