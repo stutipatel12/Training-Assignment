@@ -1,5 +1,4 @@
 // Search Model
-$(document).ready(function(){
     $( ".search-btn" ).click(function() {
       $( ".search-model" ).toggle();
       document.body.style.overflow = document.body.style.overflow == 'hidden' ? 'auto' : 'hidden';
@@ -8,7 +7,6 @@ $(document).ready(function(){
       $( ".search-model" ).toggle();
       document.body.style.overflow = 'auto';
     });
-  })
 
   // header search model open/close 
 $('.search-btn').on('click', function(e) {
@@ -37,17 +35,23 @@ function footer_adj() {
 $(document).ready(function(){
   footer_adj();
   header_adj();
-  equalHeight();
+  setTimeout(function(){
+    equalHeight();
+  },1000)
 });
 $(window).on("resize", function(){
   footer_adj();
   header_adj();
-  equalHeight();
+  setTimeout(function(){
+    equalHeight();
+  },1000)
 })
 $(window).on("load", function(){
   footer_adj();
   header_adj();
-  equalHeight();
+  setTimeout(function(){
+    equalHeight();
+  },1000)
 })
 
 
@@ -106,54 +110,76 @@ function equalHeight() {
   });
 
   setTimeout(function () {
-    $('.tabs-block .tabs .tab-content .text-content .card-block .card .text-block p').equalHeight();
-    $('.tabs-block .tabs .tab-content .text-content .card-block .card .img-block').equalHeight();
+    $('.tabs-block .tabs .tab-content .text-content .card-block .card-item .text-block .text-wrap').equalHeight();
     $('.slider-section .content-block .slider-2 .slide').equalHeight();
-  }, 700);
+  }, 1000);
 }
 
 /*========== Slider 2 ==========*/
 $('.slider-2').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 6,
   slidesToScroll: 6,
   responsive: [
     {
-      breakpoint: 1360,
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: false,
+       infinite: false,
+      }
+    },
+    {
+      breakpoint:992,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: false,
-  infinite: false,
-      }
-    },
-    // {
-    //   breakpoint: 1285,
-    //   settings: {
-    //     slidesToShow: 6,
-    //     slidesToScroll: 6,
-    //     dots: false,
-    //     infinite: false,
-    //   }
-    // },
-    {
-      breakpoint: 788,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        infinite: false,
       }
     },
     {
-      breakpoint:480,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint:612,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint:375,
+      settings: {
+        slidesToShow:1,
+        slidesToScroll: 1,
       }
     }
+    
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
   ]
 });
+
+/*----------hamburger menu-------------*/
+function onClickMenu(){
+  document.getElementById("body").classList.toggle("open-menu");
+}
+
+
+//Animations
+
+AOS.init({
+  once:true,
+  duration: 1000,
+  easing: 'ease', 
+}
+);

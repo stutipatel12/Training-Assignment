@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>NQAS</title>
+</head>
+
+<body id="body">
+
+    <div class="wrapper">
+        <!--- Header start --->
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="upper-header">
+                    <div class="container">
+                        <div class="content-block">
+                            <div class="left-block">
+                                <div class="flag-block">
+                                    <i><img src="./images/flag.png" alt="flag"></i>
+                                </div>
+                                <div class="country-name">
+                                    <select name="country-names" id="country-names">
+                                        <option value="rigatoni">AUS</option>
+                                        <option value="dave">IND</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <div class="text-block">
+                                    <p>Welcome</p>
+                                    <ul class="list-block">
+                                        <li><span>Lisa Usher, Cairns</span></li>
+                                        <li>Customer ID: <span>0123456</span></li>
+                                        <li>Company:<span>Australia</span></li>
+                                    </ul>
+                                </div>
+                                <div class="text-block-2">
+                                    <div class="account">
+                                        <a href=""><i><img src="./images/account.png" alt="account"></i>MY ACCOUNT</a>
+                                    </div>
+                                    <div class="sign-out">
+
+                                        <a href=""><i><img src="./images/sign-out.png" alt="sign-out"></i>SIGN OUT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo-block">
+                    <div class="container">
+                        <div class="content-block">
+                            <a href="#" title="NQAS">
+                                <img src="./images/logo.png" alt="NQAS logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="below-header">
+                    <div class="container">
+                        <div id="menu-bar">
+                            <div id="menu" onclick="onClickMenu()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="navbar">
+                            <div class="menu-block  nav">
+                                <ul class="menu-items">
+                                    <li><a href="#" title="Product Function">PRODUCT FUNCTION</a></li>
+                                    <li><a href="#" title="Product Type">PRODUCT TYPE</a></li>
+                                    <li><a href="#" title="Brands">BRANDS</a></li>
+                                    <li><a href="#" title="About Us">ABOUT US</a></li>
+                                    <li><a href="#" title="Contact Us">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                            <div class="search">
+                                <em class="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </em>
+                                <div class="search-model">
+                                    <div class="overlay-model">
+                                        <div class="search-box">
+                                            <input type="search" placeholder="Search...">
+                                            <i class="fa fa-times close-icon" aria-hidden="true"></i>
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--- Header end --->
+        <!---- Main wrap start ---->
+        <div class="main-wrap">
+            <section class="air-conditioning-block">
+                <div class="container">
+                    <div class="left-content">
+                        <div class="top-block">
+                            <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><i><img src="./images/next-arrow.png"></i></li>
+                            <li><a href="#">Product Type</a></li>
+                            <li><i><img src="./images/next-arrow.png"></i></li>
+                            <li><a href="#" class="active-link">Air Conditioning</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="items-block">
+
+            </section>
+        </div>
+        <!---- Main wrap end ---->
+    </div>
+    <!---  footer start  --->
+    <footer class="footer">
+        <div class="container">
+            <div class="content-block">
+                <div class="logo-block">
+                    <a href="#" title="NQAS">
+                        <img src="./images/logo.png" alt="NQAS logo">
+                    </a>
+                </div>
+                <div class="footer-menu">
+                    <ul class="menu-items">
+                        <li><a href="#" title="About Us">ABOUT US</a></li>
+                        <li><a href="#" title="Privacy and Policy">PRIVACY AND COOKIE POLICY</a></li>
+                        <li><a href="#" title="Faqs">FAQS</a></li>
+                        <li><a href="#" title="Site Map">SITE MAP</a></li>
+                        <li><a href="#" title="Warranty">WARRANTY</a></li>
+                        <li><a href="#" title="Contact Us">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---  footer end  --->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>
