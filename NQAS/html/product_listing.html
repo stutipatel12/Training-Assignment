@@ -112,24 +112,527 @@
         <div class="main-wrap">
             <section class="air-conditioning-block">
                 <div class="container">
-                    <div class="left-content">
+                    <div class="content-block">
                         <div class="top-block">
-                            <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><i><img src="./images/next-arrow.png"></i></li>
-                            <li><a href="#">Product Type</a></li>
-                            <li><i><img src="./images/next-arrow.png"></i></li>
-                            <li><a href="#" class="active-link">Air Conditioning</a></li>
+                            <ul class="breadcrumbs">
+                                <li class="breadcrumbs-item">
+                                    <a href="./index.html" class="breadcrumbs-link">HOME</a>
+                                </li>
+                                <li class="breadcrumbs-item">
+                                    <a href="./index.html" class="breadcrumbs-link">PRODUCT TYPE</a>
+                                </li>
+                                <li class="breadcrumbs-item">
+                                    <a href="./index.html" class="breadcrumbs-link active-link">AIR CONDITIONING</a>
+                                </li>
                             </ul>
+                        </div>
+                        <div class="filter-block">
+                            <h4>AIR CONDITIONING</h4>
+                            <div class="filter-btn" onclick="openNav()">
+                               <i class="filter"><img src="./images/filter-icon.png"></i>
+                               <span>FILTER</span>
+                            </div>
+                            <div class="product-content">
+                                <div class="left-block" id="myNav">
+                                    <div class="left-content">
+                                        <div class="heading-block">
+                                            <div class="close-filter">
+                                                <i class="fa fa-times filter-close-btn" aria-hidden="true" onclick="closeNav()"></i>
+                                            </div>
+                                            <h6>FILTER</h6>
+                                        </div>
+                                        <div class="selected-item-block">
+                                            <div class="filter-heading">
+                                                <p>CURRENT SELECTION</p>
+                                            </div>
+                                            <div class="filter-content">
+                                                <div class="content">
+                                                    <div class="heading">
+                                                        <p>PRODUCT TYPE</p>
+                                                    </div>
+                                                    <div class="selected-item">
+                                                        <ul class="filter-options">
+                                                            <li><a href="">Air Conditioning</a></li>
+                                                        </ul>
+                                                        <i><img src="./images/cross.png"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="heading">
+                                                        <p>BRAND</p>
+                                                    </div>
+                                                    <div class="selected-item">
+                                                        <ul class="filter-options">
+                                                            <li><a href="">NQAS</a></li>
+                                                        </ul>
+                                                        <i><img src="./images/cross.png"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="green-link">
+                                                <a href="#">Clear All</a>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-block">
+                                            <div id="accordion-1">
+                                                <div class="head">
+                                                    <p>PRODUCT FUNCTION</p>
+                                                    <i class="arrow"><img src="./images/down-arrow.png"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="filter-options">
+                                                        <li>
+                                                            <a href="#">Air Conditioning</a>
+                                                            <span class="filter-count">63</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Electrical</a>
+                                                            <span class="filter-count">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Fasteners</a>
+                                                            <span class="filter-count">10</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Filtration</a>
+                                                            <span class="filter-count">3</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Machined</a>
+                                                            <span class="filter-count">1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Rubber</a>
+                                                            <span class="filter-count">2</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="green-link">
+                                                        <a href="#">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="accordion-1">
+                                                <div class="head">
+                                                    <p>BRAND</p>
+                                                    <i class="arrow"><img src="./images/down-arrow.png"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="filter-options">
+                                                        <li>
+                                                            <a href="#">Air Conditioning</a>
+                                                            <span class="filter-count">63</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Electrical</a>
+                                                            <span class="filter-count">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Fasteners</a>
+                                                            <span class="filter-count">10</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Filtration</a>
+                                                            <span class="filter-count">3</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Machined</a>
+                                                            <span class="filter-count">1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Rubber</a>
+                                                            <span class="filter-count">2</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="green-link">
+                                                        <a href="#">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="accordion-1">
+                                                <div class="head">
+                                                    <p>PRODUCT TYPE</p>
+                                                    <i class="arrow"><img src="./images/down-arrow.png"></i>
+                                                </div>
+                                                <div class="content">
+                                                    <ul class="filter-options">
+                                                        <li>
+                                                            <a href="#">Air Conditioning</a>
+                                                            <span class="filter-count">63</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Electrical</a>
+                                                            <span class="filter-count">5</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Fasteners</a>
+                                                            <span class="filter-count">10</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Filtration</a>
+                                                            <span class="filter-count">3</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Machined</a>
+                                                            <span class="filter-count">1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Rubber</a>
+                                                            <span class="filter-count">2</span>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="green-link">
+                                                        <a href="#">View More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="right-block">
+                                    <div class="right-content">
+                                        <div class="top-product-block">
+                                            <div class="grid-block">
+                                                <div class="grid-content">
+                                                    <div class="grid-1">
+                                                        <i class="fa fa-th" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="grid-2">
+                                                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="item-count">
+                                                    <p>
+                                                        <span>9</span>
+                                                        Items
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="sort-by-block">
+                                                <label for="sort-items">Sort By: </label>
+                                                <select id="sort-items">
+                                                    <option value="Position">Position</option>
+                                                    <option value="Price">Price</option>
+                                                    <option value="Discount">Discount</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-product-block">
+                                            <div class="product-card-block">
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">NEW</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="#" title="Compressor air con"><i><img src="./images/product-1.png"></i></a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="#">Compressor air con</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>00137292 | 00181083</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CXS8034</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD472.82</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="image-block blank-block">
+                                                            <a href="" title="(NPD) Manifold Assy Aircon Comp">
+                                                            <i>
+                                                                <img src="./images/no-image.png">
+                                                            </i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block content-block-2">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">(NPD) Manifold Assy Aircon Comp</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>RE69715</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>451-1180 </span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD0.00</span></p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block green-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">FEATURED</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="" title="Hose Airconditioner">
+                                                            <i><img src="./images/product-2.png"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">Hose Airconditioner</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>CB11464674 | CB11477641</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CB11477641A1</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD40.00</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">NEW</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="#" title="Compressor air con"><i><img src="./images/product-1.png"></i></a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="#">Compressor air con</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>00137292 | 00181083</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CXS8034</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD472.82</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="image-block blank-block">
+                                                            <a href="" title="(NPD) Manifold Assy Aircon Comp">
+                                                            <i>
+                                                                <img src="./images/no-image.png">
+                                                            </i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block content-block-2">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">(NPD) Manifold Assy Aircon Comp</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>RE69715</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>451-1180 </span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD0.00</span></p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block green-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">FEATURED</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="" title="Hose Airconditioner">
+                                                            <i><img src="./images/product-2.png"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">Hose Airconditioner</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>CB11464674 | CB11477641</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CB11477641A1</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD40.00</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">NEW</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="#" title="Compressor air con"><i><img src="./images/product-1.png"></i></a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="#">Compressor air con</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>00137292 | 00181083</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CXS8034</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD472.82</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="image-block blank-block">
+                                                            <a href="" title="(NPD) Manifold Assy Aircon Comp">
+                                                            <i>
+                                                                <img src="./images/no-image.png">
+                                                            </i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block content-block-2">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">(NPD) Manifold Assy Aircon Comp</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>RE69715</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>451-1180 </span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD0.00</span></p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="card-item">
+                                                        <div class="triangle-block green-block">
+                                                            <div class="right-triangle"></div>
+                                                            <span class="text">FEATURED</span>
+                                                        </div>
+                                                        <div class="image-block">
+                                                            <a href="" title="Hose Airconditioner">
+                                                            <i><img src="./images/product-2.png"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="content-block">
+                                                            <div class="head-wrap">
+                                                                <h6><a href="">Hose Airconditioner</a></h6>
+                                                            </div>
+                                                            <div class="text-wrap">
+                                                                <div class="text-1 equal-text">
+                                                                    <p>Mfg No: <span>CB11464674 | CB11477641</span></p>
+                                                                </div>
+                                                                <div class="text-1">
+                                                                    <p>Part No.: <span>CB11477641A1</span></p>
+                                                                </div>
+                                                                <div class="text-2">
+                                                                    <p>Price:<span class="green-text">AUD40.00</span>
+                                                                    </p>
+                                                                    <p>Stock.:<span class="red-text">Out of Stock</span>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="top-product-block pagination-block">
+                                            <div class="grid-block entries-block">
+                                                <div class="grid-content">
+                                                    <label for="entries">Show</label>
+                                                    <select id="show-entries">
+                                                        <option value="51">51</option>
+                                                        <option value="46">46</option>
+                                                        <option value="25">25</option>
+                                                    </select>
+                                                </div>
+                                                <div class="item-count">
+                                                     <span>entries</span>
+                                                </div>
+                                            </div>
+                                            <div class="pagination-item">
+                                                <ul class="pagination">
+                                                    <li><a class="list-text" href="#">First</a></li>
+                                                    <li><a class="list-text" href="#">Previous</a></li>
+                                                    <li><a href="#" class="previous pagination-arrow"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+                                                    <li><a class="active" href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li><a href="#" class="next pagination-arrow"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                                    <li><a class="list-text" href="#">Next</a></li>
+                                                    <li><a class="list-text" href="#">Last</a></li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="items-block">
-
-            </section>
-        </div>
-        <!---- Main wrap end ---->
+        </section>
+    </div>
+    <!---- Main wrap end ---->
     </div>
     <!---  footer start  --->
     <footer class="footer">

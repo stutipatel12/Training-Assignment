@@ -112,6 +112,10 @@ function equalHeight() {
   setTimeout(function () {
     $('.tabs-block .tabs .tab-content .text-content .card-block .card-item .text-block .text-wrap').equalHeight();
     $('.slider-section .content-block .slider-2 .slide').equalHeight();
+    $('.bottom-product-block .product-card-block .card-block .card-item .content-block .head-wrap').equalHeight();
+    $('.bottom-product-block .product-card-block .card-block .card-item .content-block .text-wrap').equalHeight();
+    $('.bottom-product-block .product-card-block .card-block .card-item .content-block .text-wrap .equal-text p').equalHeight();
+    $('.bottom-product-block .product-card-block .card-block .card-item .content-block').equalHeight();
   }, 1000);
 }
 
@@ -183,3 +187,30 @@ AOS.init({
   easing: 'ease', 
 }
 );
+
+// ACCORDION
+
+ $('.head').click(function(event){
+  if($(this).hasClass('selected')){
+    $(this).removeClass('selected');
+    $(this).next().slideUp();
+    $(this).parent().removeClass('active');
+  }
+  else{
+    $('.head').removeClass('selected');
+    $(this).addClass('selected');
+    $('.head').next().slideUp();
+    $(this).next().slideDown();
+    $('#accordion-1').removeClass('active');
+    $(this).parent().addClass('active');
+  }
+ })
+
+ function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  document.getElementById("body").classList.toggle("open-filter");
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
