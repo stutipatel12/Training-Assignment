@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Tab to Accordion</title>
+</head>
+
+<body id="body">
+
+    <div class="wrapper">
+        <!----------- 3 LEVEL MENU ---------->
+        <!--- Header start --->
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="container">
+                    <div class="header-links">
+                        <div class="logo-block">
+                            <a href="#" title="Logo"><img src="./images/logo.png"></a>
+                        </div>
+                        <div id="menu-bar">
+                            <div id="menu" onclick="onClickMenu()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="menu-block nav">
+                            <ul class="menu">
+                                <li class="menu-links">
+                                    <a href="#" title="Product Function">PRODUCT FUNCTION</a>
+                                    <i class="arrow"><img src="./images/down-arrow.png"></i>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-link"><a href="">Link 1</a></li>
+                                        <li class="sub-menu-link"><a href="">Link 2</a></li>
+                                        <li class="sub-menu-link link-3">
+                                            <a href="">Link 3</a>
+                                            <i class="arrow-2"><img src="./images/down-arrow.png"></i>
+                                            <ul class="sub-sub-menu">
+                                                <li class="sub-sub-menu-link"><a href="">Link 1</a></li>
+                                                <li class="sub-sub-menu-link"><a href="">Link 2</a></li>
+                                                <li class="sub-sub-menu-link"><a href="">Link 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu-link"><a href="">Link 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-links"><a href="#" title="Product Type">PRODUCT TYPE</a></li>
+                                <li class="menu-links"><a href="#" title="Brands">BRANDS</a></li>
+                                <li class="menu-links"><a href="#" title="About Us">ABOUT US</a>
+                                    <i class="arrow"><img src="./images/down-arrow.png"></i>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-link"><a href="">Link 1</a></li>
+                                        <li class="sub-menu-link"><a href="">Link 2</a>
+                                            <i class="arrow-2"><img src="./images/down-arrow.png"></i>
+                                            <ul class="sub-sub-menu">
+                                                <li class="sub-menu-link"><a href="">Link 1</a></li>
+                                                <li class="sub-menu-link"><a href="">Link 2</a></li>
+                                                <li class="sub-menu-link"><a href="">Link 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-menu-link"><a href="">Link 3</a></li>
+                                        <li class="sub-menu-link"><a href="">Link 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-links"><a href="#" title="Contact Us">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--- Header end --->
+
+        <div class="main-wrap">
+            <!------------ Tab to Accordion ------->
+            <section class="tab-section-2">
+                <div class="tab-section-content">
+                    <div class="container">
+                        <div class="tab-wrapper">
+                            <ul class="tabs">
+                                <li><a href="#tab1">Tab-1</a></li>
+                                <li><a href="#tab2">Tab-2</a></li>
+                                <li><a href="#tab3">Tab-3</a></li>
+                                <li><a href="#tab4">Tab-4</a></li>
+                            </ul>
+                            <div class="tab-block">
+                                <h3 class="tab-heading"><a href="#tab1">TAB-1 CONTENT</a></h3>
+                                <div id="tab1" class="tab-content-2">
+                                    <h2>TAB-1 CONTENT</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis
+                                        quos quo aliquam. Vel dolorem quod accusamus repellendus sed aliquid nihil,
+                                        numquam facilis ad dolor eos nemo, quo magni quis?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempore?
+                                    </p>
+                                </div>
+
+                                <h3 class="tab-heading"><a href="#tab2">TAB-2 CONTENT</a></h3>
+                                <div id="tab2" class="tab-content-2">
+                                    <h2>TAB-2 CONTENT</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis
+                                        quos quo aliquam. Vel dolorem quod accusamus repellendus sed aliquid nihil,
+                                        numquam facilis ad dolor eos nemo, quo magni quis?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempore?
+                                    </p>
+                                </div>
+
+                                <h3 class="tab-heading"><a href="#tab3">TAB-3 CONTENT</a></h3>
+                                <div id="tab3" class="tab-content-2">
+                                    <h2>TAB-3 CONTENT</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis
+                                        quos quo aliquam. Vel dolorem quod accusamus repellendus sed aliquid nihil,
+                                        numquam facilis ad dolor eos nemo, quo magni quis?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempore?
+                                    </p>
+                                </div>
+
+                                <h3 class="tab-heading"><a href="#tab4">TAB-4 CONTENT</a></h3>
+                                <div id="tab4" class="tab-content-2">
+                                    <h2>TAB-4 CONTENT</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis
+                                        quos quo aliquam. Vel dolorem quod accusamus repellendus sed aliquid nihil,
+                                        numquam facilis ad dolor eos nemo, quo magni quis?</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, tempore?
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+
+    </div>
+
+
+    <script src="js\main.js"></script>
+</body>
+
+</html>
