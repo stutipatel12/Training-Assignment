@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Slider</title>
+</head>
+
+<body id="body">
+
+    <div class="wrapper">
+        <div class="main-wrap">
+            <section class="full-screen blue">
+                <div>
+                    <h1>Basic Tweening</h1>
+                </div>
+            </section>
+            <section id="scale-trigger" class="full-screen orange">
+                <div id="scale-animation">
+                    <div class="inner-wrap">
+                        <h2>SIMPLE TWEENING EXAMPLE</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempora,
+                            veniam amet harum laboriosam necessitatibus aliquam.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="move">
+                <div class="move-wrap">
+                    <p id="high1" class="">One</p>
+                    <p id="high2" class="active">Two</p>
+                    <p id="high3">Three</p>
+                    <p id="high4">Four</p>
+                </div>
+            </div>
+            <div class="spacer s1" id="sec1">
+                <div class="box2" style="background-color: #8DBBE0;">
+                    <p>One</p>
+                    <a href="#" class="viewsource">view source</a>
+                </div>
+            </div>
+            <div class="spacer s1" id="sec2">
+                <div class="box2" style="background-color: #6AA6D8;">
+                    <p>Two</p>
+                    <a href="#" class="viewsource">view source</a>
+                </div>
+            </div>
+            <div class="spacer s1" id="sec3">
+                <div class="box2" style="background-color: #4E96D1;">
+                    <p>Three</p>
+                    <a href="#" class="viewsource">view source</a>
+                </div>
+            </div>
+            <div class="spacer s1" id="sec4">
+                <div class="box2" style="background-color: #307FB5;">
+                    <p>Four</p>
+                    <a href="#" class="viewsource">view source</a>
+                </div>
+            </div>
+            <div class="spacer s2"></div>
+
+            <div class="spacer s0" id="trigger"></div>
+
+            <section class="wrap">
+                <div id="animate" class="box1 blue">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, ab id labore consectetur
+                        aspernatur dolore!</p>
+                </div>
+            </section>
+
+            <section class="zap-block">
+                <div id="trigger1" class="spacer s0"></div>
+                <div id="animate1" class="box1 red">
+                    <div class="zap-wrap">
+                        <img src="./images/prom-banner-img-1.jpg" class="zap-img">
+                    </div>
+                </div>
+            </section>
+
+            <div id="test">
+            </div>
+
+            <div id="move">
+                <div id="animation"> </div>
+            </div>
+
+           
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+
+</html>
