@@ -11,4 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nu
+    "nuxt": "^2.15.8"
+  }
+}
